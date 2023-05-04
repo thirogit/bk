@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>TOPSTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial CE</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>BUYELLHEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>TABLEHEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+
+
+			<text label="TITLE_LABEL">
+				<position>
+					<left>200</left>
+					<top>80</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>70</height>
+				</size>
+				<value>WAŻENIE {DOCNUMBER}</value>
+				<style>2</style>
+			</text>
+			
+			<text label="SOURCEHENT_LABEL">
+				<position>
+					<left>71</left>
+					<top>203</top>
+				</position>
+				<size>
+					<width>753</width>
+					<height>61</height>
+				</size>
+				<value>DOSTAWCA</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			<text label="SOURCE">
+				<position>
+					<left>71</left>
+					<top>264</top>
+				</position>
+				<size>
+					<width>753</width>
+					<height>190</height>
+				</size>
+				<value>{SOURCE}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			<text label="DESTINATION_LABEL">
+				<position>
+					<left>71</left>
+					<top>454</top>
+				</position>
+				<size>
+					<width>753</width>
+					<height>61</height>
+				</size>
+				<value>MIEJSCE DOCELOWE</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			<text label="DESTINATION">
+				<position>
+					<left>71</left>
+					<top>515</top>
+				</position>
+				<size>
+					<width>753</width>
+					<height>203</height>
+				</size>
+				<value>{DESTINATION}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>203</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Data wystawienia:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>261</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Data transportu:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>319</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Numer rejestracyjny:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>377</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Godzina zał. 1 zwierz.:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>435</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Godzina wyładunku:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="DOCDATE">
+				<position>
+					<left>1466</left>
+					<top>203</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{DOCDATE}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="TRANSPORTDATE">
+				<position>
+					<left>1466</left>
+					<top>261</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{TRANSPORTDATE}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="PLATENO">
+				<position>
+					<left>1466</left>
+					<top>319</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{PLATENO}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="LOADSTARTTIME">
+				<position>
+					<left>1466</left>
+					<top>377</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{LOADSTARTTIME}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="LOADENDTIME">
+				<position>
+					<left>1466</left>
+					<top>435</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{LOADENDTIME}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+					<text label="">
+						<position>
+							<left>66</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>82</height>
+						</size>
+						<value>LP</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>191</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>82</height>
+						</size>
+						<value>Numer zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>566</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>147</width>
+							<height>82</height>
+						</size>
+						<value>Płeć</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>713</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>147</width>
+							<height>82</height>
+						</size>
+						<value>Klasa</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>3</style>
+					</text>					
+					<text label="">
+						<position>
+							<left>860</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>227</width>
+							<height>82</height>
+						</size>
+						<value>Waga</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1087</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>695</width>
+							<height>82</height>
+						</size>
+						<value>Uwagi</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+
+
+				</header>
+
+				<fields>
+
+
+					<text label="INDEX">
+						<position>
+							<left>66</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>52</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>-1</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>191</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>52</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>-1</style>
+					</text>
+					<text label="COWSEX">
+						<position>
+							<left>566</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>147</width>
+							<height>52</height>
+						</size>
+						<value>{COWSEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>-1</style>
+					</text>
+					<text label="COWCLASS">
+						<position>
+							<left>713</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>147</width>
+							<height>52</height>
+						</size>
+						<value>{COWCLASS}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#E4E4E4</fillColor>
+						<style>-1</style>
+					</text>
+					
+					<text label="WEIGTHACCEPTED">
+						<position>
+							<left>860</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>227</width>
+							<height>52</height>
+						</size>
+						<value></value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWEXTRAS">
+						<position>
+							<left>1087</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>695</width>
+							<height>52</height>
+						</size>
+						<value>{COWEXTRAS}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+
+				</fields>
+			</band>
+		</bands>
+
+		<documentfooter >
+		</documentfooter>
+		
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>-1</style>
+			</text>
+		</pagefooter>
+	</document>
+
+</expandabletemplate>

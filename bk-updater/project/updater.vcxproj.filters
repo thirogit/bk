@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{3c64db28-18a8-41c4-a7d8-7483bd2a7065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common\versioning">
+      <UniqueIdentifier>{c426afaf-3856-4d65-9e75-906cd71a559c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\versioning\generated">
+      <UniqueIdentifier>{1088871d-4d87-415e-821b-5c5c79e76d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\filesystem">
+      <UniqueIdentifier>{d8efc7a4-a40d-4c45-bc4d-4a8934a7d28e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\httpdownloader">
+      <UniqueIdentifier>{82540d35-0e80-4ffb-9f90-550c754e8baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\log">
+      <UniqueIdentifier>{962a21da-4ffd-42e3-a5f2-da63d932ebf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\types">
+      <UniqueIdentifier>{704656f0-c3a4-4eb5-b7e5-f456a9509bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\exception">
+      <UniqueIdentifier>{1244e944-9de4-4cc8-b2cb-22c426eb739f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ported">
+      <UniqueIdentifier>{d099d1f4-6db8-4edf-bec2-7997f21bad0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\progress">
+      <UniqueIdentifier>{cd32bb17-be23-458b-b7e5-734710bec4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\progress\ui">
+      <UniqueIdentifier>{e8e14b34-84fc-49e1-9fa8-8367e1a63105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\string">
+      <UniqueIdentifier>{def897a6-02ff-4b5d-9f15-2c9d9c96e871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\format">
+      <UniqueIdentifier>{5bdd2a2b-78ca-472f-9700-59b8a5786df7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\updater.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\updater.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\CmdLineParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\updater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VersionFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VersionFileList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VersionInfoList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VersionTmpArchiveFileCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\versioning\generated\UpdateLocation.cxx">
+      <Filter>Source Files\common\versioning\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VersionInstaller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\versioning\VersionInfo.cpp">
+      <Filter>Source Files\common\versioning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\filesystem\FileDeleterFinalizer.cpp">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\filesystem\paths.cpp">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\ChunkBuffer.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\DownloadProgress.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\HttpFileGetter.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\TransferBuffer.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\TransferFile.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\URLBuilder.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\httpdownloader\DownloadException.cpp">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\log\AmLog.cpp">
+      <Filter>Source Files\common\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\DateTime.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\exception\DateTimeException.cpp">
+      <Filter>Source Files\common\exception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\ported\strptime.cpp">
+      <Filter>Source Files\common\ported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\progress\ui\SimpleProgressDialog.cpp">
+      <Filter>Source Files\common\progress\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\FloatString.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\IntString.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\TempStringLoader.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\format\FloatFormat.cpp">
+      <Filter>Source Files\common\format</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\format\StringFormat.cpp">
+      <Filter>Source Files\common\format</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\filesystem\files.cpp">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\CmdLineParser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\updater.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VersionFile.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VersionFileList.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VersionInfoList.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VersionTmpArchiveFileCache.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\versioning\generated\UpdateLocation.hxx">
+      <Filter>Source Files\common\versioning\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VersionInstaller.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\versioning\VersionInfo.h">
+      <Filter>Source Files\common\versioning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\versioning\VersionInfoStruct.h">
+      <Filter>Source Files\common\versioning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\filesystem\FileDeleterFinalizer.h">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\filesystem\paths.h">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\ChunkBuffer.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\DownloadProgress.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\HttpFileGetter.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\TransferBuffer.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\TransferFile.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\TransferStream.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\URLBuilder.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\httpdownloader\DownloadException.h">
+      <Filter>Source Files\common\httpdownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\log\AmLog.h">
+      <Filter>Source Files\common\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\DateTime.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\MapEx.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\exception\BaseException.h">
+      <Filter>Source Files\common\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\exception\DateTimeException.h">
+      <Filter>Source Files\common\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\ported\strptime.h">
+      <Filter>Source Files\common\ported</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\SimpleProgress.h">
+      <Filter>Source Files\common\progress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\ui\SimpleProgressDialog.h">
+      <Filter>Source Files\common\progress\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\ui\SimpleProgresResource.h">
+      <Filter>Source Files\common\progress\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\FloatString.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\IntString.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\TempStringLoader.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\format\FloatFormat.h">
+      <Filter>Source Files\common\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\format\StringFormat.h">
+      <Filter>Source Files\common\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\filesystem\files.h">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

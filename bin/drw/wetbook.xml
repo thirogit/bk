@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="landscape" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-20</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>HEADSTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>TOP</verAlign>
+			<font>
+				<height>-20</height>
+				<face>Verdana</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+
+		</pageheader>
+		<documentheader>
+			<rect label="top_margin">
+				<position>
+					<left>0</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1</width>
+					<height>100</height>
+				</size>				
+			</rect>
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+					<text label="">
+						<position>
+							<left>91</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>97</width>
+							<height>158</height>
+						</size>
+						<value>LP.</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>186</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>445</width>
+							<height>158</height>
+						</size>
+						<value>Imię i nazwisko albo nazwa posiadacza&#xA;zwiarzęcia oraz adres gospodarstwa,&#xA;z którego zwierzę zostało dostarczone</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>629</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>284</width>
+							<height>158</height>
+						</size>
+						<value>Numer identyfikacyjny&#xA;gospodarstwa&#xA;pochodzenia lub stada pochodzenia zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>911</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>288</width>
+							<height>158</height>
+						</size>
+						<value>Numer identyfikacyjny&#xA;zwierzęcia&#xA;(Nr paszportu)&#xA;[Nr świad. zdrowia]</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1197</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>444</width>
+							<height>158</height>
+						</size>
+						<value>Imię i nazwisko albo nazwa posiadacza zwierzęcia lub weterynaryjny numer identyfikacyjny</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1640</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>189</width>
+							<height>158</height>
+						</size>
+						<value>Data wprowadzenia zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1827</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>194</width>
+							<height>158</height>
+						</size>
+						<value>Data wyprowadzenia zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>2019</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>413</width>
+							<height>158</height>
+						</size>
+						<value>Miejsce przeznaczenia zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>2432</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>183</width>
+							<height>158</height>
+						</size>
+						<value>Nr rejestracyjny srodka transportu, którym dostarczona zwierzę</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>2615</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>182</width>
+							<height>158</height>
+						</size>
+						<value>Nr rejestracyjny środka transportu, którym odebrano zwierzę</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>  
+
+				</header>
+
+				<fields>                    
+
+
+					<text label="INDEX">
+						<position>
+							<left>91</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>97</width>
+							<height>174</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="FROMPLACE">
+						<position>
+							<left>186</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>445</width>
+							<height>174</height>
+						</size>
+						<value>{FROMPLACE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="FROMHENTNO">
+						<position>
+							<left>629</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>284</width>
+							<height>174</height>
+						</size>
+						<value>{FROMHENTNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COW">
+						<position>
+							<left>911</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>288</width>
+							<height>174</height>
+						</size>
+						<value>{COW}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="FSTOWNER">
+						<position>
+							<left>1197</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>444</width>
+							<height>174</height>
+						</size>
+						<value>{FSTOWNER}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="INDATE">
+						<position>
+							<left>1640</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>189</width>
+							<height>174</height>
+						</size>
+						<value>{INDATE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="OUTDATE">
+						<position>
+							<left>1827</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>194</width>
+							<height>174</height>
+						</size>
+						<value>{OUTDATE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="OUTPLACE">
+						<position>
+							<left>2019</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>413</width>
+							<height>174</height>
+						</size>
+						<value>{OUTPLACE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="PLATEIN">
+						<position>
+							<left>2432</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>183</width>
+							<height>174</height>
+						</size>
+						<value>{PLATEIN}\n{INWETIDNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="PLATEOUT">
+						<position>
+							<left>2615</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>182</width>
+							<height>174</height>
+						</size>
+						<value>{PLATEOUT}\n{OUTWETIDNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+				</fields>
+				<footer>
+
+				</footer>
+			</band>
+
+		</bands>  
+
+		<documentfooter stickToBottom="y">
+
+
+
+		</documentfooter>
+
+		<pagefooter>
+
+		</pagefooter>
+	</document>
+
+</expandabletemplate>

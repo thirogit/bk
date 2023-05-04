@@ -1,0 +1,2494 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fixedtemplate orientation="portrait" paper="A4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>UNDERTITLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>BOTTOM</verAlign>
+			<font>
+				<height>-26</height>
+				<face>Arial Narrow</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>SMALLLABEL</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-26</height>
+				<face>Arial Narrow</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>BEAM</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="4">
+			<name>QUESTION</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-32</height>
+				<face>Arial Narrow</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="5">
+			<name>QUESTION_CENTER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-32</height>
+				<face>Arial Narrow</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="6">
+			<name>QUESTION_BOTTOM</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>BOTTOM</verAlign>
+			<font>
+				<height>-32</height>
+				<face>Arial Narrow</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="7">
+			<name>QUESTION_TOPLEFT</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>TOP</verAlign>
+			<font>
+				<height>-32</height>
+				<face>Arial Narrow</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+
+
+	<pages>
+		<page name="front">
+
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>74</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>194</height>
+				</size>
+				<value>INFORMACJE DOTYCZĄCE ŁAŃCUCHA&#xA;ŻYWNOŚCIOWEGO ZWIERZĄT</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>RIGHT</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-55</height>
+						<face>Arial Narrow</face>
+						<bold>true</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>295</top>
+				</position>
+				<size>
+					<width>733</width>
+					<height>235</height>
+				</size>
+				<value>Imię i nazwisko lub nazwa właściciela zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="NAME">
+				<position>
+					<left>58</left>
+					<top>302</top>
+				</position>
+				<size>
+					<width>718</width>
+					<height>196</height>
+				</size>
+				<value>{NAME}</value>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>295</top>
+				</position>
+				<size>
+					<width>214</width>
+					<height>55</height>
+				</size>
+				<value>Miejscowość</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<padding>
+					<left>20</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+				</padding>
+				<style>2</style>
+			</text>
+			
+			<text label="CITY">
+				<position>
+					<left>998</left>
+					<top>295</top>
+				</position>
+				<size>
+					<width>485</width>
+					<height>55</height>
+				</size>
+				<value>{CITY}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>350</top>
+				</position>
+				<size>
+					<width>214</width>
+					<height>55</height>
+				</size>
+				<value>Kod</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			<text label="ZIP">
+				<position>
+					<left>998</left>
+					<top>350</top>
+				</position>
+				<size>
+					<width>485</width>
+					<height>55</height>
+				</size>
+				<value>{ZIP}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>405</top>
+				</position>
+				<size>
+					<width>214</width>
+					<height>55</height>
+				</size>
+				<value>Powiat</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			<text label="DISTRICT">
+				<position>
+					<left>998</left>
+					<top>405</top>
+				</position>
+				<size>
+					<width>485</width>
+					<height>55</height>
+				</size>
+				<value>{DISTRICT}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1483</left>
+					<top>295</top>
+				</position>
+				<size>
+					<width>214</width>
+					<height>55</height>
+				</size>
+				<value>Nr posesji</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			<text label="POBOX">
+				<position>
+					<left>1697</left>
+					<top>295</top>
+				</position>
+				<size>
+					<width>303</width>
+					<height>55</height>
+				</size>
+				<value>{POBOX}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1483</left>
+					<top>350</top>
+				</position>
+				<size>
+					<width>214</width>
+					<height>55</height>
+				</size>
+				<value>Poczta</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			<text label="POST">
+				<position>
+					<left>1697</left>
+					<top>350</top>
+				</position>
+				<size>
+					<width>303</width>
+					<height>55</height>
+				</size>
+				<value>{POST}</value>	
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1483</left>
+					<top>405</top>
+				</position>
+				<size>
+					<width>214</width>
+					<height>55</height>
+				</size>
+				<value>Gmina</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			
+			<text label="COUNTY">
+				<position>
+					<left>1697</left>
+					<top>405</top>
+				</position>
+				<size>
+					<width>303</width>
+					<height>55</height>
+				</size>
+				<value>{COUNTY}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>460</top>
+				</position>
+				<size>
+					<width>434</width>
+					<height>68</height>
+				</size>
+				<value>Nr gospodarstwa</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>LEFT</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-39</height>
+						<face>Arial Narrow</face>
+						<bold>true</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			
+			
+			<text label="HENTNO">
+				<position>
+					<left>1218</left>
+					<top>460</top>
+				</position>
+				<size>
+					<width>782</width>
+					<height>68</height>
+				</size>
+				<value>{HENTNO}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>528</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Deklaracje właściciela zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>3</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>591</top>
+				</position>
+				<size>
+					<width>733</width>
+					<height>151</height>
+				</size>
+				<value>Zwierzęta wywożone do rzeźni (nazwa, adres, WIN)</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>56</left>
+					<top>596</top>
+				</position>
+				<size>
+					<width>723</width>
+					<height>120</height>
+				</size>
+				<value>{SLAUGHTER}</value>				
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>591</top>
+				</position>
+				<size>
+					<width>434</width>
+					<height>151</height>
+				</size>
+				<value>Gatunek</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>789</left>
+					<top>596</top>
+				</position>
+				<size>
+					<width>424</width>
+					<height>101</height>
+				</size>
+				<value>{SPIECIES}</value>				
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>591</top>
+				</position>
+				<size>
+					<width>412</width>
+					<height>151</height>
+				</size>
+				<value>Ilość sztuk</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1223</left>
+					<top>596</top>
+				</position>
+				<size>
+					<width>402</width>
+					<height>100</height>
+				</size>
+				<value>{COWAMOUNT}</value>				
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>591</top>
+				</position>
+				<size>
+					<width>370</width>
+					<height>151</height>
+				</size>
+				<value>Nr środka transportu</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1606</left>
+					<top>596</top>
+				</position>
+				<size>
+					<width>360</width>
+					<height>101</height>
+				</size>
+				<value>{PLATENO}</value>				
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>742</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Informacje dotyczące leczenia zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>3</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>805</top>
+				</position>
+				<size>
+					<width>1579</width>
+					<height>43</height>
+				</size>
+				<value>Czy zwierzęta były leczone?</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>805</top>
+				</position>
+				<size>
+					<width>130</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>805</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>848</top>
+				</position>
+				<size>
+					<width>733</width>
+					<height>215</height>
+				</size>
+				<value>Stosowane preparaty lecznicze</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>848</top>
+				</position>
+				<size>
+					<width>976</width>
+					<height>43</height>
+				</size>
+				<value>Okres stosowania</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>848</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value>okres karencji</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>891</top>
+				</position>
+				<size>
+					<width>134</width>
+					<height>43</height>
+				</size>
+				<value>od</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>918</left>
+					<top>891</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>891</top>
+				</position>
+				<size>
+					<width>142</width>
+					<height>43</height>
+				</size>
+				<value>do</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1360</left>
+					<top>891</top>
+				</position>
+				<size>
+					<width>400</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>891</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>934</top>
+				</position>
+				<size>
+					<width>134</width>
+					<height>43</height>
+				</size>
+				<value>od</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>918</left>
+					<top>934</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>934</top>
+				</position>
+				<size>
+					<width>142</width>
+					<height>43</height>
+				</size>
+				<value>do</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1360</left>
+					<top>934</top>
+				</position>
+				<size>
+					<width>400</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>934</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>977</top>
+				</position>
+				<size>
+					<width>134</width>
+					<height>43</height>
+				</size>
+				<value>od</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>918</left>
+					<top>977</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+						
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>977</top>
+				</position>
+				<size>
+					<width>142</width>
+					<height>43</height>
+				</size>
+				<value>do</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1360</left>
+					<top>977</top>
+				</position>
+				<size>
+					<width>400</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>977</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>1020</top>
+				</position>
+				<size>
+					<width>134</width>
+					<height>43</height>
+				</size>
+				<value>od</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>918</left>
+					<top>1020</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>1020</top>
+				</position>
+				<size>
+					<width>142</width>
+					<height>43</height>
+				</size>
+				<value>do</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1360</left>
+					<top>1020</top>
+				</position>
+				<size>
+					<width>400</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>1020</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1063</top>
+				</position>
+				<size>
+					<width>974</width>
+					<height>145</height>
+				</size>
+				<value>Imię i nazwisko lek. wet. prowadzącego leczenie</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1063</top>
+				</position>
+				<size>
+					<width>975</width>
+					<height>145</height>
+				</size>
+				<value>Adres</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1208</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Informacje dotyczące występowania chorób zakaźnych</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<fillColor>#C0C0C0</fillColor>        
+				<style>3</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1269</top>
+				</position>
+				<size>
+					<width>1579</width>
+					<height>43</height>
+				</size>
+				<value>Czy gospodarstwo było objęte rygorem zwalczania chorób zakaźnych?</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>1269</top>
+				</position>
+				<size>
+					<width>130</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>1269</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1312</top>
+				</position>
+				<size>
+					<width>609</width>
+					<height>43</height>
+				</size>
+				<value>Nazwa choroby</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>660</left>
+					<top>1312</top>
+				</position>
+				<size>
+					<width>558</width>
+					<height>43</height>
+				</size>
+				<value>Gatunek zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>1312</top>
+				</position>
+				<size>
+					<width>782</width>
+					<height>43</height>
+				</size>
+				<value>Czas trwania</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1355</top>
+				</position>
+				<size>
+					<width>609</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+				
+			</text>
+			
+			
+			<text label="SPIECIES">
+				<position>
+					<left>660</left>
+					<top>1355</top>
+				</position>
+				<size>
+					<width>558</width>
+					<height>43</height>
+				</size>
+				<value>{SPIECIES}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>1355</top>
+				</position>
+				<size>
+					<width>142</width>
+					<height>43</height>
+				</size>
+				<value>od</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1360</left>
+					<top>1355</top>
+				</position>
+				<size>
+					<width>270</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+			<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>1355</top>
+				</position>
+				<size>
+					<width>130</width>
+					<height>43</height>
+				</size>
+				<value>do</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>1355</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>				
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1398</top>
+				</position>
+				<size>
+					<width>609</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="SPIECIES">
+				<position>
+					<left>660</left>
+					<top>1398</top>
+				</position>
+				<size>
+					<width>558</width>
+					<height>43</height>
+				</size>
+				<value>{SPIECIES}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+		
+	<text label="">
+				<position>
+					<left>1218</left>
+					<top>1398</top>
+				</position>
+				<size>
+					<width>142</width>
+					<height>43</height>
+				</size>
+				<value>od</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1360</left>
+					<top>1398</top>
+				</position>
+				<size>
+					<width>270</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+		
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>1398</top>
+				</position>
+				<size>
+					<width>130</width>
+					<height>43</height>
+				</size>
+				<value>do</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1760</left>
+					<top>1398</top>
+				</position>
+				<size>
+					<width>240</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+				
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1439</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Informacje dotyczące żywienia zwerząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>3</style>
+			</text>
+		
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1502</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>43</height>
+				</size>
+				<value>Zwierzęta były karmione paszą pochodzącą z wytwórni pasz / własne gospodarstwo*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1545</top>
+				</position>
+				<size>
+					<width>974</width>
+					<height>142</height>
+				</size>
+				<value>Nazwa i adres zakładu</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1545</top>
+				</position>
+				<size>
+					<width>975</width>
+					<height>142</height>
+				</size>
+				<value>Nr zakładu / nr gospodarstwa</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1687</top>
+				</position>
+				<size>
+					<width>733</width>
+					<height>171</height>
+				</size>
+				<value>Stosowane dodatki paszowe</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>1687</top>
+				</position>
+				<size>
+					<width>241</width>
+					<height>43</height>
+				</size>
+				<value>Data</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1687</top>
+				</position>
+				<size>
+					<width>975</width>
+					<height>43</height>
+				</size>
+				<value>Nazwa dodatku paszowego</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>1730</top>
+				</position>
+				<size>
+					<width>241</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1730</top>
+				</position>
+				<size>
+					<width>975</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>1773</top>
+				</position>
+				<size>
+					<width>241</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1773</top>
+				</position>
+				<size>
+					<width>975</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>1816</top>
+				</position>
+				<size>
+					<width>241</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1816</top>
+				</position>
+				<size>
+					<width>975</width>
+					<height>43</height>
+				</size>
+				<value></value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			
+				<text label="">
+				<position>
+					<left>51</left>
+					<top>1858</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Informacje dotyczące badań monitoringowych</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>3</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>1921</top>
+				</position>
+				<size>
+					<width>733</width>
+					<height>90</height>
+				</size>
+				<value>Czy w gospodarstwie pobieranio do badań&#xA;monitoringowych?</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>1921</top>
+				</position>
+				<size>
+					<width>241</width>
+					<height>90</height>
+				</size>
+				<value>Krew**</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>6</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>1921</top>
+				</position>
+				<size>
+					<width>193</width>
+					<height>90</height>
+				</size>
+				<value>Mocz**</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>6</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>1921</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>90</height>
+				</size>
+				<value>Woda**</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>6</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1424</left>
+					<top>1921</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>90</height>
+				</size>
+				<value>Mleko**</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>6</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>1921</top>
+				</position>
+				<size>
+					<width>370</width>
+					<height>90</height>
+				</size>
+				<value>Środki żywienia zwierząt**</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>6</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2011</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Informacje dotyczace podjętych środków kontroli</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>3</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2074</top>
+				</position>
+				<size>
+					<width>1167</width>
+					<height>128</height>
+				</size>
+				<value>Właściwego stosowania</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+
+
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>2074</top>
+				</position>
+				<size>
+					<width>412</width>
+					<height>45</height>
+				</size>
+				<value>Dodatków paszowych</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>2074</top>
+				</position>
+				<size>
+					<width>370</width>
+					<height>45</height>
+				</size>
+				<value>Leków weterynaryjnych</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+
+<text label="">
+				<position>
+					<left>1218</left>
+					<top>2119</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>83</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1424</left>
+					<top>2119</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>83</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>2119</top>
+				</position>
+				<size>
+					<width>185</width>
+					<height>83</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1815</left>
+					<top>2119</top>
+				</position>
+				<size>
+					<width>185</width>
+					<height>83</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+						
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2202</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>63</height>
+				</size>
+				<value>Informacje dotyczące programów nadzoru i kontroli</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>3</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2265</top>
+				</position>
+				<size>
+					<width>1949</width>
+					<height>43</height>
+				</size>
+				<value>Czy gospodarstwo posiada programy dotyczące nadzowru i kontroli z zakresu?</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2308</top>
+				</position>
+				<size>
+					<width>360</width>
+					<height>81</height>
+				</size>
+				<value>zdrowia zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			<text label="">
+				<position>
+					<left>411</left>
+					<top>2308</top>
+				</position>
+				<size>
+					<width>373</width>
+					<height>81</height>
+				</size>
+				<value>dobrostanu zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>2308</top>
+				</position>
+				<size>
+					<width>434</width>
+					<height>81</height>
+				</size>
+				<value>zdrowia roślin mających wpływ na zdrowie człowieka</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>2308</top>
+				</position>
+				<size>
+					<width>412</width>
+					<height>81</height>
+				</size>
+				<value>czynników odzwierzęcych</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>2308</top>
+				</position>
+				<size>
+					<width>370</width>
+					<height>81</height>
+				</size>
+				<value>charakteru i pochodzenia paszy</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>180</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>231</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>180</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>411</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>188</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>599</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>185</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>	
+			
+			
+			
+			
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>241</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>193</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1424</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1630</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>185</width>
+					<height>43</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1815</left>
+					<top>2389</top>
+				</position>
+				<size>
+					<width>185</width>
+					<height>43</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2432</top>
+				</position>
+				<size>
+					<width>974</width>
+					<height>90</height>
+				</size>
+				<value>Czy w gospodarstwie stwierdzono dodatnie wyniki badań?</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>4</style>
+			</text>
+			
+			
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1025</left>
+					<top>2432</top>
+				</position>
+				<size>
+					<width>193</width>
+					<height>90</height>
+				</size>
+				<value>nie*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>2432</top>
+				</position>
+				<size>
+					<width>206</width>
+					<height>91</height>
+				</size>
+				<value>tak*</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+					
+			
+			<text label="">
+				<position>
+					<left>1424</left>
+					<top>2432</top>
+				</position>
+				<size>
+					<width>576</width>
+					<height>199</height>
+				</size>
+				<value>Jeżeli tak to podać kiedy i jakie:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>7</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2522</top>
+				</position>
+				<size>
+					<width>360</width>
+					<height>109</height>
+				</size>
+				<value>Data</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+			<text label="DATE">
+				<position>
+					<left>56</left>
+					<top>2517</top>
+				</position>
+				<size>
+					<width>350</width>
+					<height>70</height>
+				</size>
+				<value>{DATE}</value>				
+				<style>-1</style>				
+			</text>
+	
+		<text label="">
+				<position>
+					<left>411</left>
+					<top>2522</top>
+				</position>
+				<size>
+					<width>1013</width>
+					<height>109</height>
+				</size>
+				<value>Czytelny podpis właściciela zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+		
+			
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>2631</top>
+				</position>
+				<size>
+					<width>360</width>
+					<height>113</height>
+				</size>
+				<value>Wypełnia zakład&#xA;uboju zwierząt</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+			
+			
+			<text label="">
+				<position>
+					<left>411</left>
+					<top>2631</top>
+				</position>
+				<size>
+					<width>373</width>
+					<height>113</height>
+				</size>
+				<value>Data dostarczenia do uboju</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>2631</top>
+				</position>
+				<size>
+					<width>434</width>
+					<height>113</height>
+				</size>
+				<value>Data uboju</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>2631</top>
+				</position>
+				<size>
+					<width>782</width>
+					<height>113</height>
+				</size>
+				<value>Podpis osoby przyjmującej zwierzęta do uboju</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+					<text label="">
+				<position>
+					<left>51</left>
+					<top>2744</top>
+				</position>
+				<size>
+					<width>360</width>
+					<height>113</height>
+				</size>
+				<value>Wypełnia urzędowy&#xA;lekarz weterynarii</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>5</style>
+			</text>
+	
+	
+			<text label="">
+				<position>
+					<left>411</left>
+					<top>2744</top>
+				</position>
+				<size>
+					<width>373</width>
+					<height>113</height>
+				</size>
+				<value>Data badania przedubojowego</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+	
+			<text label="">
+				<position>
+					<left>784</left>
+					<top>2744</top>
+				</position>
+				<size>
+					<width>434</width>
+					<height>113</height>
+				</size>
+				<value>Poz. oz.</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+	
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>2744</top>
+				</position>
+				<size>
+					<width>782</width>
+					<height>113</height>
+				</size>
+				<value>Podpis urzędowego lekarza weterynarii</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			
+		</page>
+
+	</pages>
+
+</fixedtemplate>

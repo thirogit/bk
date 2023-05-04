@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>FSTOWNER</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-38</height>
+				<face>Times New Roman</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>ANIMAL_COUNT</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-38</height>
+				<face>Times New Roman</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>FSTOWNERNO_LABEL</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-38</height>
+				<face>Times New Roman</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="4">
+			<name>statement</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>TOP</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Times New Roman</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="5">
+			<name>FILL_STYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>TOP</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Times New Roman</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+
+		<documentheader>
+
+
+
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>109</top>
+				</position>
+				<size>
+					<width>2003</width>
+					<height>148</height>
+				</size>
+				<value>Informacja dotycząca łańcucha żywieniowego zwierząt kierowanych do uboju.</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-43</height>
+						<face>Times New Roman</face>
+						<bold>true</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>125</left>
+					<top>344</top>
+				</position>
+				<size>
+					<width>1837</width>
+					<height>101</height>
+				</size>
+				<value>I. Identyfikacja gospodarstwa i dane dotyczące zwierząt:</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>LEFT</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-39</height>
+						<face>Times New Roman</face>
+						<bold>true</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>97</left>
+					<top>482</top>
+				</position>
+				<size>
+					<width>1899</width>
+					<height>74</height>
+				</size>
+				<value>Imię i nazwisko właściciela:............................................................................................................</value>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>97</left>
+					<top>569</top>
+				</position>
+				<size>
+					<width>1899</width>
+					<height>74</height>
+				</size>
+				<value>Adres:................................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>97</left>
+					<top>660</top>
+				</position>
+				<size>
+					<width>1899</width>
+					<height>74</height>
+				</size>
+				<value>Telefon:..............................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+			<text label="FIRST_OWNER_NAME">
+				<position>
+					<left>572</left>
+					<top>477</top>
+				</position>
+				<size>
+					<width>1408</width>
+					<height>52</height>
+				</size>
+				<value>{OWNERNAME}</value>
+				<style>5</style>
+			</text>
+			<text label="FIRST_OWNER_ADDRESS">
+				<position>
+					<left>226</left>
+					<top>564</top>
+				</position>
+				<size>
+					<width>1757</width>
+					<height>53</height>
+				</size>
+				<value>{OWNERADDRESS}</value>
+				<style>5</style>
+			</text>
+			<text label="FIRST_OWNER_PHONENO">
+				<position>
+					<left>255</left>
+					<top>660</top>
+				</position>
+				<size>
+					<width>1728</width>
+					<height>52</height>
+				</size>
+				<value>{OWNERPHONENO}</value>
+				<style>5</style>
+			</text>
+			<text label="COW_SPIECIES">
+				<position>
+					<left>422</left>
+					<top>818</top>
+				</position>
+				<size>
+					<width>362</width>
+					<height>56</height>
+				</size>
+				<value>{SPIECIES}</value>
+				<style>5</style>
+			</text>
+			<text label="COW_AMOUNT_NUM">
+				<position>
+					<left>932</left>
+					<top>818</top>
+				</position>
+				<size>
+					<width>291</width>
+					<height>56</height>
+				</size>
+				<value>{COWAMOUNTNUM}</value>
+				<style>5</style>
+			</text>
+			<text label="COW_AMOUNT_TXT">
+				<position>
+					<left>1387</left>
+					<top>818</top>
+				</position>
+				<size>
+					<width>596</width>
+					<height>56</height>
+				</size>
+				<value>{COWAMOUNTTXT}</value>				
+				<style>5</style>
+			</text>
+			<text label="FIRST_OWNER_HENTNO">
+				<position>
+					<left>821</left>
+					<top>985</top>
+				</position>
+				<size>
+					<width>1156</width>
+					<height>57</height>
+				</size>
+				<value>{OWNERHENTNO}</value>
+				<style>5</style>
+			</text>
+			<text label="">
+				<position>
+					<left>108</left>
+					<top>818</top>
+				</position>
+				<size>
+					<width>687</width>
+					<height>74</height>
+				</size>
+				<value>Gatunek zwierząt: ..................</value>
+				<style>2</style>
+			</text>
+			<text label="">
+				<position>
+					<left>803</left>
+					<top>818</top>
+				</position>
+				<size>
+					<width>436</width>
+					<height>74</height>
+				</size>
+				<value>Liczba: ....................</value>
+				<style>2</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1231</left>
+					<top>818</top>
+				</position>
+				<size>
+					<width>770</width>
+					<height>74</height>
+				</size>
+				<value>Słownie: ...................................</value>
+				<style>2</style>
+			</text>
+			<text label="">
+				<position>
+					<left>99</left>
+					<top>985</top>
+				</position>
+				<size>
+					<width>717</width>
+					<height>69</height>
+				</size>
+				<value>Numer (gospodarstwa) siedziby stada:</value>
+				<style>3</style>
+			</text>
+			<rect label="">
+				<position>
+					<left>65</left>
+					<top>458</top>
+				</position>
+				<size>
+					<width>1968</width>
+					<height>315</height>
+				</size>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+			</rect>
+			<rect label="">
+				<position>
+					<left>65</left>
+					<top>773</top>
+				</position>
+				<size>
+					<width>1968</width>
+					<height>154</height>
+				</size>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+			</rect>
+
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<fields>
+
+
+					<text label="">
+						<position>
+							<left>99</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>717</width>
+							<height>69</height>
+						</size>
+						<value>Numer paszportu, numer kolczyka</value>
+						<style>3</style>
+					</text>
+					<text label="PASSNO_AND_COWNO">
+						<position>
+							<left>821</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1156</width>
+							<height>57</height>
+						</size>
+						<value>{PASSNOANDCOWNO}</value>
+						<style>5</style>
+					</text>
+					<text label="">
+						<position>
+							<left>816</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1177</width>
+							<height>69</height>
+						</size>
+						<value>......................................................................................................</value>
+						<style>3</style>
+					</text>
+
+				</fields>
+			</band>
+		</bands>
+
+		<documentfooter stickToBottom="n">
+
+
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1837</width>
+					<height>101</height>
+				</size>
+				<value>II. Znormalizowane oświadczenie</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>LEFT</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-39</height>
+						<face>Times New Roman</face>
+						<bold>true</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>138</top>
+				</position>
+				<size>
+					<width>1913</width>
+					<height>101</height>
+				</size>
+				<value>Przedsiębiorca sektora spożywczego odpowiedzialny za gospodarstwo, z którego&#xA;pochodzą wyżej wymienione zwierzęta oświadcza, że:</value>
+				<style>4</style>
+			</text>
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>239</top>
+				</position>
+				<size>
+					<width>1913</width>
+					<height>93</height>
+				</size>
+				<value>1. Nie ma żadnych istotnych informacji o statusie zdrowotnym zwierząt w gospodarstwie,&#xA;gospodarstwie z którego pochodzą, ani danych produkcyjnych, ktore mogłyby wskazywać na występowanie choroby.</value>
+				<style>4</style>
+			</text>
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>332</top>
+				</position>
+				<size>
+					<width>1913</width>
+					<height>47</height>
+				</size>
+				<value>2. Nie ma żadnych oznak występowania chorób mogących ujemnie wpłynąć na bezpieczeństwo mięsa.</value>
+				<style>4</style>
+			</text>
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>379</top>
+				</position>
+				<size>
+					<width>1913</width>
+					<height>85</height>
+				</size>
+				<value>3. W okresie 7 dni przed wysłaniem zwierzą do uboju nie występowały okresy karencji w związku z podaniem&#xA;weterynaryjnych produktów leczniczych i nie przeprowadzono innego leczenia.</value>
+				<style>4</style>
+			</text>
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>464</top>
+				</position>
+				<size>
+					<width>1913</width>
+					<height>47</height>
+				</size>
+				<value>4. Nie mażadnych mających znaczeni dla ochrony zdrowia publicznego wyników analiz przeprowadzonych na próbkach.</value>
+				<style>4</style>
+			</text>
+			<text label="">
+				<position>
+					<left>131</left>
+					<top>511</top>
+				</position>
+				<size>
+					<width>1913</width>
+					<height>47</height>
+				</size>
+				<value>5. Nazwisko i adres zwykle wzywanego lekarza weterynarii:</value>
+				<style>4</style>
+			</text>
+			<text label="">
+				<position>
+					<left>141</left>
+					<top>995</top>
+				</position>
+				<size>
+					<width>529</width>
+					<height>162</height>
+				</size>
+				<value>_____________________________&#xA;miejscowość</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>681</left>
+					<top>995</top>
+				</position>
+				<size>
+					<width>521</width>
+					<height>162</height>
+				</size>
+				<value>_____________________________&#xA;data</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1218</left>
+					<top>995</top>
+				</position>
+				<size>
+					<width>802</width>
+					<height>162</height>
+				</size>
+				<value>______________________________________________&#xA;podpis</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>181</left>
+					<top>567</top>
+				</position>
+				<size>
+					<width>1863</width>
+					<height>124</height>
+				</size>
+				<value>Imię i nazwisko lekarza:&#xA;........................................................................................................................................................................................&#xA;Adres: ....................................................................................................................................</value>
+				<style>4</style>
+			</text>
+
+		</documentfooter>
+
+		<pagefooter>
+
+			<text label="PAGES">
+
+				<position>                            
+					<left>0</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>
+
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-27</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+
+			</text>
+		</pagefooter>
+
+	</document>
+</expandabletemplate>

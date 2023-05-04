@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="1">
+			<name>TOPSTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial CE</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="2">
+			<name>BUYELLHEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="3">
+			<name>TABLEHEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+		
+		<logo label="LOGO">
+				<position>
+					<left>200</left>
+					<top>110</top>
+				</position>
+				<size>
+					<width>350</width>
+					<height>350</height>
+				</size>
+				
+								
+			</logo>
+			
+			
+			<text label="DOCTYPE">
+				<position>
+					<left>200</left>
+					<top>49</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>64</height>
+				</size>
+				<value>SPECYFIKACJA {DOCNUMBER}</value>
+				
+				<style>2</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>600</left>
+					<top>120</top>
+				</position>
+				<size>
+					<width>350</width>
+					<height>50</height>
+				</size>
+				<value>Data wystawienia:</value>
+				<style>1</style>
+			</text>
+			
+			<text label="DOCDATE">
+				<position>
+					<left>950</left>
+					<top>120</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>50</height>
+				</size>
+				<value>{DOCDATE}</value>				
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>600</left>
+					<top>180</top>
+				</position>
+				<size>
+					<width>350</width>
+					<height>50</height>
+				</size>
+				<value>Data transportu:</value>
+				<style>1</style>
+			</text>
+
+			<text label="LOADDATE">
+				<position>
+					<left>950</left>
+					<top>180</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>50</height>
+				</size>
+				<value>{LOADDATE}</value>
+				<style>1</style>
+			</text>
+
+			
+
+			<text label="">
+				<position>
+					<left>600</left>
+					<top>240</top>
+				</position>
+				<size>
+					<width>350</width>
+					<height>50</height>
+				</size>
+				<value>Numer rejestracyjny:</value>
+				<style>1</style>
+			</text>
+			
+			<text label="PLATENO">
+				<position>
+					<left>950</left>
+					<top>240</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>50</height>
+				</size>
+				<value>{PLATENO}</value>
+				<style>1</style>
+			</text>
+
+			
+			<text label="">
+				<position>
+					<left>1300</left>
+					<top>120</top>
+				</position>
+				<size>
+					<width>600</width>
+					<height>60</height>
+				</size>
+				<value>ADNOTACJE</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			<text label="EXTRAS">
+				<position>
+					<left>1300</left>
+					<top>180</top>
+				</position>
+				<size>
+					<width>600</width>
+					<height>280</height>
+				</size>
+				<value>{EXTRAS}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+		
+			<text label="">
+				<position>
+					<left>200</left>
+					<top>480</top>
+				</position>
+				<size>
+					<width>850</width>
+					<height>60</height>
+				</size>
+				<value>DOSTAWCA</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			<text label="SELLER">
+				<position>
+					<left>200</left>
+					<top>540</top>
+				</position>
+				<size>
+					<width>850</width>
+					<height>200</height>
+				</size>
+				<value>{SELLER}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1050</left>
+					<top>480</top>
+				</position>
+				<size>
+					<width>850</width>
+					<height>60</height>
+				</size>
+				<value>ODBIORCA</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+
+			<text label="HENT">
+				<position>
+					<left>1050</left>
+					<top>540</top>
+				</position>
+				<size>
+					<width>850</width>
+					<height>200</height>
+				</size>
+				<value>{HENT}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+
+					<text label="INDEX_LABEL">
+						<position>
+							<left>312</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>63</height>
+						</size>
+						<value>LP</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="COWNO_LABEL">
+						<position>
+							<left>437</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>522</width>
+							<height>63</height>
+						</size>
+						<value>Numer zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="COWCLASS_LABEL">
+						<position>
+							<left>957</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>243</width>
+							<height>63</height>
+						</size>
+						<value>Rasa</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="COWSEX_LABEL">
+						<position>
+							<left>1198</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>286</width>
+							<height>63</height>
+						</size>
+						<value>Płeć</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="COWWEIGHT_LABEL">
+						<position>
+							<left>1481</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>200</width>
+							<height>64</height>
+						</size>
+						<value>Waga</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="COWGROUP_LABEL">
+						<position>
+							<left>1681</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>120</width>
+							<height>64</height>
+						</size>
+						<value>Grupa</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+
+
+				</header>
+
+				<fields>
+
+
+
+					<text label="INDEX">
+						<position>
+							<left>312</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>52</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>437</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>522</width>
+							<height>52</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWCLASS">
+						<position>
+							<left>957</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>243</width>
+							<height>52</height>
+						</size>
+						<value>{COWCLASS}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWSEX">
+						<position>
+							<left>1197</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>286</width>
+							<height>52</height>
+						</size>
+						<value>{COWSEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="WEIGHT">
+						<position>
+							<left>1482</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>200</width>
+							<height>52</height>
+						</size>
+						<value>{WEIGHT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="GRP">
+						<position>
+							<left>1681</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>120</width>
+							<height>52</height>
+						</size>
+						<value>{GRP}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+
+				</fields>
+			</band>
+		</bands>
+
+		<documentfooter stickToBottom="y">
+
+			<text label="TOTALWEIGHT_LABEL">
+				<position>
+					<left>1200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>280</width>
+					<height>63</height>
+				</size>
+				<value>Waga razem:</value>
+				<style>1</style>
+			</text>
+			<text label="TOTALWEIGHT">
+				<position>
+					<left>1493</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>314</width>
+					<height>63</height>
+				</size>
+				<value>{TOTALWEIGHT}</value>
+				<style>1</style>
+			</text>
+		</documentfooter>
+		
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>-1</style>
+			</text>
+		</pagefooter>
+	</document>
+
+</expandabletemplate>

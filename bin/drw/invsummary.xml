@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>TABLESTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader/>
+
+		<documentheader>
+
+			<text label="TITLE">
+				<position>
+					<left>50</left>
+					<top>80</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>80</height>
+				</size>
+				<value>%TITLE%</value>
+				<style>1</style>
+			</text>
+
+		</documentheader>		
+
+		<bands>
+
+			<band name="items">
+				<fields>
+
+
+					<text label="">
+						<position>
+							<left>100</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>65</width>
+							<height>61</height>
+						</size>
+						<value>Nr:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="INVNO0">
+						<position>
+							<left>165</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>400</width>
+							<height>61</height>
+						</size>
+						<value>{INVOICENO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="OTHER_INVNO0">
+						<position>
+							<left>400</left>
+							<top>40</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>30</height>
+						</size>
+						<value>{INTERNALINVNO}</value>
+						<ownstyle>
+							<textColor>#000000</textColor>
+							<horAlign>RIGHT</horAlign>
+							<verAlign>CENTER</verAlign>
+							<font>
+								<height>-20</height>
+								<face>Arial</face>
+								<bold>false</bold>
+								<italic>true</italic>
+								<underline>false</underline>
+								<strikeout>false</strikeout>
+							</font>
+						</ownstyle>
+					</text>
+					<text label="">
+						<position>
+							<left>565</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>285</width>
+							<height>61</height>
+						</size>
+						<value>Data wystawienia:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="INVDATE0">
+						<position>
+							<left>850</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>61</height>
+						</size>
+						<value>{INVOICEDATE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					<text label="">
+						<position>
+							<left>1100</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>61</height>
+						</size>
+						<value>Stawka VAT:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="VATRATE0">
+						<position>
+							<left>1350</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>{VATRATE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1500</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>300</width>
+							<height>61</height>
+						</size>
+						<value>Sposób zapłaty:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="PAYWAY0">
+						<position>
+							<left>1800</left>
+							<top>10</top>
+						</position>
+						<size>
+							<width>200</width>
+							<height>61</height>
+						</size>
+						<value>{PAYWAY}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					<text label="">
+						<position>
+							<left>100</left>
+							<top>71</top>
+						</position>
+						<size>
+							<width>202</width>
+							<height>61</height>
+						</size>
+						<value>Kontrahent:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="HENT0">
+						<position>
+							<left>302</left>
+							<top>71</top>
+						</position>
+						<size>
+							<width>1235</width>
+							<height>61</height>
+						</size>
+						<value>{HENT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					
+					<text label="">
+						<position>
+							<left>1537</left>
+							<top>71</top>
+						</position>
+						<size>
+							<width>244</width>
+							<height>61</height>
+						</size>
+						<value>Zapłacone</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="PAID0">
+						<position>
+							<left>1781</left>
+							<top>71</top>
+						</position>
+						<size>
+							<width>219</width>
+							<height>61</height>
+						</size>
+						<value>{ISPAID}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					
+					<text label="">
+						<position>
+							<left>100</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>120</width>
+							<height>61</height>
+						</size>
+						<value>Ilość:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="QTY0">
+						<position>
+							<left>220</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>130</width>
+							<height>61</height>
+						</size>
+						<value>{COWAMOUNT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					
+					<text label="">
+						<position>
+							<left>350</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>Waga:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALWEIGHT0">
+						<position>
+							<left>500</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>175</width>
+							<height>61</height>
+						</size>
+						<value>{WEIGHTVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					<text label="">
+						<position>
+							<left>675</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>Netto:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALNETTO0">
+						<position>
+							<left>825</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>275</width>
+							<height>61</height>
+						</size>
+						<value>{NETVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					<text label="">
+						<position>
+							<left>1100</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>VAT:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALVAT0">
+						<position>
+							<left>1250</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>61</height>
+						</size>
+						<value>{VATVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+										
+					<text label="">
+						<position>
+							<left>1500</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>Brutto:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALBRUTTO0">
+						<position>
+							<left>1650</left>
+							<top>132</top>
+						</position>
+						<size>
+							<width>350</width>
+							<height>61</height>
+						</size>
+						<value>{GROSSVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+				</fields>
+			</band>
+
+		</bands>
+
+		<documentfooter stickToBottom="y">
+
+			<rect label="">
+				<position>
+					<left>48</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>2004</width>
+					<height>0</height>
+				</size>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<fillColor>#C0C0C0</fillColor>
+			</rect>
+
+			<text label="">
+				<position>
+					<left>100</left>
+					<top>25</top>
+				</position>
+				<size>
+					<width>174</width>
+					<height>60</height>
+				</size>
+				<value>RAZEM:</value>				
+				<style>1</style>
+			</text>
+			
+			
+			<text label="">
+						<position>
+							<left>100</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>120</width>
+							<height>61</height>
+						</size>
+						<value>Ilość:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="QTY0">
+						<position>
+							<left>220</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>130</width>
+							<height>61</height>
+						</size>
+						<value>{TOTALCOWAMOUNT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					
+					<text label="">
+						<position>
+							<left>350</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>Waga:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALWEIGHT">
+						<position>
+							<left>500</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>175</width>
+							<height>61</height>
+						</size>
+						<value>{TOTALWEIGHTVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					<text label="">
+						<position>
+							<left>675</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>Netto:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALNETTO">
+						<position>
+							<left>825</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>275</width>
+							<height>61</height>
+						</size>
+						<value>{TOTALNETVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+					<text label="">
+						<position>
+							<left>1100</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>VAT:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALVAT">
+						<position>
+							<left>1250</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>61</height>
+						</size>
+						<value>{TOTALVATVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					
+										
+					<text label="">
+						<position>
+							<left>1500</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>150</width>
+							<height>61</height>
+						</size>
+						<value>Brutto:</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>1</style>
+					</text>
+					<text label="TOTALBRUTTO">
+						<position>
+							<left>1650</left>
+							<top>100</top>
+						</position>
+						<size>
+							<width>350</width>
+							<height>61</height>
+						</size>
+						<value>{TOTALGROSSVALUE}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+		</documentfooter>
+	</document>
+</expandabletemplate>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>STYLE1</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-36</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>HEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>TABLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="4">
+			<name>FILLING</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>TOP</verAlign>
+			<font>
+				<height>-36</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+	</styles>
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+
+
+			<text label="TITLE">
+				<position>
+					<left>332</left>
+					<top>479</top>
+				</position>
+				<size>
+					<width>1350</width>
+					<height>85</height>
+				</size>
+				<value>INFORMACJA DOTYCZĄCA PRZESYŁKI ZWIERZĄT</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-45</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="CARRIER_STAMP">
+				<position>
+					<left>213</left>
+					<top>225</top>
+				</position>
+				<size>
+					<width>613</width>
+					<height>207</height>
+				</size>
+				<value>Pieczęć przewoźnika</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>BOTTOM</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1202</left>
+					<top>117</top>
+				</position>
+				<size>
+					<width>627</width>
+					<height>198</height>
+				</size>
+				<value>............................................................&#xA;(miejsce i data wystawienia dokumentu)</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-35</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>172</left>
+					<top>580</top>
+				</position>
+				<size>
+					<width>490</width>
+					<height>90</height>
+				</size>
+				<value>I. Identyfikacja zwierząt</value>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>670</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>90</height>
+				</size>
+				<value>1) Gatunek zwierząt&#xA;....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>400</left>
+					<top>715</top>
+				</position>
+				<size>
+					<width>1200</width>
+					<height>45</height>
+				</size>
+				<value>{SPIECIES}</value>
+				<style>4</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>760</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>90</height>
+				</size>
+				<value>2) Ilość zwierząt (słownie)&#xA;....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>400</left>
+					<top>805</top>
+				</position>
+				<size>
+					<width>1200</width>
+					<height>45</height>
+				</size>
+				<value>{ANIMALCOUNT}</value>
+				<style>4</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>172</left>
+					<top>850</top>
+				</position>
+				<size>
+					<width>755</width>
+					<height>90</height>
+				</size>
+				<value>II. Pochodzenie i przeznaczenie zwierząt</value>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>940</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>90</height>
+				</size>
+				<value>1) Nazwa i adres właściciela zwierząt&#xA;....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>400</left>
+					<top>985</top>
+				</position>
+				<size>
+					<width>1200</width>
+					<height>45</height>
+				</size>
+				<value>{OWNERNAME}</value>
+				<style>4</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>1030</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>45</height>
+				</size>
+				<value>....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>400</left>
+					<top>1030</top>
+				</position>
+				<size>
+					<width>1200</width>
+					<height>45</height>
+				</size>
+				<value>{OWNERADDRESS}</value>
+				<style>4</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>1075</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>90</height>
+				</size>		
+				<value>2) Miejsce , data i godzina wyjazdu&#xA;....................................................................................................................................................</value>      
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>1165</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>90</height>
+				</size>
+				<value>3) Przewidywalny czas transportu&#xA;....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>1255</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>90</height>
+				</size>
+				<value>4) Nazwa i adres odbiorcy&#xA;....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>400</left>
+					<top>1300</top>
+				</position>
+				<size>
+					<width>1200</width>
+					<height>45</height>
+				</size>
+				<value>{BUYERNAME}</value>
+				<style>4</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>268</left>
+					<top>1345</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>45</height>
+				</size>
+				<value>....................................................................................................................................................</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>400</left>
+					<top>1345</top>
+				</position>
+				<size>
+					<width>1200</width>
+					<height>45</height>
+				</size>
+				<value>{BUYERADDRESS}</value>
+				<style>4</style>
+			</text>
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+
+					<text label="">
+						<position>
+							<left>547</left>
+							<top>50</top>
+						</position>
+						<size>
+							<width>113</width>
+							<height>90</height>
+						</size>
+						<value>Lp</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<brush>
+							<fillColor>#C0C0C0</fillColor>
+						</brush>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>660</left>
+							<top>50</top>
+						</position>
+						<size>
+							<width>521</width>
+							<height>90</height>
+						</size>
+						<value>Numer paszportu</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<brush>
+							<fillColor>#C0C0C0</fillColor>
+						</brush>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1181</left>
+							<top>50</top>
+						</position>
+						<size>
+							<width>521</width>
+							<height>90</height>
+						</size>
+						<value>Numer kolczyka</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<brush>
+							<fillColor>#C0C0C0</fillColor>
+						</brush>
+						<style>2</style>
+					</text>
+
+
+				</header>
+
+				<fields>
+
+
+					<text label="INDEX">
+						<position>
+							<left>547</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>113</width>
+							<height>66</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="PASSNO">
+						<position>
+							<left>660</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>521</width>
+							<height>66</height>
+						</size>
+						<value>{PASSNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>1181</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>521</width>
+							<height>66</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+
+				</fields>
+			</band>
+		</bands>
+
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>-1</style>
+			</text>
+		</pagefooter>
+		
+		<documentfooter stickToBottom="y">
+		</documentfooter>
+	</document>
+
+</expandabletemplate>

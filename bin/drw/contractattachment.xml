@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="INFO">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		
+		<style id="INFOLEFT">			
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		
+		<style id="TABLEBODY">
+			<name>TABLEBODY</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="HEAD">
+			<name>BUYELLHEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		
+		
+		
+		
+		<style id="TABLEHEADER">
+			<name>TABLEHEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+		
+			
+			<text label="TITLE">
+				<position>
+					<left>50</left>
+					<top>100</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>120</height>
+				</size>
+				<value>Załącznik nr 1 do Umowy intensywnego tuczu hodowlanego bydła opasowego z dnia {CONTRACTDT}
+zawartej pomiędzy:</value>
+				
+				<style>HEAD</style>
+			</text>
+	
+		<text label="">
+			<position>
+				<left>50</left>
+				<top>220</top>
+			</position>
+			<size>
+				<width>2000</width>
+				<height>60</height>
+			</size>
+			<value>Kontraktującym:</value>
+			
+			<style>INFO</style>
+		</text>
+	
+	
+			<text label="COMPANY">
+				<position>
+					<left>50</left>
+					<top>260</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>300</height>
+				</size>
+				<value>{COMPANY_NAME}
+ul. {COMPANY_STREET} {COMPANY_POBOX},{COMPANY_ZIPCODE} {COMPANY_CITY},
+NIP {COMPANY_FISCALNO}</value>
+				
+				<style>INFO</style>
+			</text>
+				
+			<text label="">
+			<position>
+				<left>50</left>
+				<top>560</top>
+			</position>
+			<size>
+				<width>2000</width>
+				<height>60</height>
+			</size>
+			<value>a, Producentem:</value>
+			
+			<style>INFO</style>
+		</text>
+		
+		<text label="FARMER">
+			<position>
+				<left>50</left>
+				<top>620</top>
+			</position>
+			<size>
+				<width>2000</width>
+				<height>300</height>
+			</size>
+			<value>{FARMER}</value>
+			
+			<style>INFO</style>
+		</text>
+
+		
+		<text label="SUBTITLE">
+			<position>
+				<left>50</left>
+				<top>920</top>
+			</position>
+			<size>
+				<width>2000</width>
+				<height>100</height>
+			</size>
+			<value>Dokument WZ</value>
+			
+			<style>HEAD</style>
+		</text>
+		
+		<text label="DELIVERYDT">
+			<position>
+				<left>50</left>
+				<top>1020</top>
+			</position>
+			<size>
+				<width>2000</width>
+				<height>60</height>
+			</size>
+			<value>Data dostawy: {DELIVERYDT}</value>
+			
+			<style>INFOLEFT</style>
+		</text>
+
+		</documentheader>
+		
+		<bands>
+
+			<band name="items">
+				<header>
+
+
+					<text label="INDEX_LABEL">
+						<position>
+							<left>100</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>60</height>
+						</size>
+						<value>LP</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					<text label="COWNO_LABEL">
+						<position>
+							<left>225</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>400</width>
+							<height>60</height>
+						</size>
+						<value>Numer zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					<text label="PASSNO_LABEL">
+						<position>
+							<left>625</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>60</height>
+						</size>
+						<value>Numer paszportu</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					
+					<text label="CHIPNO_LABEL">
+						<position>
+							<left>1000</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>300</width>
+							<height>60</height>
+						</size>
+						<value>Numer chip</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					
+					
+					<text label="COWSTOCK_LABEL">
+						<position>
+							<left>1300</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>60</height>
+						</size>
+						<value>Rasa</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					<text label="COWSEX_LABEL">
+						<position>
+							<left>1550</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>60</height>
+						</size>
+						<value>Płeć</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					<text label="COWWEIGHT_LABEL">
+						<position>
+							<left>1800</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>200</width>
+							<height>60</height>
+						</size>
+						<value>Waga</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEHEADER</style>
+					</text>
+					
+
+				</header>
+
+				<fields>
+
+					<text label="INDEX">
+						<position>
+							<left>100</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>50</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>225</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>400</width>
+							<height>50</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+					
+					<text label="PASSNO">
+						<position>
+							<left>625</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>50</height>
+						</size>
+						<value>{PASSNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+					
+					<text label="CHIPNO">
+						<position>
+							<left>1000</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>300</width>
+							<height>50</height>
+						</size>
+						<value>{CHIPNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+					
+					
+					<text label="COWSTOCK">
+						<position>
+							<left>1300</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>50</height>
+						</size>
+						<value>{COWSTOCK}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+					
+					<text label="COWSEX">
+						<position>
+							<left>1550</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>250</width>
+							<height>50</height>
+						</size>
+						<value>{COWSEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+					<text label="WEIGHT">
+						<position>
+							<left>1800</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>200</width>
+							<height>50</height>
+						</size>
+						<value>{WEIGHT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLEBODY</style>
+					</text>
+			
+
+				</fields>
+				
+				<footer>
+					<text label="TOTALWEIGHT_LABEL">
+						<position>
+							<left>1500</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>280</width>
+							<height>60</height>
+						</size>
+						<value>Waga razem:</value>
+						<style>INFO</style>
+					</text>
+			
+					<text label="TOTALWEIGHT">
+						<position>
+							<left>1800</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>200</width>
+							<height>60</height>
+						</size>
+						<value>{TOTALWEIGHT}</value>
+						<style>INFO</style>
+					</text>
+				
+				</footer>
+			</band>
+		</bands>
+
+		<documentfooter stickToBottom="y">
+			
+			
+			<text label="COMPANY_SIGNATURE">
+				<position>
+					<left>200</left>
+					<top>150</top>
+				</position>
+				<size>
+					<width>400</width>
+					<height>120</height>
+				</size>
+				<value>..................................................
+Kontraktujący</value>
+				<style>INFO</style>
+			</text>
+			
+			<text label="FARMER_SIGNATURE">
+				<position>
+					<left>1500</left>
+					<top>150</top>
+				</position>
+				<size>
+					<width>400</width>
+					<height>120</height>
+				</size>
+				<value>..................................................
+Producent</value>
+				<style>INFO</style>
+			</text>
+			
+			
+		</documentfooter>
+		
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>INFO</style>
+			</text>
+		</pagefooter>
+	</document>
+
+</expandabletemplate>

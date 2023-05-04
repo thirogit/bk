@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "updater", "updater.vcxproj", "{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_crash_hkey|Win32 = Debug_crash_hkey|Win32
+		Debug|Win32 = Debug|Win32
+		Release_noupdate|Win32 = Release_noupdate|Win32
+		Release|Win32 = Release|Win32
+		Trial|Win32 = Trial|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Debug_crash_hkey|Win32.ActiveCfg = Debug_crash_hkey|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Debug_crash_hkey|Win32.Build.0 = Debug_crash_hkey|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Debug|Win32.Build.0 = Debug|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Release_noupdate|Win32.ActiveCfg = Release_noupdate|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Release_noupdate|Win32.Build.0 = Release_noupdate|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Release|Win32.ActiveCfg = Release|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Release|Win32.Build.0 = Release|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Trial|Win32.ActiveCfg = Trial|Win32
+		{7FF62D6D-54F9-41AC-8F58-7E5FF0C7EB3C}.Trial|Win32.Build.0 = Trial|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

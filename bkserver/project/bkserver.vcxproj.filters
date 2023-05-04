@@ -1,0 +1,2489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{7314c91b-4dec-49f2-91e6-d01f28987eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dao">
+      <UniqueIdentifier>{96eaefaa-4d7c-4612-a3e7-5cb334b46767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data">
+      <UniqueIdentifier>{976773bd-aa8f-4049-8632-bacb6ae802d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\types">
+      <UniqueIdentifier>{ee702866-7951-4fd3-b174-7853802fe2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\types\countries">
+      <UniqueIdentifier>{d9467b2b-aa0a-4a94-b1e3-e1426a4503bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\impl">
+      <UniqueIdentifier>{b07b404a-04e7-43c7-8247-173360111d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\types">
+      <UniqueIdentifier>{946fc838-882d-4a1d-86fa-aebe37569f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\arrays">
+      <UniqueIdentifier>{57f5d311-3bc9-4d6a-9048-a5038dae4573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\service">
+      <UniqueIdentifier>{6c343e84-7238-4077-84bb-7cebe287ca9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\service\messages">
+      <UniqueIdentifier>{722244fc-db0d-489d-9d4f-79baf03c7308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\exception">
+      <UniqueIdentifier>{d781a135-956e-4b0b-9e98-18972865d41b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\string">
+      <UniqueIdentifier>{af701828-89c1-4608-a25f-62b3ecdc29a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ported">
+      <UniqueIdentifier>{27980d32-d07f-471f-be9f-7c6e80840dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\db">
+      <UniqueIdentifier>{429a14e6-8d8f-4291-b942-248a91489c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\format">
+      <UniqueIdentifier>{f84753e7-599b-4501-81da-129de4f5a58f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\filesystem">
+      <UniqueIdentifier>{8011b096-3bdb-4dad-a0df-7672fe344ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\types\serialization">
+      <UniqueIdentifier>{58195a30-bffe-4047-99b0-95198c4d902f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\db\query">
+      <UniqueIdentifier>{af569348-36d9-4910-ad2b-9f735e260977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\progress">
+      <UniqueIdentifier>{13bd4a28-4533-4fc6-95cd-5a7405705bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\service\notification">
+      <UniqueIdentifier>{7121206c-e75f-4cf0-8f68-2fd65aa5f054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\compare">
+      <UniqueIdentifier>{ce8cbad8-268e-4baf-ac9b-316a772c582f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\object">
+      <UniqueIdentifier>{1ce5de42-f593-4507-879b-370b6ad22484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\motives">
+      <UniqueIdentifier>{a0ebca2f-71f6-4353-abcc-4da3bd662f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\impl\serialization">
+      <UniqueIdentifier>{8e8b9052-7cf8-4866-836a-94459ce1f282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\service\wire">
+      <UniqueIdentifier>{fa0e95fc-acaf-42a5-bf0f-012f1817e2d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\transaction">
+      <UniqueIdentifier>{c1ddc83b-b9ba-45b3-8cc5-24d986566e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\runtime">
+      <UniqueIdentifier>{f56ad802-d84a-41ff-9b99-dec6a36cc3a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\runtime\serialization">
+      <UniqueIdentifier>{0300b648-02fa-4769-9921-79b17c3732c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\logic">
+      <UniqueIdentifier>{f81a626c-41de-48dd-b3ca-595d36f44d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\logic\cowtrail">
+      <UniqueIdentifier>{e25d54c8-6079-4f15-9b67-837ba0986210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\snapshot">
+      <UniqueIdentifier>{4cd7484d-e915-4686-87fe-46667acea1c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\logic\herdregistry">
+      <UniqueIdentifier>{b9007dee-b152-4710-9c4d-eaf2a8b580ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\utils">
+      <UniqueIdentifier>{81d0f17f-7ad3-4d76-af41-b61f79c1a92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\logic\changedetect">
+      <UniqueIdentifier>{a153ada3-5979-4464-a23f-dbb3dbaa5e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\errortoken">
+      <UniqueIdentifier>{62e5528e-13b7-4b65-ad7e-375187790aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\settings">
+      <UniqueIdentifier>{c556e528-0078-49ab-a56f-89ab9cf7bcb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\settings\serializers">
+      <UniqueIdentifier>{491b50a8-2488-4f5a-9fa5-8f570ba3664a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\utils">
+      <UniqueIdentifier>{58885be0-6c9f-4b57-896e-83a71730d318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\configuration">
+      <UniqueIdentifier>{0af7e54c-569f-4f7f-93fe-feaf594783a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\db\pgserver">
+      <UniqueIdentifier>{af34fdff-4525-43f3-892d-b2b6bfadcfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\configuration\serialization">
+      <UniqueIdentifier>{8b066d9f-558e-47b4-a5fc-a8a022e1b11a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\configuration\passportrecognition">
+      <UniqueIdentifier>{83e82010-c43b-43a5-b32f-8c7c86a1ae66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\configuration\print">
+      <UniqueIdentifier>{ab00464a-6aa2-4d42-b4d2-f4301e91cd4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\configuration\deductions">
+      <UniqueIdentifier>{cb833568-e5ba-4aee-80e3-5ddf1c570016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\repo">
+      <UniqueIdentifier>{219521bb-2128-4ae1-be09-91ed1330aa31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\repo\serialization">
+      <UniqueIdentifier>{466eb41e-d6ae-4f26-8964-558238aa98cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\repo">
+      <UniqueIdentifier>{0b728b8a-cd70-49c7-a895-90f39cfb0fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\payways">
+      <UniqueIdentifier>{a9b0b58e-cb96-41a3-a7ab-1f552ff98b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\invoicetypes">
+      <UniqueIdentifier>{876cb6f1-10b3-446c-be43-c970280333a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\henttypes">
+      <UniqueIdentifier>{83d6ff0d-3e02-4006-a7fe-1d6c6ab00772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\mustache">
+      <UniqueIdentifier>{e85b7ebc-d4be-4cfb-959d-b88d31b76711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\transaction\purache">
+      <UniqueIdentifier>{d6967b01-58ad-4a3e-8c8f-33f99c0d4b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\seasonimpl">
+      <UniqueIdentifier>{71b89346-f5f8-429d-90eb-69785f35d98e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\seasonimpl\operations">
+      <UniqueIdentifier>{ccd5a275-3bb4-4524-ad59-6c9c64ac7c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\index">
+      <UniqueIdentifier>{555cd08f-159a-4cef-8f1f-454b2aad1bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\log">
+      <UniqueIdentifier>{05780f5d-512e-4433-95be-3ba33fb7fb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cloud">
+      <UniqueIdentifier>{b42d307b-51be-4088-8403-7a75bf9ac585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data\invoicescopes">
+      <UniqueIdentifier>{48a5c5f0-6eae-4cc5-b2f9-4a0c9de90147}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dao\BaseDAO.cpp">
+      <Filter>Source Files\dao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dao\CompanyDAO.cpp">
+      <Filter>Source Files\dao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dao\MuuDAO.cpp">
+      <Filter>Source Files\dao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\countries\Countries.cpp">
+      <Filter>Source Files\common\data\types\countries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\countries\Country.cpp">
+      <Filter>Source Files\common\data\types\countries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Farm.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Herd.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\DateTime.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FarmSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\LoginResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BKService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\LoginRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FarmOrganisation.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\AccountNo.cpp">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\FarmNo.cpp">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\HerdNo.cpp">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\TextUtils.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Season.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\ported\strptime.cpp">
+      <Filter>Source Files\common\ported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\SQLSingleConnectionPool.cpp">
+      <Filter>Source Files\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\Transaction.cpp">
+      <Filter>Source Files\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\NullDouble.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\filesystem\paths.cpp">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableFarm.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\serialization\TypesSerialization.cpp">
+      <Filter>Source Files\common\data\types\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BKServiceConstructor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\query\mysql_func.cpp">
+      <Filter>Source Files\db\query</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\query\sql_string.cpp">
+      <Filter>Source Files\db\query</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\GeoCoordinate.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\query\SQLQuery.cpp">
+      <Filter>Source Files\db\query</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\NullInt.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ClientSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SeasonSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FarmSessionBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Hent.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\Latitude.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\Longitude.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\progress\SafeSimpleProgress.cpp">
+      <Filter>Source Files\common\progress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableHerd.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableSeason.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\OpenSeasonResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchHentsResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\HentNo.cpp">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SeasonSessionBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableHent.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FarmAudience.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ClientSeasonSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ClientSeasonSessionFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\HentRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\CowSex.cpp">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Class.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\Decimal.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Stock.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Cow.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\types\CowNo.cpp">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\NullDecimal.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchClassesResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchCowsResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchStocksResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableClass.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCow.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableStock.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\motives\Motives.cpp">
+      <Filter>Source Files\common\data\motives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\DocDetails.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\DocContent.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\CowEntry.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\InDoc.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\Time.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\progress\SafeComplexProgress.cpp">
+      <Filter>Source Files\common\progress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SeasonSpectator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInDoc.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableDocDetails.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableDocContent.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowEntry.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\BuyDoc.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\MoveDoc.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\OutDoc.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\SellDoc.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableMoveDoc.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableOutDoc.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableBuyDoc.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\object\LockableObject.cpp">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableSellDoc.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\wire\HentWireObject.cpp">
+      <Filter>Source Files\common\service\wire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\CowInvoiceEntry.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\InvoiceDetails.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\BuyInvoice.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\SellInvoice.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\InvoiceContent.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\InvoiceHent.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchInvoicesResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntry.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInvoiceContent.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInvoiceDetails.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInvoiceHent.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\CowDetails.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\CowRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowDetails.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\CowEntryDetails.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\OperationArguments.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\serialization\SerializableOperationArguments.cpp">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\TransactionRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\TransactionResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\DataSerialization.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\Agent.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\wire\CowWireObject.cpp">
+      <Filter>Source Files\common\service\wire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableAgent.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\cowtrail\CowTracker.cpp">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\cowtrail\CowTrail.cpp">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\DocSnapshot.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\herdregistry\CowPresenceKey.cpp">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\herdregistry\HerdRegistry.cpp">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowEntryDetails.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchManifest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CowNoReference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\HentsDocSnapshot.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\MoveDocSnapshot.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\OwnDocSnapshot.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\EditInDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\NewInDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\types\DateRange.cpp">
+      <Filter>Source Files\common\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IFetchHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\ItemId.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\serialization\RuntimeTypesSerialization.cpp">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\NewMoveDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\DocTransactionSkeleton.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils\iif.cpp">
+      <Filter>Source Files\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\cowtrail\CowPath.cpp">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\NewSellDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\DocKey.cpp">
+      <Filter>Source Files\common\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\notification\Notification.cpp">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\notification\NotificationEnvelope.cpp">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\NewBuyDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\OutDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\User.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\CowInvoiceEntryDetails.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntryDetails.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\DocCowItem.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\InvoiceCowItem.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\DocTransactionCowItem.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\InvoiceTransactionCowItem.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\PlusDocTransactionSkeleton.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\InvoiceItemKey.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\EditMoveDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\EditSellDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\EditBuyDocTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\errortoken\ErrorToken.cpp">
+      <Filter>Source Files\common\errortoken</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\IntString.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableBuyInvoice.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableSellInvoice.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\InvoiceKey.cpp">
+      <Filter>Source Files\common\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InvoiceRelations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SessionLockRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\IClientTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BKServiceDestructor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\TypesRegistration.cpp">
+      <Filter>Source Files\common\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\BuyInvoiceCowsTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\BuyInvoiceDocsTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\InvoiceTransactionSkeleton.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\SettingType.cpp">
+      <Filter>Source Files\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\SettingPart.cpp">
+      <Filter>Source Files\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\SettingDefinition.cpp">
+      <Filter>Source Files\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\snapshot\InvoiceSnapshot.cpp">
+      <Filter>Source Files\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\Settings.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\serializers\IntegerSettingSerializer.cpp">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\SettingValue.cpp">
+      <Filter>Source Files\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\changedetect\DocChangeDetector.cpp">
+      <Filter>Source Files\common\logic\changedetect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\changedetect\InvoiceChangeDetector.cpp">
+      <Filter>Source Files\common\logic\changedetect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\serializers\IntToIntMapSerializer.cpp">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\MarkInvoicePaidRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\utils\GetDocHerd.cpp">
+      <Filter>Source Files\common\data\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\utils\GetDocInvoice.cpp">
+      <Filter>Source Files\common\data\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\Setting.cpp">
+      <Filter>Source Files\common\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\SellInvoiceCowsTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\SellInvoiceDocsTransaction.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FarmSessionFinalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SeasonSessionFinalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\pgserver\PGSvrPool.cpp">
+      <Filter>Source Files\db\pgserver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\Cursor.cpp">
+      <Filter>Source Files\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\DbConnection.cpp">
+      <Filter>Source Files\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\Result.cpp">
+      <Filter>Source Files\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\DbConnectionOptions.cpp">
+      <Filter>Source Files\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\PrintProfileRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchPrintProfilesResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\serialization\SerializablePrintProfile.cpp">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UserSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dao\UserDAO.cpp">
+      <Filter>Source Files\dao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UserSessionBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BkServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\UserSettings.cpp">
+      <Filter>Source Files\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\UserSettingsManager.cpp">
+      <Filter>Source Files\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchPassportRecognitionProfilesResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\PassportRecognitionProfileRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportField.cpp">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportFieldDescriptor.cpp">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportFieldMetrics.cpp">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportFields.cpp">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfile.cpp">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfiles.cpp">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\print\PrintOption.cpp">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\print\PrintProfile.cpp">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\print\PrintProfiles.cpp">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\serialization\SerializablePassportRecognitionProfile.cpp">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\Utf8.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\print\OrderSpecifier.cpp">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\deductions\DeductionDetails.cpp">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\InvoiceDeductions.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\deductions\DeductionDefinition.cpp">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\Purchase.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseHent.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseInvoice.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseCow.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\InvoiceDeduction.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\Purchases.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchPurchasesResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\PurchaseQuery.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchase.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseCow.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseHent.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoice.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\DeductionDefinitionRequest.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\serialization\SerializableDeductionDefinition.cpp">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\serialization\SerializableDeductionDetails.cpp">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchDeductionDefinitionsResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\configuration\deductions\DeductionDefinitions.cpp">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\repo\RepoClient.cpp">
+      <Filter>Source Files\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\repo\RepoClientFactory.cpp">
+      <Filter>Source Files\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\repo\CursorDescriptor.cpp">
+      <Filter>Source Files\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\payways\PayWays.cpp">
+      <Filter>Source Files\common\data\payways</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\invoicetypes\InvoiceTypes.cpp">
+      <Filter>Source Files\common\data\invoicetypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\henttypes\HentTypes.cpp">
+      <Filter>Source Files\common\data\henttypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseInvoiceDeduction.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoiceDeduction.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseObjPath.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\PurchaseDownloadIssue.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\PurchaseDownloadIssues.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\RepoTypesSerialization.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssuesSerializer.cpp">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueSerializer.cpp">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mustache\Mustache.cpp">
+      <Filter>Source Files\common\mustache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\DownloadPurchaseTransaction.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\AgentIntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\ClassIntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\FirstOwnerHentIntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\HerdIntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\IntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\InvoiceHentIntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\StockIntegrityProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\SolutionParameters.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\AgentIntegritySolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\ProblemVerifingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\AgentProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\ClassIntegritySolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\ClassProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\FirstOwnerHentProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\HerdIntegritySolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\HerdProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\StockIntegritySolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\StockProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\InvoiceHentProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\serialization\SolutionParametersSerializer.cpp">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\IntegrityProblemIdentifier.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\ClientSeasonSessionInterfaceImpl.cpp">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\FetchHandleImpl.cpp">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\ScopedUpdateState.cpp">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\SeasonSessionFacadeImpl.cpp">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\StateHolder.cpp">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\operations\InsertPurchaseOperation.cpp">
+      <Filter>Source Files\seasonimpl\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\PurchaseDownloadIssueCategory.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueCategorySerializer.cpp">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\SolutionApplyingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\PurchaseTraverser.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\index\HentsIndex.cpp">
+      <Filter>Source Files\index</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\InvoiceDeductionsSerializer.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\InvoiceDeductionSerializer.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\DeductionTransactionItem.cpp">
+      <Filter>Source Files\transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\log\LoggerAware.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\BankAccount.cpp">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\impl\serialization\BankAccountSerializer.cpp">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BkLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\operations\LoggerAwareSeasonOperation.cpp">
+      <Filter>Source Files\seasonimpl\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\seasonimpl\operations\SeasonOperation.cpp">
+      <Filter>Source Files\seasonimpl\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils\BoolUtil.cpp">
+      <Filter>Source Files\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\string\ToString.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils\WildcardMatch.cpp">
+      <Filter>Source Files\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\IInvoice.cpp">
+      <Filter>Source Files\common\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\InStockCowDuplicationProblem.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\InStockCowDuplicationSolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\InStockCowDuplictionProblemDetectingVisitor.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\logic\herdregistry\CowPresenceKeys.cpp">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\FstOwnerHentIntegritySolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\transaction\purchase\InvoiceHentIntegritySolution.cpp">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseHeader.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\PurchaseHeaders.cpp">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchPurchaseHeadersResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\repo\serialization\PurchaseHeaderSerializer.cpp">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\serializers\BooleanSettingSerializer.cpp">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\serializers\UIntegerSettingSerializer.cpp">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\serializers\DecimalSettingSerializer.cpp">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\runtime\SimpleUser.cpp">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\CloudPublisher.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\FirebaseTopicPublisher.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\GoogleServiceAccount.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils\JsonUtils.cpp">
+      <Filter>Source Files\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\HttpClient.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\Auth0Account.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\Auth0TokenProvider.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils\IdGenerator.cpp">
+      <Filter>Source Files\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\messages\FetchPurchaseResponse.cpp">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\settings\serializers\IntegerVectorSerializer.cpp">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\service\notification\NopNotificationRelay.cpp">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\data\invoicescopes\InvoiceScopes.cpp">
+      <Filter>Source Files\common\data\invoicescopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\FirebaseClient.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\GoogleAuth2TokenProvider.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\Ref.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cloud\ChangePublisher.cpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dao\BaseDAO.h">
+      <Filter>Source Files\dao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dao\CompanyDAO.h">
+      <Filter>Source Files\dao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dao\MuuDAO.h">
+      <Filter>Source Files\dao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IFarm.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IHerd.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\AccountNo.h">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\FarmNo.h">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\HerdNo.h">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\countries\Countries.h">
+      <Filter>Source Files\common\data\types\countries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\countries\Country.h">
+      <Filter>Source Files\common\data\types\countries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Farm.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Herd.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\ISeason.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\DateTime.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FarmSession.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\arrays\NewPtrFlushArray.h">
+      <Filter>Source Files\common\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\arrays\SortArray.h">
+      <Filter>Source Files\common\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\IBKService.h">
+      <Filter>Source Files\common\service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\LoginResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BKService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\LoginRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FarmOrganisation.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\TextUtils.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Season.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\ported\strptime.h">
+      <Filter>Source Files\common\ported</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\CommonDatabasePool.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\SingleConnectionPool.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\SQLDefs.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\SQLException.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\SQLExceptions.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\SQLSingleConnectionPool.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\Transaction.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\Nullable.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\NullDouble.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\filesystem\paths.h">
+      <Filter>Source Files\common\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableFarm.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\serialization\TypesSerialization.h">
+      <Filter>Source Files\common\data\types\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BKServiceConstructor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IUser.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\query\defs.h">
+      <Filter>Source Files\db\query</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\query\exceptions.h">
+      <Filter>Source Files\db\query</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\query\mysql_func.h">
+      <Filter>Source Files\db\query</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\query\sql_string.h">
+      <Filter>Source Files\db\query</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\GeoCoordinate.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\query\SQLQuery.h">
+      <Filter>Source Files\db\query</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\NullInt.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ClientSession.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SeasonSession.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FarmSessionBuilder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IHent.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Hent.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\Latitude.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\Longitude.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SeasonObserver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\ComplexProgress.h">
+      <Filter>Source Files\common\progress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\SafeSimpleProgress.h">
+      <Filter>Source Files\common\progress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\SimpleProgress.h">
+      <Filter>Source Files\common\progress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableHerd.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableSeason.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Log.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\OpenSeasonResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchHentsResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableHent.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\HentNo.h">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SeasonSessionBuilder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FarmAudience.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ClientSeasonSession.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ClientSeasonSessionFacade.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\HentRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IClass.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\ICow.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\CowSex.h">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Class.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\Decimal.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Stock.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IStock.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Cow.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\types\CowNo.h">
+      <Filter>Source Files\common\data\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\NullDecimal.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchClassesResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchCowsResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchStocksResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableClass.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCow.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableStock.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\motives\Motives.h">
+      <Filter>Source Files\common\data\motives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IInDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IOutDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\ISellDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\DocDetails.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\DocContent.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\CowEntry.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\ICowEntry.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\InDoc.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\Time.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\progress\SafeComplexProgress.h">
+      <Filter>Source Files\common\progress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SeasonSpectator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\INotificationPublish.h">
+      <Filter>Source Files\common\service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInDoc.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableDocDetails.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableDocContent.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowEntry.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IMoveDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\BuyDoc.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\MoveDoc.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\OutDoc.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\SellDoc.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IOwnDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IHentsDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableMoveDoc.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableOutDoc.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableBuyDoc.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\BuyDocServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\CowServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\HentServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\InDocServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\LockableObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\MoveDocServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\OutDocServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\SellDocServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\ServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableSellDoc.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\wire\HentWireObject.h">
+      <Filter>Source Files\common\service\wire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IInvoice.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\InvoiceType.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\CowInvoiceEntry.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\InvoiceDetails.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\InvoiceTemplate.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\BuyInvoice.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\SellInvoice.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\InvoiceContent.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IInvoiceHent.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\InvoiceHent.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\BuyInvoiceServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\SellInvoiceServerObject.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchInvoicesResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntry.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInvoiceContent.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInvoiceDetails.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInvoiceHent.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\CowDetails.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\CowRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowDetails.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\CowEntryDetails.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\OperationArguments.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\serialization\SerializableOperationArguments.h">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\TransactionRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\TransactionResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\DataSerialization.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IAgent.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Agent.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\wire\CowWireObject.h">
+      <Filter>Source Files\common\service\wire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableAgent.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\cowtrail\CowTracker.h">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\cowtrail\CowTrail.h">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\cowtrail\ICowTrail.h">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\DocSnapshot.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\OwnDocSnapshot.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\herdregistry\CowPresenceKey.h">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\herdregistry\ICowPresence.h">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\herdregistry\HerdRegistry.h">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowEntryDetails.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchManifest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CowNoReference.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\arrays\DeepDelete.h">
+      <Filter>Source Files\common\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\arrays\Enumerator.h">
+      <Filter>Source Files\common\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\arrays\IdableIndex.h">
+      <Filter>Source Files\common\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\HentsDocSnapshot.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\MoveDocSnapshot.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\EditInDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\NewInDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\types\DateRange.h">
+      <Filter>Source Files\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\ItemId.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\serialization\RuntimeTypesSerialization.h">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\NewMoveDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\DocOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\DocTransactionSkeleton.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\iif.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\SafeGet.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\cowtrail\CowPath.h">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\cowtrail\IHerdFootprint.h">
+      <Filter>Source Files\common\logic\cowtrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\NewSellDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\DocKey.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\DocType.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\CowNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\CowNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\DeleteNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\DeleteNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\HentNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\LockNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\LockNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\Notification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\NotificationEnvelope.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\NotificationRelay.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\UnlockNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\UnlockNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\DocNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\DocNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\HentNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\NewBuyDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\OutDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\User.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\CowInvoiceEntryDetails.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntryDetails.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\DocCowItem.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\InvoiceCowItem.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\DocTransactionCowItem.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\InvoiceTransactionCowItem.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\PlusDocTransactionSkeleton.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\InvoiceItemKey.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\wire\WireObject.h">
+      <Filter>Source Files\common\service\wire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\wire\WireObjects.h">
+      <Filter>Source Files\common\service\wire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\EditMoveDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\EditSellDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\EditBuyDocTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\errortoken\ErrorToken.h">
+      <Filter>Source Files\common\errortoken</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\InvoiceNotification.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\InvoiceNotifications.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\IntString.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableBuyInvoice.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableSellInvoice.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\InvoiceKey.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InvoiceRelations.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SessionLockRecord.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ClientSeasonSessionInterface.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\IClientTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BKServiceDestructor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchDocsResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchDocsResponses.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\TypesRegistration.h">
+      <Filter>Source Files\common\service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\BuyInvoiceCowsTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\BuyInvoiceDocsTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\InvoiceTransactionSkeleton.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\SettingPart.h">
+      <Filter>Source Files\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\SettingDefinition.h">
+      <Filter>Source Files\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\SettingType.h">
+      <Filter>Source Files\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\snapshot\InvoiceSnapshot.h">
+      <Filter>Source Files\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\Settings.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\IntegerSettingSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\SettingSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\SettingValue.h">
+      <Filter>Source Files\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\changedetect\ChangeEvent.h">
+      <Filter>Source Files\common\logic\changedetect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\changedetect\DocChangeDetector.h">
+      <Filter>Source Files\common\logic\changedetect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\changedetect\InvoiceChangeDetector.h">
+      <Filter>Source Files\common\logic\changedetect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\Undo.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\IntToIntMapSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\MarkInvoicePaidRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\utils\GetDocHerd.h">
+      <Filter>Source Files\common\data\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\utils\GetDocInvoice.h">
+      <Filter>Source Files\common\data\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\Setting.h">
+      <Filter>Source Files\common\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\SellInvoiceCowsTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\SellInvoiceDocsTransaction.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FarmSessionFinalizer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SeasonSessionFinalizer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\pgserver\PGSvrPool.h">
+      <Filter>Source Files\db\pgserver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\Cursor.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\DbConnection.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\Result.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\exception\TagException.h">
+      <Filter>Source Files\common\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\DbConnectionOptions.h">
+      <Filter>Source Files\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\PrintProfileRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchPrintProfilesResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\serialization\SerializablePrintProfile.h">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UserSession.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UserSessionFacade.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dao\UserDAO.h">
+      <Filter>Source Files\dao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UserSessionBuilder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BkServer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\UserSettings.h">
+      <Filter>Source Files\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\UserSettingsManager.h">
+      <Filter>Source Files\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common_config.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\CommonTypes.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchPassportRecognitionProfilesResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\PassportRecognitionProfileRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\IPassportField.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\IPassportRecognitionProfile.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportField.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportFieldDescriptor.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportFieldMetrics.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportFields.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfile.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfiles.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\print\IPrintProfile.h">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\print\PrintOption.h">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\print\PrintProfile.h">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\print\PrintProfiles.h">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\serialization\SerializablePassportRecognitionProfile.h">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\Point.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\passportrecognition\Size.h">
+      <Filter>Source Files\common\configuration\passportrecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\Utf8.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\print\OrderSpecifier.h">
+      <Filter>Source Files\common\configuration\print</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\deductions\DeductionDefinition.h">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\deductions\DeductionDetails.h">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\deductions\IDeductionDefinition.h">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IDeduction.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\Deduction.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\InvoiceDeductions.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\IPurchase.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\IPurchaseCow.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\IPurchaseHent.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\IPurchaseInvoice.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\Purchase.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseHent.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseInvoice.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseCow.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\Purchases.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchPurchasesResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\PurchaseQuery.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchase.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseCow.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseHent.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoice.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\DeductionDefinitionRequest.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\serialization\SerializableDeductionDefinition.h">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\serialization\SerializableDeductionDetails.h">
+      <Filter>Source Files\common\configuration\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchDeductionDefinitionsResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\configuration\deductions\DeductionDefinitions.h">
+      <Filter>Source Files\common\configuration\deductions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\repo\RepoClient.h">
+      <Filter>Source Files\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\repo\RepoClientFactory.h">
+      <Filter>Source Files\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\repo\CursorDescriptor.h">
+      <Filter>Source Files\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\repo\Cursor.h">
+      <Filter>Source Files\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\repo\RepoException.h">
+      <Filter>Source Files\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\IBuyDoc.h">
+      <Filter>Source Files\common\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\payways\PayWays.h">
+      <Filter>Source Files\common\data\payways</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\invoicetypes\InvoiceTypes.h">
+      <Filter>Source Files\common\data\invoicetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\henttypes\HentTypes.h">
+      <Filter>Source Files\common\data\henttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseInvoiceDeduction.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoiceDeduction.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseObjPath.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\BuyDocOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\DocTransactionItemTuple.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\InDocOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\InvoiceCowsScopeOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\InvoiceDocsScopeOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\InvoiceTransactionItemTuple.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\ISimpleUser.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\MoveDocOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\OutDocOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\SellDocOperations.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\SimpleUser.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\SolutionType.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\IPurchaseDownloadIssue.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadIssue.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadIssues.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\RepoTypesSerialization.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssuesSerializer.h">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueSerializer.h">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mustache\Mustache.h">
+      <Filter>Source Files\common\mustache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\DownloadPurchaseTransaction.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\EmptyProblemVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\ProblemVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\Solution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\SolutionVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\AgentIntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\AgentIntegritySolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\ClassIntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\FirstOwnerHentIntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\HerdIntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\IntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\InvoiceHentIntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\StockIntegrityProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\SolutionParameters.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\ProblemVerifingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\AgentProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\ClassIntegritySolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\ClassProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\FirstOwnerHentProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\HerdIntegritySolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\HerdProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\StockIntegritySolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\StockProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\InvoiceHentProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\serialization\SolutionParametersSerializer.h">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\IntegrityProblemIdentifier.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\ClientSeasonSessionInterfaceImpl.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\FetchHandleImpl.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\ScopedUpdateState.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\SeasonSessionFacadeImpl.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\SeasonSessionState.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\SeasonTransactionImpl.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\StateHolder.h">
+      <Filter>Source Files\seasonimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\operations\InsertPurchaseOperation.h">
+      <Filter>Source Files\seasonimpl\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadIssueCategory.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueCategorySerializer.h">
+      <Filter>Source Files\common\data\runtime\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\SolutionApplyingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\PurchaseTraverser.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\AgentsIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\ClassesIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\HentsIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\HerdsIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\IdableIndexes.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\IdableSOIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\ServerObjectPeeler.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\StocksIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\index\UsersIndex.h">
+      <Filter>Source Files\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\InvoiceDeductionsSerializer.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\InvoiceDeductionSerializer.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\runtime\DeductionItemTuple.h">
+      <Filter>Source Files\common\data\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\DeductionTransactionItem.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log\LoggerAware.h">
+      <Filter>Source Files\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log\LogInterface.h">
+      <Filter>Source Files\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\BankAccount.h">
+      <Filter>Source Files\common\data\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\impl\serialization\BankAccountSerializer.h">
+      <Filter>Source Files\common\data\impl\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BkLogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\operations\LoggerAwareSeasonOperation.h">
+      <Filter>Source Files\seasonimpl\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\seasonimpl\operations\SeasonOperation.h">
+      <Filter>Source Files\seasonimpl\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\BoolUtil.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\string\ToString.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\ISeasonInterface.h">
+      <Filter>Source Files\transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\WildcardMatch.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\InStockCowDuplicationProblem.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\InStockCowDuplicationSolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\InStockCowDuplictionProblemDetectingVisitor.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\logic\herdregistry\CowPresenceKeys.h">
+      <Filter>Source Files\common\logic\herdregistry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\FstOwnerHentIntegritySolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\transaction\purchase\InvoiceHentIntegritySolution.h">
+      <Filter>Source Files\transaction\purache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseHeader.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\PurchaseHeaders.h">
+      <Filter>Source Files\common\data\repo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchPurchaseHeadersResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\repo\serialization\PurchaseHeaderSerializer.h">
+      <Filter>Source Files\common\data\repo\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\BooleanSettingSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\UIntegerSettingSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\DecimalSettingSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\CloudPublisher.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\FirebaseTopicPublisher.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\GoogleServiceAccount.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\arrays\ptrrange.h">
+      <Filter>Source Files\common\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\root_certificates.hpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\JsonUtils.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\HttpClient.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\Auth0Account.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\Auth0TokenProvider.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils\IdGenerator.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\ChunkedEncodingReader.hpp">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\messages\FetchPurchaseResponse.h">
+      <Filter>Source Files\common\service\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\settings\serializers\IntegerVectorSerializer.h">
+      <Filter>Source Files\settings\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\service\notification\NopNotificationRelay.h">
+      <Filter>Source Files\common\service\notification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\data\invoicescopes\InvoiceScopes.h">
+      <Filter>Source Files\common\data\invoicescopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\FirebaseClient.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\FirebaseException.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\GoogleAuth2TokenProvider.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\Ref.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cloud\ChangePublisher.h">
+      <Filter>Source Files\cloud</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

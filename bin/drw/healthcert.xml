@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>TOPSTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>TABLEHEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-25</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+
+			<text label="">
+				<position>
+					<left>50</left>
+					<top>80</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>400</height>
+				</size>
+				<value>Załącznik do świadectwa zdrowia zwierząt /&#xA;Allegato di Certifificato Sanitario /&#xA;Anhang zur tiergesundheitsbesheinigung /&#xA;Annex to Animal Health Certificate</value>
+				<style>1</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>50</left>
+					<top>480</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>80</height>
+				</size>
+				<value>Identyfikacja zwierzęcia (zwierząt) / Identificazione dell animale / Kennezeichnung der Tiere / Identification of animal(s)</value>
+				<style>2</style>
+			</text>
+
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+
+
+					<text label="">
+						<position>
+							<left>351</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>117</width>
+							<height>286</height>
+						</size>
+						<value>Lp.</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>468</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>378</width>
+							<height>286</height>
+						</size>
+						<value>Numer paszportu /&#xA;Numero dei passaporto /&#xA;Nummer des Rinderpasses /&#xA;Number of passport</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>846</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>888</width>
+							<height>286</height>
+						</size>
+						<value>Urzędowe oznakowanie /&#xA;Identificazione ufficiale /&#xA;Amtliche Kennzeichnung /&#xA;Official identification</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>2</style>
+					</text>
+
+
+				</header>
+
+				<fields>
+
+
+					<text label="INDEX">
+						<position>
+							<left>351</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>117</width>
+							<height>45</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="PASSNO">
+						<position>
+							<left>468</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>378</width>
+							<height>45</height>
+						</size>
+						<value>{PASSNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>846</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>888</width>
+							<height>45</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+
+				</fields>
+			</band>
+		</bands>
+
+		<documentfooter>			
+		</documentfooter>
+
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>-1</style>
+			</text>
+		</pagefooter>
+	</document>
+
+</expandabletemplate>

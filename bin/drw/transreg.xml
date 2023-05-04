@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>TOPSTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial CE</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>BUYELLHEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>TABLEHEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+
+			<text label="">
+				<position>
+					<left>69</left>
+					<top>263</top>
+				</position>
+				<size>
+					<width>753</width>
+					<height>60</height>
+				</size>
+				<value>PRZEWOŹNIK</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			
+			<text label="TRANSPORTCOMPANY">
+				<position>
+					<left>69</left>
+					<top>323</top>
+				</position>
+				<size>
+					<width>753</width>
+					<height>200</height>
+				</size>
+				<value>{CARRIER}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>200</left>
+					<top>90</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>64</height>
+				</size>
+				<value>REJESTR PRZEWOŻONYCH ZWIERZĄT</value>
+				<style>2</style>
+			</text>
+			<text label="">
+				<position>
+					<left>68</left>
+					<top>523</top>
+				</position>
+				<size>
+					<width>754</width>
+					<height>60</height>
+				</size>
+				<value>MIEJSCE DOCELOWE</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			<text label="DESTINATION">
+				<position>
+					<left>68</left>
+					<top>583</top>
+				</position>
+				<size>
+					<width>754</width>
+					<height>200</height>
+				</size>
+				<value>{DESTINATION}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>553</top>
+				</position>
+				<size>
+					<width>862</width>
+					<height>61</height>
+				</size>
+				<value>ADNOTACJE</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>2</style>
+			</text>
+			<text label="EXTRAS">
+				<position>
+					<left>1151</left>
+					<top>614</top>
+				</position>
+				<size>
+					<width>862</width>
+					<height>169</height>
+				</size>
+				<value>{EXTRAS}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>-1</style>
+			</text>
+			<text label="DOCNUMBER">
+				<position>
+					<left>200</left>
+					<top>160</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>64</height>
+				</size>				
+				<value>{DOCNUMBER}</value>
+				<style>2</style>
+			</text>
+			
+			
+			<logo label="LOGO">
+				<position>
+					<left>836</left>
+					<top>323</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>300</height>
+				</size>
+				
+			</logo>
+			
+			
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>263</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Data wystawienia:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>321</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Data transportu:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>379</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Numer rejestracyjny:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>437</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Godzina zał. 1 zwierz.:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="">
+				<position>
+					<left>1151</left>
+					<top>495</top>
+				</position>
+				<size>
+					<width>315</width>
+					<height>58</height>
+				</size>
+				<value>Godzina wyładunku:</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-30</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+			</text>
+			<text label="DOCDATE">
+				<position>
+					<left>1466</left>
+					<top>263</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{DOCDATE}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="TRANSPORTDATE">
+				<position>
+					<left>1466</left>
+					<top>321</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{TRANSPORTDATE}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="PLATENO">
+				<position>
+					<left>1466</left>
+					<top>379</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{PLATENO}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="LOADSTARTTIME">
+				<position>
+					<left>1466</left>
+					<top>437</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{LOADSTARTTIME}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+			<text label="LOADENDTIME">
+				<position>
+					<left>1466</left>
+					<top>495</top>
+				</position>
+				<size>
+					<width>547</width>
+					<height>58</height>
+				</size>
+				<value>{LOADENDTIME}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>1</style>
+			</text>
+
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+
+
+					<text label="">
+						<position>
+							<left>66</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>63</height>
+						</size>
+						<value>LP</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>191</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>63</height>
+						</size>
+						<value>Numer zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>566</left>
+							<top>20</top>
+						</position>
+						<size>
+							<width>1452</width>
+							<height>63</height>
+						</size>
+						<value>Kupione od</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>3</style>
+					</text>
+
+
+
+				</header>
+
+				<fields>
+
+
+					<text label="INDEX">
+						<position>
+							<left>66</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>52</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>191</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>52</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="FSTOWNER">
+						<position>
+							<left>566</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1452</width>
+							<height>52</height>
+						</size>
+						<value>{FSTOWNER}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+				</fields>
+			</band>
+		</bands>
+
+		<documentfooter >
+		</documentfooter>
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>-1</style>
+			</text>
+		</pagefooter>
+	</document>
+
+</expandabletemplate>

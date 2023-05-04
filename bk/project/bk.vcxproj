@@ -1,0 +1,2313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_XP|Win32">
+      <Configuration>Release_XP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_XP|x64">
+      <Configuration>Release_XP</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E4E89CDF-06AF-446C-9D3A-D4A6B5EF06A9}</ProjectGuid>
+    <RootNamespace>bk</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files (x86)\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Visual Leak Detector\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRTDBG_MAP_ALLOC;NO_WARN_MBCS_MFC_DEPRECATION;USE_WIDECHAR;CONFIG_32;_WINSOCK_DEPRECATED_NO_WARNINGS;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalLibraryDirectories>..\..\..\bk_3rd_party\mpdecimal-2.4.0\vcbuild\dist32;..\..\..\bk_3rd_party\RCF-2.0.1.100\cmake\bin;..\..\..\boost_1_55_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalIncludeDirectories>..\..\..\bk3rdparty\libxl-3.8.3.0\include_cpp;..\..\..\bk3rdparty\typestring;..\..\..\bk3rdparty\RCF-2.2.0.0\include;..\..\..\bk3rdparty\casajson\include;..\..\..\bk3rdparty\libjson-rpc-cpp\src;..\..\..\bk3rdparty\\libb64-1.2\include;..\..\..\bk3rdparty\FreeImage\Dist;..\..\..\bk3rdparty\FreeImage\Wrapper\FreeImagePlus\dist;..\..\..\bk3rdparty\utf8cpp;..\..\..\bk3rdparty\pugixml-1.4\src;..\..\..\bk3rdparty\xerces-c-3.1.1-x86_64-windows-vc-10.0\include;..\..\..\bk3rdparty\mpdecimal-2.4.0\libmpdec;..\..\..\bk3rdparty\better-enums;..\..\..\boost_1_68_0;..\..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\bk3rdparty\libxl-3.8.3.0\lib;..\..\..\bk3rdparty\libjson-rpc-cpp\cmake\bin;..\..\..\bk3rdparty\casajson\cmake\bin;..\..\..\bk3rdparty\libb64-1.2\base64\VisualStudioProject\Debug;..\..\..\bk3rdparty\FreeImage\Wrapper\FreeImagePlus\dist;..\..\..\bk3rdparty\pugixml-1.4\bin;..\..\..\bk3rdparty\mpdecimal-2.4.0\vcbuild\dist32;..\..\..\bk3rdparty\RCF-2.2.0.0\cmake\bin;..\..\..\boost_1_68_0\stage\x86\lib;..\..\..\bk3rdparty\FreeImage\Dist;..\..\..\bk3rdparty\xerces-c-3.1.1-x86-windows-vc-10.0\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RcfLib32d.lib;libmpdec-2.4.0.lib;setupapi.lib;pugixml_x32d.lib;FreeImagePlusd.lib;FreeImaged.lib;Version.lib;base64.lib;jsonrpc_x32d.lib;casajson_x32d.lib;xerces-c_3.lib;libxl.lib</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)\bin\$(TargetName)_debug$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sg0891787\Desktop\Projects\bk2013\common;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sg0891787\Desktop\Projects\bk_3rd_party\xerces-c-3.1.1-x86_64-windows-vc-10.0\include;C:\Users\sg0891787\Desktop\Projects\bk_3rd_party\mpdecimal-2.3;C:\Users\sg0891787\Desktop\Projects\bk_3rd_party\RCF-2.0.1.100\include;C:\Users\sg0891787\Desktop\Projects\boost_1_55_0;C:\Users\sg0891787\Desktop\Projects\bk2013\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DEV\my\bk3rdparty\xerces-c-3.1.1-x86-windows-vc-10.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RcfLib.lib;libmpdec-2.3.lib;xerces-c_static_3D.lib</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)\bin\$(TargetName)_debug$(TargetExt)</OutputFile>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sg0891787\Desktop\Projects\bk2013\common;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>USE_WIDECHAR;CONFIG_32;WIN32;_WINDOWS;NDEBUG;NO_WARN_MBCS_MFC_DEPRECATION;_WINSOCK_DEPRECATED_NO_WARNINGS;BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\bk3rdparty\libxl-3.8.3.0\include_cpp;..\..\..\bk3rdparty\typestring;..\..\..\bk3rdparty\better-enums;..\..\..\bk3rdparty\casajson\include;..\..\..\bk3rdparty\libjson-rpc-cpp\src;..\..\..\bk3rdparty\\libb64-1.2\include;..\..\..\bk3rdparty\FreeImage\Dist;..\..\..\bk3rdparty\FreeImage\Wrapper\FreeImagePlus\dist;..\..\..\bk3rdparty\utf8cpp;..\..\..\bk3rdparty\pugixml-1.4\src;..\..\..\bk3rdparty\xerces-c-3.1.1-x86_64-windows-vc-10.0\include;..\..\..\bk3rdparty\mpdecimal-2.4.0\libmpdec;..\..\..\bk3rdparty\RCF-2.2.0.0\include;..\..\..\boost_1_67_0;..\..\common;..\..\..\bk3rdparty\WinSparkle-0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalDependencies>RcfLib32r.lib;libmpdec-2.4.0.lib;setupapi.lib;pugixml_x32r.lib;FreeImagePlus.lib;FreeImage.lib;WinSparkle.lib;version.lib;base64.lib;jsonrpc_x32r.lib;casajson_x32r.lib;libxl.lib</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)\bin\$(TargetName)_release$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\bk3rdparty\libxl-3.8.3.0\lib;..\..\..\bk3rdparty\libjson-rpc-cpp\cmake\bin;..\..\..\bk3rdparty\casajson\cmake\bin;..\..\..\bk3rdparty\libb64-1.2\base64\VisualStudioProject\Release;..\..\..\bk3rdparty\WinSparkle-0.4\Release;..\..\..\bk3rdparty\FreeImage\Wrapper\FreeImagePlus\dist;..\..\..\bk3rdparty\pugixml-1.4\bin;..\..\..\bk3rdparty\mpdecimal-2.4.0\vcbuild\dist32;..\..\..\bk3rdparty\RCF-2.2.0.0\cmake\bin;..\..\..\boost_1_67_0\stage\x86\lib;..\..\..\bk3rdparty\FreeImage\Dist</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration />
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>USE_WIDECHAR;CONFIG_32;WIN32;_WINDOWS;NDEBUG;NO_WARN_MBCS_MFC_DEPRECATION;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\bk3rdparty\casajson\include;..\..\..\bk3rdparty\libjson-rpc-cpp\src;..\..\..\bk3rdparty\\libb64-1.2\include;..\..\..\bk3rdparty\FreeImage\Dist;..\..\..\bk3rdparty\FreeImage\Wrapper\FreeImagePlus\dist;..\..\..\bk3rdparty\utf8cpp;..\..\..\bk3rdparty\pugixml-1.4\src;..\..\..\bk3rdparty\xerces-c-3.1.1-x86_64-windows-vc-10.0\include;..\..\..\bk3rdparty\mpdecimal-2.4.0\libmpdec;..\..\..\bk3rdparty\RCF-2.2.0.0\include;..\..\..\..\boost_1_61_0;..\..\common;..\..\..\bk3rdparty\WinSparkle-0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>RcfLib32r.lib;libmpdec-2.4.0.lib;setupapi.lib;pugixml_x32r.lib;FreeImagePlus.lib;FreeImage.lib;WinSparkle.lib;version.lib;base64.lib;jsonrpc_x32r.lib;casajson_x32r.lib</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)\bin\$(TargetName)_release_xp$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\bk3rdparty\libjson-rpc-cpp\cmake\bin;..\..\..\bk3rdparty\casajson\cmake\bin;..\..\..\bk3rdparty\libb64-1.2\base64\VisualStudioProject\Release;..\..\..\bk3rdparty\WinSparkle-0.4\Release;..\..\..\bk3rdparty\FreeImage\Wrapper\FreeImagePlus\dist;..\..\..\bk3rdparty\pugixml-1.4\build;..\..\..\bk3rdparty\mpdecimal-2.4.0\vcbuild\dist32;..\..\..\bk3rdparty\RCF-2.2.0.0\cmake\bin;..\..\..\..\boost_1_61_0\stage\lib_x86;..\..\..\bk3rdparty\FreeImage\Dist</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_XP|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\compare\TypesCompare.cpp" />
+    <ClCompile Include="..\..\common\configuration\deductions\DeductionDefinition.cpp" />
+    <ClCompile Include="..\..\common\configuration\deductions\DeductionDefinitions.cpp" />
+    <ClCompile Include="..\..\common\configuration\deductions\DeductionDetails.cpp" />
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportField.cpp" />
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportFieldDescriptor.cpp" />
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportFieldMetrics.cpp" />
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportFields.cpp" />
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfile.cpp" />
+    <ClCompile Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfiles.cpp" />
+    <ClCompile Include="..\..\common\configuration\print\OrderSpecifier.cpp" />
+    <ClCompile Include="..\..\common\configuration\print\PrintOption.cpp" />
+    <ClCompile Include="..\..\common\configuration\print\PrintProfile.cpp" />
+    <ClCompile Include="..\..\common\configuration\print\PrintProfiles.cpp" />
+    <ClCompile Include="..\..\common\configuration\serialization\SerializableDeductionDefinition.cpp" />
+    <ClCompile Include="..\..\common\configuration\serialization\SerializableDeductionDetails.cpp" />
+    <ClCompile Include="..\..\common\configuration\serialization\SerializablePassportRecognitionProfile.cpp" />
+    <ClCompile Include="..\..\common\configuration\serialization\SerializablePrintProfile.cpp" />
+    <ClCompile Include="..\..\common\configuration\Setting.cpp" />
+    <ClCompile Include="..\..\common\data\DocKey.cpp" />
+    <ClCompile Include="..\..\common\data\doctypes\DocTypes.cpp" />
+    <ClCompile Include="..\..\common\data\henttypes\HentTypes.cpp" />
+    <ClCompile Include="..\..\common\data\IInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Agent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\BankAccount.cpp" />
+    <ClCompile Include="..\..\common\data\impl\BuyDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\BuyInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Class.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Cow.cpp" />
+    <ClCompile Include="..\..\common\data\impl\CowDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\CowEntry.cpp" />
+    <ClCompile Include="..\..\common\data\impl\CowEntryDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\CowInvoiceEntry.cpp" />
+    <ClCompile Include="..\..\common\data\impl\CowInvoiceEntryDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\DocContent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\DocDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Farm.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Hent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Herd.cpp" />
+    <ClCompile Include="..\..\common\data\impl\InDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\InvoiceContent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\InvoiceDeduction.cpp" />
+    <ClCompile Include="..\..\common\data\impl\InvoiceDeductions.cpp" />
+    <ClCompile Include="..\..\common\data\impl\InvoiceDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\InvoiceHent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\MoveDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\OutDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Season.cpp" />
+    <ClCompile Include="..\..\common\data\impl\SellDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\SellInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\BankAccountSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\DataSerialization.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\InvoiceDeductionSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\InvoiceDeductionsSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableAgent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableBuyDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableBuyInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableClass.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCow.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowEntry.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowEntryDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntry.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntryDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableDocContent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableDocDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableFarm.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableHent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableHerd.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInvoiceContent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInvoiceDetails.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableInvoiceHent.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableMoveDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableOutDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableSeason.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableSellDoc.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableSellInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\impl\serialization\SerializableStock.cpp" />
+    <ClCompile Include="..\..\common\data\impl\Stock.cpp" />
+    <ClCompile Include="..\..\common\data\impl\User.cpp" />
+    <ClCompile Include="..\..\common\data\InvoiceKind.cpp" />
+    <ClCompile Include="..\..\common\data\invoicescopes\InvoiceScopes.cpp" />
+    <ClCompile Include="..\..\common\data\invoicetypes\InvoiceTypes.cpp" />
+    <ClCompile Include="..\..\common\data\motives\Motives.cpp" />
+    <ClCompile Include="..\..\common\data\payways\PayWays.cpp" />
+    <ClCompile Include="..\..\common\data\repo\Purchase.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseCow.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseHeader.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseHeaders.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseHent.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseInvoiceDeduction.cpp" />
+    <ClCompile Include="..\..\common\data\repo\PurchaseObjPath.cpp" />
+    <ClCompile Include="..\..\common\data\repo\Purchases.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\PurchaseHeaderSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\RepoTypesSerialization.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchase.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseCow.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseHent.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoice.cpp" />
+    <ClCompile Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoiceDeduction.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\InvoiceItemKey.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\ItemId.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\OperationArguments.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\PurchaseDownloadIssue.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\PurchaseDownloadIssueCategory.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\PurchaseDownloadIssues.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueCategorySerializer.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssuesSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\serialization\RuntimeTypesSerialization.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\serialization\SerializableOperationArguments.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\serialization\SolutionParametersSerializer.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\SimpleUser.cpp" />
+    <ClCompile Include="..\..\common\data\runtime\SolutionParameters.cpp" />
+    <ClCompile Include="..\..\common\data\types\AccountNo.cpp" />
+    <ClCompile Include="..\..\common\data\types\countries\Countries.cpp" />
+    <ClCompile Include="..\..\common\data\types\countries\Country.cpp" />
+    <ClCompile Include="..\..\common\data\types\CowNo.cpp" />
+    <ClCompile Include="..\..\common\data\types\CowSex.cpp" />
+    <ClCompile Include="..\..\common\data\types\FarmNo.cpp" />
+    <ClCompile Include="..\..\common\data\types\HentNo.cpp" />
+    <ClCompile Include="..\..\common\data\types\HerdNo.cpp" />
+    <ClCompile Include="..\..\common\data\types\serialization\TypesSerialization.cpp" />
+    <ClCompile Include="..\..\common\data\utils\GetDocHerd.cpp" />
+    <ClCompile Include="..\..\common\data\utils\GetDocInvoice.cpp" />
+    <ClCompile Include="..\..\common\errortoken\ErrorToken.cpp" />
+    <ClCompile Include="..\..\common\filesystem\FileDeleterFinalizer.cpp" />
+    <ClCompile Include="..\..\common\filesystem\files.cpp" />
+    <ClCompile Include="..\..\common\filesystem\paths.cpp" />
+    <ClCompile Include="..\..\common\format\StringFormat.cpp" />
+    <ClCompile Include="..\..\common\logic\changedetect\DocChangeDetector.cpp" />
+    <ClCompile Include="..\..\common\logic\changedetect\InvoiceChangeDetector.cpp" />
+    <ClCompile Include="..\..\common\logic\cowtrail\CowPath.cpp" />
+    <ClCompile Include="..\..\common\logic\cowtrail\CowTracker.cpp" />
+    <ClCompile Include="..\..\common\logic\cowtrail\CowTrail.cpp" />
+    <ClCompile Include="..\..\common\logic\herdregistry\CowPresenceKey.cpp" />
+    <ClCompile Include="..\..\common\logic\herdregistry\HerdRegistry.cpp" />
+    <ClCompile Include="..\..\common\mustache\Mustache.cpp" />
+    <ClCompile Include="..\..\common\ported\strptime.cpp" />
+    <ClCompile Include="..\..\common\progress\SafeComplexProgress.cpp" />
+    <ClCompile Include="..\..\common\progress\SafeSimpleProgress.cpp" />
+    <ClCompile Include="..\..\common\service\messages\CowRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\DeductionDefinitionRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FarmOrganisation.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchClassesResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchCowsResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchDeductionDefinitionsResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchHentsResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchInvoicesResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchManifest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchPassportRecognitionProfilesResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchPrintProfilesResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchPurchaseHeadersResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchPurchaseResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchPurchasesResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\FetchStocksResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\HentRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\LoginRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\LoginResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\MarkInvoicePaidRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\OpenSeasonResponse.cpp" />
+    <ClCompile Include="..\..\common\service\messages\PassportRecognitionProfileRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\PrintProfileRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\PurchaseQuery.cpp" />
+    <ClCompile Include="..\..\common\service\messages\Settings.cpp" />
+    <ClCompile Include="..\..\common\service\messages\TransactionRequest.cpp" />
+    <ClCompile Include="..\..\common\service\messages\TransactionResponse.cpp" />
+    <ClCompile Include="..\..\common\service\notification\Notification.cpp" />
+    <ClCompile Include="..\..\common\service\notification\NotificationEnvelope.cpp" />
+    <ClCompile Include="..\..\common\service\TypesRegistration.cpp" />
+    <ClCompile Include="..\..\common\service\wire\CowWireObject.cpp" />
+    <ClCompile Include="..\..\common\service\wire\HentWireObject.cpp" />
+    <ClCompile Include="..\..\common\string\IntString.cpp" />
+    <ClCompile Include="..\..\common\string\TextUtils.cpp" />
+    <ClCompile Include="..\..\common\string\ToString.cpp" />
+    <ClCompile Include="..\..\common\string\Utf8.cpp" />
+    <ClCompile Include="..\..\common\types\DateRange.cpp" />
+    <ClCompile Include="..\..\common\types\DateTime.cpp" />
+    <ClCompile Include="..\..\common\types\Decimal.cpp" />
+    <ClCompile Include="..\..\common\types\DecimalRange.cpp" />
+    <ClCompile Include="..\..\common\types\GeoCoordinate.cpp" />
+    <ClCompile Include="..\..\common\types\IntRange.cpp" />
+    <ClCompile Include="..\..\common\types\Latitude.cpp" />
+    <ClCompile Include="..\..\common\types\Longitude.cpp" />
+    <ClCompile Include="..\..\common\types\NullDecimal.cpp" />
+    <ClCompile Include="..\..\common\types\NullDouble.cpp" />
+    <ClCompile Include="..\..\common\types\NullInt.cpp" />
+    <ClCompile Include="..\..\common\types\NullString.cpp" />
+    <ClCompile Include="..\..\common\types\Time.cpp" />
+    <ClCompile Include="..\..\common\utils\BoolUtil.cpp" />
+    <ClCompile Include="..\..\common\utils\IdGenerator.cpp" />
+    <ClCompile Include="..\..\common\utils\iif.cpp" />
+    <ClCompile Include="..\..\common\utils\JsonUtils.cpp" />
+    <ClCompile Include="..\..\common\utils\WildcardMatch.cpp" />
+    <ClCompile Include="..\..\common\validation\CowNoValidator.cpp" />
+    <ClCompile Include="..\..\common\validation\HentNoValidator.cpp" />
+    <ClCompile Include="..\src\App.cpp" />
+    <ClCompile Include="..\src\AppServices.cpp" />
+    <ClCompile Include="..\src\barcodescanner\BarcodeScanner.cpp" />
+    <ClCompile Include="..\src\barcodescanner\BarcodeScannerService.cpp" />
+    <ClCompile Include="..\src\barcodescanner\oposscanner.cpp" />
+    <ClCompile Include="..\src\barcodescanner\symbolscanner.cpp" />
+    <ClCompile Include="..\src\barcodescanner\ui\BarcodeInputDlg.cpp" />
+    <ClCompile Include="..\src\barcodescanner\ui\ScannerStatusBtn.cpp" />
+    <ClCompile Include="..\src\barcodescanner\ui\ScannerStatusIndicator.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\CompositeObject.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\ImgObject.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\Page.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\Paper.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\PrintOut.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\RealizedTextStyle.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\RectObject.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\SizeCalculator.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\TemplateRenderer.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\TextObject.cpp" />
+    <ClCompile Include="..\src\bkprint\renderer\Values.cpp" />
+    <ClCompile Include="..\src\bkprint\template\Band.cpp" />
+    <ClCompile Include="..\src\bkprint\template\Border.cpp" />
+    <ClCompile Include="..\src\bkprint\template\DocumentFooter.cpp" />
+    <ClCompile Include="..\src\bkprint\template\ExpandableTemplate.cpp" />
+    <ClCompile Include="..\src\bkprint\template\Field.cpp" />
+    <ClCompile Include="..\src\bkprint\template\FieldFactory.cpp" />
+    <ClCompile Include="..\src\bkprint\template\FieldsContainer.cpp" />
+    <ClCompile Include="..\src\bkprint\template\FixedTemplate.cpp" />
+    <ClCompile Include="..\src\bkprint\template\ImageField.cpp" />
+    <ClCompile Include="..\src\bkprint\template\LogoField.cpp" />
+    <ClCompile Include="..\src\bkprint\template\NullVisitor.cpp" />
+    <ClCompile Include="..\src\bkprint\template\PageHeader.cpp" />
+    <ClCompile Include="..\src\bkprint\template\RectField.cpp" />
+    <ClCompile Include="..\src\bkprint\template\Template.cpp" />
+    <ClCompile Include="..\src\bkprint\template\TextField.cpp" />
+    <ClCompile Include="..\src\bkprint\template\TextStyle.cpp" />
+    <ClCompile Include="..\src\bkprint\template\TextStyleIndex.cpp" />
+    <ClCompile Include="..\src\bkprint\template\unmarshaler\LogoSettingVisitor.cpp" />
+    <ClCompile Include="..\src\bkprint\template\unmarshaler\TemplateUnmarshaller.cpp" />
+    <ClCompile Include="..\src\bkprint\template\unmarshaler\TypesUnmarshaler.cpp" />
+    <ClCompile Include="..\src\bkprint\template\util\AlignUtil.cpp" />
+    <ClCompile Include="..\src\bkprint\template\util\ColorUtil.cpp" />
+    <ClCompile Include="..\src\bkprint\template\util\PaperOrientationUtil.cpp" />
+    <ClCompile Include="..\src\bkprint\template\util\PaperTypeUtil.cpp" />
+    <ClCompile Include="..\src\bkprint\types\Font.cpp" />
+    <ClCompile Include="..\src\ChildFrm.cpp" />
+    <ClCompile Include="..\src\ChildView.cpp" />
+    <ClCompile Include="..\src\collector\Collector.cpp" />
+    <ClCompile Include="..\src\collector\CollectorServer.cpp" />
+    <ClCompile Include="..\src\collector\data\DownloadCow.cpp" />
+    <ClCompile Include="..\src\collector\data\DownloadDoc.cpp" />
+    <ClCompile Include="..\src\collector\data\DownloadHent.cpp" />
+    <ClCompile Include="..\src\collector\data\DownloadSnapshot.cpp" />
+    <ClCompile Include="..\src\collector\data\DownloadSnapshotHeader.cpp" />
+    <ClCompile Include="..\src\collector\data\UploadCow.cpp" />
+    <ClCompile Include="..\src\collector\data\UploadCowClass.cpp" />
+    <ClCompile Include="..\src\collector\data\UploadHent.cpp" />
+    <ClCompile Include="..\src\collector\data\UploadProperties.cpp" />
+    <ClCompile Include="..\src\collector\data\UploadSnapshot.cpp" />
+    <ClCompile Include="..\src\collector\import\items\CowImportItem.cpp" />
+    <ClCompile Include="..\src\collector\import\items\ImportItem.cpp" />
+    <ClCompile Include="..\src\collector\import\items\ImportItemVisitor.cpp" />
+    <ClCompile Include="..\src\collector\import\items\InDocImportItem.cpp" />
+    <ClCompile Include="..\src\collector\import\items\OutDocImportItem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\EmptyInDocImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\EmptyOutDocImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\HentImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\HerdImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\ImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\MainClassImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\ProblemVisitor.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\TermBuyClassImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\problems\TermSellClassImportProblem.cpp" />
+    <ClCompile Include="..\src\collector\import\SnapshotImportSession.cpp" />
+    <ClCompile Include="..\src\collector\snapshotstorage\CollectorSnapshotStorage.cpp" />
+    <ClCompile Include="..\src\collector\ui\CollectorDownloadDlg.cpp" />
+    <ClCompile Include="..\src\collector\ui\CollectorManagerDlg.cpp" />
+    <ClCompile Include="..\src\collector\ui\CollectorServerStatusBarCtrl.cpp" />
+    <ClCompile Include="..\src\collector\ui\content\CollectorListContent.cpp" />
+    <ClCompile Include="..\src\collector\ui\content\SnapshotListContent.cpp" />
+    <ClCompile Include="..\src\collector\ui\text\CollectorStatusString.cpp" />
+    <ClCompile Include="..\src\collector\ui\text\CollectorText.cpp" />
+    <ClCompile Include="..\src\compare\CowPresenceViewComparator.cpp" />
+    <ClCompile Include="..\src\compare\DocComparator.cpp" />
+    <ClCompile Include="..\src\compare\HentComparator.cpp" />
+    <ClCompile Include="..\src\compare\HentsDocComparator.cpp" />
+    <ClCompile Include="..\src\compare\InvoiceViewComparator.cpp" />
+    <ClCompile Include="..\src\compare\MoveDocComparator.cpp" />
+    <ClCompile Include="..\src\compare\OwnDocComparator.cpp" />
+    <ClCompile Include="..\src\compare\SeasonComparator.cpp" />
+    <ClCompile Include="..\src\compare\SortAttribute.cpp" />
+    <ClCompile Include="..\src\compare\SortAttributes.cpp" />
+    <ClCompile Include="..\src\content\AgentsComboContent.cpp" />
+    <ClCompile Include="..\src\content\AllCowsListContent.cpp" />
+    <ClCompile Include="..\src\content\BankAccountsComboContent.cpp" />
+    <ClCompile Include="..\src\content\BuyDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\BuyInvoicesListContent.cpp" />
+    <ClCompile Include="..\src\content\ClassesComboContent.cpp" />
+    <ClCompile Include="..\src\content\CowPresenceRow.cpp" />
+    <ClCompile Include="..\src\content\CowsListContent.cpp" />
+    <ClCompile Include="..\src\content\DocItemRow.cpp" />
+    <ClCompile Include="..\src\content\HentSearchContent.cpp" />
+    <ClCompile Include="..\src\content\HentRow.cpp" />
+    <ClCompile Include="..\src\content\HentsDocRow.cpp" />
+    <ClCompile Include="..\src\content\HentsDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\HerdsComboContent.cpp" />
+    <ClCompile Include="..\src\content\InCowsListContent.cpp" />
+    <ClCompile Include="..\src\content\InDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\InvoiceRow.cpp" />
+    <ClCompile Include="..\src\content\InvoicesListContent.cpp" />
+    <ClCompile Include="..\src\content\MoveDocRow.cpp" />
+    <ClCompile Include="..\src\content\MoveDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\OutDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\OwnDocRow.cpp" />
+    <ClCompile Include="..\src\content\OwnDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\predicate\AndPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceAgeRangePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceBirthDatePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceBoughtFromPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceCowNoPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceCowSexPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceHerdEntryDatePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceHerdExitDatePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceOwnClassPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceOwnStockPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresencePassportNoPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceSoldToPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\CowPresenceWeightRangePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentAliasPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentCityPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentFiscalNoPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentHentNoPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentHentTypePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentNamePredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentPersonalNoPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentPOBoxPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentStreetPredicate.cpp" />
+    <ClCompile Include="..\src\content\predicate\HentZipPredicate.cpp" />
+    <ClCompile Include="..\src\content\SellDocsListContent.cpp" />
+    <ClCompile Include="..\src\content\DocTransactionContent.cpp" />
+    <ClCompile Include="..\src\content\SellInvoicesListContent.cpp" />
+    <ClCompile Include="..\src\content\SimpleInvoicesListContent.cpp" />
+    <ClCompile Include="..\src\content\StocksComboContent.cpp" />
+    <ClCompile Include="..\src\ContextAccess.cpp" />
+    <ClCompile Include="..\src\context\ContextDestructor.cpp" />
+    <ClCompile Include="..\src\context\ContextInitialiser.cpp" />
+    <ClCompile Include="..\src\context\HerdAudience.cpp" />
+    <ClCompile Include="..\src\context\NotificationRelayImpl.cpp" />
+    <ClCompile Include="..\src\context\NotificationSubscriber.cpp" />
+    <ClCompile Include="..\src\context\SeasonSessionImpl.cpp" />
+    <ClCompile Include="..\src\context\transaction\DefaultValuesApplier.cpp" />
+    <ClCompile Include="..\src\context\transaction\NoOpCowEditor.cpp" />
+    <ClCompile Include="..\src\context\UserSettingsImpl.cpp" />
+    <ClCompile Include="..\src\context\transaction\BuyDocTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\CowEditor.cpp" />
+    <ClCompile Include="..\src\context\transaction\InvoiceTransactionDeductionItem.cpp" />
+    <ClCompile Include="..\src\context\transaction\DocItem.cpp" />
+    <ClCompile Include="..\src\context\transaction\DownloadPurchaseTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\InDocTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\InvoiceCowsTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\InvoiceDocsTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\InvoiceTransactionItem.cpp" />
+    <ClCompile Include="..\src\context\transaction\InvoiceItemIndex.cpp" />
+    <ClCompile Include="..\src\context\transaction\MoveDocTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\ObserverableInvoiceTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\ObserverableTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\OutDocTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\SellDocTransaction.cpp" />
+    <ClCompile Include="..\src\context\transaction\TransactionCowEditor.cpp" />
+    <ClCompile Include="..\src\context\transaction\TransactionNewCowEditor.cpp" />
+    <ClCompile Include="..\src\context\UIBridge.cpp" />
+    <ClCompile Include="..\src\context\XContext.cpp" />
+    <ClCompile Include="..\src\cow\CowDlg.cpp" />
+    <ClCompile Include="..\src\cow\CowSelectDlg.cpp" />
+    <ClCompile Include="..\src\cow\LonlyCowEditor.cpp" />
+    <ClCompile Include="..\src\cow\ScanCowBCdsWizard.cpp" />
+    <ClCompile Include="..\src\ctrls\AccountNoEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\agerange\AgeRangeCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\arrowbutton\ArrowButton.cpp" />
+    <ClCompile Include="..\src\ctrls\BaseCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\checkablegroup\CheckableGroupBox.cpp" />
+    <ClCompile Include="..\src\ctrls\checkboxlist\CheckBoxListBox.cpp" />
+    <ClCompile Include="..\src\ctrls\checkboxlist\CheckBoxItem.cpp" />
+    <ClCompile Include="..\src\ctrls\clickablegroup\ClickableGroupBox.cpp" />
+    <ClCompile Include="..\src\ctrls\contentlistctrl\ContentListCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\contentlistctrl\ListContent.cpp" />
+    <ClCompile Include="..\src\ctrls\contentlistctrl\NulllListRow.cpp" />
+    <ClCompile Include="..\src\ctrls\coolbtn\CoolBtn.cpp" />
+    <ClCompile Include="..\src\ctrls\countrybutton\CountryButton.cpp" />
+    <ClCompile Include="..\src\ctrls\countryedit\CountryEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\countryflags\CountryFlagsImageList.cpp" />
+    <ClCompile Include="..\src\ctrls\CowNoEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\cownowildcardedit\CowNoWildcardEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\cowsexbtn\CowSexBtn.cpp" />
+    <ClCompile Include="..\src\ctrls\cowsexcombo\CowSexCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\dateedit\dateedit.cpp" />
+    <ClCompile Include="..\src\ctrls\daterange\DateRangeCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\decimaledit\DecimalEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\decimalrange\DecimalRangeCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\dimedit\DimEditCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\dwmbtn\DayWeekMonthBtn.cpp" />
+    <ClCompile Include="..\src\ctrls\editwithbtnctrl\editwithbtnctrl.cpp" />
+    <ClCompile Include="..\src\ctrls\encodingcombo\EncodingCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\enteredit\EnterEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\ExtrasMemo.cpp" />
+    <ClCompile Include="..\src\ctrls\FilterEdit\FilterEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\freeimagectrl\FreeImageCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\GeoCoordinateEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\hentbtn\HentBtn.cpp" />
+    <ClCompile Include="..\src\ctrls\HentNoEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\HentTypeCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\hourminuteedit\HourMinuteEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\integeredit\IntegerEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\invoicetypebtn\InvoiceTypeBtn.cpp" />
+    <ClCompile Include="..\src\ctrls\invoicetypecombo\InvoiceTypeCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\LatitudeEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\layoutlistctrl\ColumnLayout.cpp" />
+    <ClCompile Include="..\src\ctrls\layoutlistctrl\HeaderColumn.cpp" />
+    <ClCompile Include="..\src\ctrls\layoutlistctrl\LayoutHeaderCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\layoutlistctrl\LayoutListCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\layoutlistctrl\ListHeaderDescriptor.cpp" />
+    <ClCompile Include="..\src\ctrls\layoutlistctrl\ListHeaderLayout.cpp" />
+    <ClCompile Include="..\src\ctrls\LongitudeEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\maskededit\OXMaskedEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\MotiveCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\numericedit\NumericEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\ownclasswnd\OwnClassWnd.cpp" />
+    <ClCompile Include="..\src\ctrls\ownrdrwlistctrl\OwnrDrwListCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\paywaycombo\PayWayCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\pngbutton\PngButton.cpp" />
+    <ClCompile Include="..\src\ctrls\pngmenubutton\PngMenuButton.cpp" />
+    <ClCompile Include="..\src\ctrls\sectionheader\SectionHeader.cpp" />
+    <ClCompile Include="..\src\ctrls\stdedit\stdedit.cpp" />
+    <ClCompile Include="..\src\ctrls\tabctrl\CustomTabCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\tabctrl\ThemeUtil.cpp" />
+    <ClCompile Include="..\src\ctrls\tipedit\TipEdit.cpp" />
+    <ClCompile Include="..\src\ctrls\tipwnd\TimerTipWnd.cpp" />
+    <ClCompile Include="..\src\ctrls\tipwnd\TipWnd.cpp" />
+    <ClCompile Include="..\src\ctrls\tipwnd\TipWndStyle.cpp" />
+    <ClCompile Include="..\src\ctrls\vatratecombo\VATCombo.cpp" />
+    <ClCompile Include="..\src\ctrls\vnavigation\VNavigation.cpp" />
+    <ClCompile Include="..\src\ctrls\xcolorstatic\FontSize.cpp" />
+    <ClCompile Include="..\src\ctrls\xcolorstatic\XColorStatic.cpp" />
+    <ClCompile Include="..\src\ctrls\xstatusbar\XStatusBar.cpp" />
+    <ClCompile Include="..\src\ctrls\XTabCtrl\XTabCtrl.cpp" />
+    <ClCompile Include="..\src\ctrls\xtoolbar\XToolBar.cpp" />
+    <ClCompile Include="..\src\doc\BuyDocDlg.cpp" />
+    <ClCompile Include="..\src\doc\CandidatesContent.cpp" />
+    <ClCompile Include="..\src\doc\CowPresenceSelectRow.cpp" />
+    <ClCompile Include="..\src\doc\ctrls\DocItemListCtrl.cpp" />
+    <ClCompile Include="..\src\doc\ctrls\ItemCountStatic.cpp" />
+    <ClCompile Include="..\src\doc\ctrls\RecognizePassportsBtn.cpp" />
+    <ClCompile Include="..\src\doc\DocSelectDlg.cpp" />
+    <ClCompile Include="..\src\doc\FastInDocDlg.cpp" />
+    <ClCompile Include="..\src\doc\InDocDlg.cpp" />
+    <ClCompile Include="..\src\doc\MoveDocDlg.cpp" />
+    <ClCompile Include="..\src\doc\OutDocDlg.cpp" />
+    <ClCompile Include="..\src\doc\SellDocDlg.cpp" />
+    <ClCompile Include="..\src\doc\TransactionSelectInterface.cpp" />
+    <ClCompile Include="..\src\excelexport\ExcelExport.cpp" />
+    <ClCompile Include="..\src\excelexport\ExcelExportSettings.cpp" />
+    <ClCompile Include="..\src\excelexport\ExcelExportSettingsDlg.cpp" />
+    <ClCompile Include="..\src\farmaccounts\FarmAccountDlg.cpp" />
+    <ClCompile Include="..\src\farmaccounts\FarmAccountsManagerDlg.cpp" />
+    <ClCompile Include="..\src\farmaccounts\FarmAccountsStorage.cpp" />
+    <ClCompile Include="..\src\farmaccounts\Farms.cpp" />
+    <ClCompile Include="..\src\header\BuyInvoiceCalculationHeader.cpp" />
+    <ClCompile Include="..\src\header\CowListHeader.cpp" />
+    <ClCompile Include="..\src\header\CowPresenceListHeader.cpp" />
+    <ClCompile Include="..\src\header\CowInStockPresenceListHeader.cpp" />
+    <ClCompile Include="..\src\header\HeaderLayoutConfiguration.cpp" />
+    <ClCompile Include="..\src\header\HentsDocsListHeader.cpp" />
+    <ClCompile Include="..\src\header\InvoiceListHeader.cpp" />
+    <ClCompile Include="..\src\header\MoveDocsListHeader.cpp" />
+    <ClCompile Include="..\src\header\OwnDocsListHeader.cpp" />
+    <ClCompile Include="..\src\header\SellInvoiceCalculationHeader.cpp" />
+    <ClCompile Include="..\src\hent\HentDlg.cpp" />
+    <ClCompile Include="..\src\hent\HentEditor.cpp" />
+    <ClCompile Include="..\src\hent\HentSearchDlg.cpp" />
+    <ClCompile Include="..\src\image\fipWinImageEx.cpp" />
+    <ClCompile Include="..\src\image\Png.cpp" />
+    <ClCompile Include="..\src\info\CompanyInfoDlg.cpp" />
+    <ClCompile Include="..\src\invoice\BaseInvoiceDlg.cpp" />
+    <ClCompile Include="..\src\invoice\BuyDocSelectInterface.cpp" />
+    <ClCompile Include="..\src\invoice\BuyInvoiceCowScopeDlg.cpp" />
+    <ClCompile Include="..\src\invoice\BuyInvoiceCowsSelectInterface.cpp" />
+    <ClCompile Include="..\src\invoice\BuyInvoiceDlg.cpp" />
+    <ClCompile Include="..\src\invoice\BuyInvoiceDocScopeDlg.cpp" />
+    <ClCompile Include="..\src\invoice\calculation\CalculationElement.cpp" />
+    <ClCompile Include="..\src\invoice\calculation\DeductionElement.cpp" />
+    <ClCompile Include="..\src\invoice\calculation\InvoiceCalculation.cpp" />
+    <ClCompile Include="..\src\invoice\calculator\InvoiceCalculator.cpp" />
+    <ClCompile Include="..\src\invoice\content\BuyDocsCandidatesListContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\CalculationElementRow.cpp" />
+    <ClCompile Include="..\src\invoice\content\CowCandidatesContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\DeductionElementRow.cpp" />
+    <ClCompile Include="..\src\invoice\content\HentsDocsCandidatesListContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\InvoiceCalculationContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\InvoiceDeductionsContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\SellDocsCandidatesListContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\SimpleHentsDocsListContent.cpp" />
+    <ClCompile Include="..\src\invoice\content\SimpleInDocsListContent.cpp" />
+    <ClCompile Include="..\src\invoice\InvoiceCowsSelectInterface.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\FullAccountingSymfonia.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\JpkExporter.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\JsonExporter.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\options\InvoiceExporterOption.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\options\InvoiceExporterOptions.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\quickxml.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\sagejson.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\SmallBusinessSymfonia.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\exporters\SubiektEDI.cpp" />
+    <ClCompile Include="..\src\invoice\invoiceexport\ui\InvoicesExportDlg.cpp" />
+    <ClCompile Include="..\src\invoice\InvoiceHentUpdateDlg.cpp" />
+    <ClCompile Include="..\src\invoice\lock\BuyInvoiceLocker.cpp" />
+    <ClCompile Include="..\src\invoice\lock\SellInvoiceLocker.cpp" />
+    <ClCompile Include="..\src\invoice\markpaid\BuyInvoiceMarkPaidDlg.cpp" />
+    <ClCompile Include="..\src\invoice\markpaid\InvoiceMarkPaidDlg.cpp" />
+    <ClCompile Include="..\src\invoice\markpaid\SellInvoiceMarkPaidDlg.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\content\MoneyTransferRow.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\content\MoneyTransfersContent.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\AliorFormatter.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\BZWBKFormatter.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\DelimetedFormatter.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\ElixirFormatter.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\CompanyNameAndAddrField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\CompanySourceAccountNo.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\CompanySourceBankNo.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\ConstantField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\CurrencyCodeField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\Elixir4x35Field.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\EmptyField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\FormatterField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceDateField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentAccountNoField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentAddrField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentBankNoField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentCityField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentNameAndAddrField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentNameAndNoField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentNameField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentStreetAddrField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentZipField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceIdField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceNumberField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceTitleField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\MaxSizeField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\MoneyCentValueField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\MoneyFloatValueField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\MoneyTransferDateField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\MoneyTransferTitleField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\QuotedField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\ReplaceField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\fields\WrapperField.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\KBFormatter.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\PolbankFormatter.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\formatters\utils\AccountNoUtils.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\MoneyTransferContext.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\MoneyTransferEntry.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\MoneyTransferEntryFactory.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\text\MoneyTransferEntryText.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\ui\MoneyTransferDlg.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\view\MoneyTransferView.cpp" />
+    <ClCompile Include="..\src\invoice\moneytransfer\view\MoneyTransferViewCreator.cpp" />
+    <ClCompile Include="..\src\invoice\SellDocSelectInterface.cpp" />
+    <ClCompile Include="..\src\invoice\SellInvoiceCowScopeDlg.cpp" />
+    <ClCompile Include="..\src\invoice\SellInvoiceCowsSelectInterface.cpp" />
+    <ClCompile Include="..\src\invoice\SellInvoiceDlg.cpp" />
+    <ClCompile Include="..\src\invoice\SellInvoiceDocScopeDlg.cpp" />
+    <ClCompile Include="..\src\invoice\ui\deduction\DeductionDetailsDlg.cpp" />
+    <ClCompile Include="..\src\invoice\ui\deduction\EditDeductionDetailsDlg.cpp" />
+    <ClCompile Include="..\src\invoice\ui\deduction\NewDeductionDetailsDlg.cpp" />
+    <ClCompile Include="..\src\invoice\view\BuyCalculationViewCreator.cpp" />
+    <ClCompile Include="..\src\invoice\view\CalculationElementView.cpp" />
+    <ClCompile Include="..\src\invoice\view\CalculationViewCreator.cpp" />
+    <ClCompile Include="..\src\invoice\view\DeductionElementView.cpp" />
+    <ClCompile Include="..\src\invoice\view\DeductionElementViewCreator.cpp" />
+    <ClCompile Include="..\src\invoice\view\SellCalculationViewCreator.cpp" />
+    <ClCompile Include="..\src\localstorage\LocalStorage.cpp" />
+    <ClCompile Include="..\src\locking\LockAttempt.cpp" />
+    <ClCompile Include="..\src\locking\LockerDlg.cpp" />
+    <ClCompile Include="..\src\locking\RecordLocker.cpp" />
+    <ClCompile Include="..\src\logo\Logo.cpp" />
+    <ClCompile Include="..\src\logo\LogoService.cpp" />
+    <ClCompile Include="..\src\MainFrm.cpp" />
+    <ClCompile Include="..\src\passportrecognition\cache\PassportImageDiskCache.cpp" />
+    <ClCompile Include="..\src\passportrecognition\engine\abbyy80\Abbyy80RecognitionEngine.cpp" />
+    <ClCompile Include="..\src\passportrecognition\engine\abbyy80\AbbyyString.cpp" />
+    <ClCompile Include="..\src\passportrecognition\engine\abbyy80\AutoDib.cpp" />
+    <ClCompile Include="..\src\passportrecognition\engine\abbyy80\BstrWrap.cpp" />
+    <ClCompile Include="..\src\passportrecognition\operations\FindPassportFrameOperation.cpp" />
+    <ClCompile Include="..\src\passportrecognition\operations\LoadFromDIBOperation.cpp" />
+    <ClCompile Include="..\src\passportrecognition\operations\LoadFromFileOperation.cpp" />
+    <ClCompile Include="..\src\passportrecognition\operations\RegressionLine.cpp" />
+    <ClCompile Include="..\src\passportrecognition\operations\TresholdOperation.cpp" />
+    <ClCompile Include="..\src\passportrecognition\PassportImage.cpp" />
+    <ClCompile Include="..\src\passportrecognition\PassportRecognitionFieldsConstructor.cpp" />
+    <ClCompile Include="..\src\passportrecognition\PassportRecognitionResult.cpp" />
+    <ClCompile Include="..\src\passportrecognition\PassportRecognizer.cpp" />
+    <ClCompile Include="..\src\passportrecognition\profileeditor\PassportRecognitionProfileEditor.cpp" />
+    <ClCompile Include="..\src\passportrecognition\session\ExistingItemEditor.cpp" />
+    <ClCompile Include="..\src\passportrecognition\session\NewItemEditor.cpp" />
+    <ClCompile Include="..\src\passportrecognition\session\PlusDocPassportRecognitionSession.cpp" />
+    <ClCompile Include="..\src\passportrecognition\settings\DataSettings.cpp" />
+    <ClCompile Include="..\src\passportrecognition\settings\EngineSettings.cpp" />
+    <ClCompile Include="..\src\passportrecognition\settings\ImageSettings.cpp" />
+    <ClCompile Include="..\src\passportrecognition\settings\PassportRecognizerSettings.cpp" />
+    <ClCompile Include="..\src\passportrecognition\settings\PassportRecognizerSettingsStorage.cpp" />
+    <ClCompile Include="..\src\passportrecognition\settings\ScannerSettings.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ChooseCowDlg.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\content\RecognitionItemRow.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\content\RecognitionSessionContent.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\FloatEnterEdit.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\FloorPlanCtrl.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\IntValueSliderCtrl.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\PassImageCtrl.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\PassportProfileFieldsListCtrl.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\RulerWnd.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\ctrls\XEdit.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\InputWeightDlg.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\PassportProfileEditorDlg.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\PassportRecognitionDlg.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\settings\DataSettingsPage.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\settings\EngineSettingsPage.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\settings\ImageSettingsPage.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\settings\PassportRecognizerCfgDlg.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\settings\ScannerSettingsPage.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\text\RecognitionItemViewText.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\twain\Dyndll.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\twain\TraceFile.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\twain\TwainEventHandler.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\twain\TwainPP.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\utils\PassportMetricUtils.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\view\RecognitionItemView.cpp" />
+    <ClCompile Include="..\src\passportrecognition\ui\view\RecognitionItemViewCreator.cpp" />
+    <ClCompile Include="..\src\passportsegregation\BucketEntry.cpp" />
+    <ClCompile Include="..\src\passportsegregation\BucketListCtrl.cpp" />
+    <ClCompile Include="..\src\passportsegregation\CowPassport.cpp" />
+    <ClCompile Include="..\src\passportsegregation\CrossLayout.cpp" />
+    <ClCompile Include="..\src\passportsegregation\NamedValue.cpp" />
+    <ClCompile Include="..\src\passportsegregation\PassportSearchDlg.cpp" />
+    <ClCompile Include="..\src\passportsegregation\PassportSegregationDlg.cpp" />
+    <ClCompile Include="..\src\passportsegregation\SearchBucket.cpp" />
+    <ClCompile Include="..\src\passportsegregation\SearchBucketSummary.cpp" />
+    <ClCompile Include="..\src\passportsegregation\SegregationBucket.cpp" />
+    <ClCompile Include="..\src\print\context\CurrencySymbol.cpp" />
+    <ClCompile Include="..\src\print\context\DocumentContext.cpp" />
+    <ClCompile Include="..\src\print\context\DocumentContextBuilder.cpp" />
+    <ClCompile Include="..\src\print\context\numbertotext\NumberToText.cpp" />
+    <ClCompile Include="..\src\print\context\pricetotext\PriceToText.cpp" />
+    <ClCompile Include="..\src\print\context\text\QtyUnitText.cpp" />
+    <ClCompile Include="..\src\print\DocumentArchetype.cpp" />
+    <ClCompile Include="..\src\print\DocumentInstance.cpp" />
+    <ClCompile Include="..\src\print\DocumentInterface.cpp" />
+    <ClCompile Include="..\src\print\DocumentManagerService.cpp" />
+    <ClCompile Include="..\src\print\DocumentSelection.cpp" />
+    <ClCompile Include="..\src\print\documents\Contract.cpp" />
+    <ClCompile Include="..\src\print\documents\ContractAttachment.cpp" />
+    <ClCompile Include="..\src\print\documents\Disinfection.cpp" />
+    <ClCompile Include="..\src\print\documents\Displacement.cpp" />
+    <ClCompile Include="..\src\print\documents\DisplacementViaMarket.cpp" />
+    <ClCompile Include="..\src\print\documents\Foodchain1.cpp" />
+    <ClCompile Include="..\src\print\documents\Foodchain2.cpp" />
+    <ClCompile Include="..\src\print\documents\Foodchain3.cpp" />
+    <ClCompile Include="..\src\print\documents\HealthCertAttachment.cpp" />
+    <ClCompile Include="..\src\print\documents\HentsDocSpecification.cpp" />
+    <ClCompile Include="..\src\print\documents\HerdBook.cpp" />
+    <ClCompile Include="..\src\print\documents\InvoiceDocument.cpp" />
+    <ClCompile Include="..\src\print\documents\InvoiceSpecification.cpp" />
+    <ClCompile Include="..\src\print\documents\InvoicesSummary.cpp" />
+    <ClCompile Include="..\src\print\documents\NormalizedFoodchain.cpp" />
+    <ClCompile Include="..\src\print\documents\OwnDocSpecification.cpp" />
+    <ClCompile Include="..\src\print\documents\PlusDocReport.cpp" />
+    <ClCompile Include="..\src\print\documents\TransportManifest.cpp" />
+    <ClCompile Include="..\src\print\documents\TransportManifest2.cpp" />
+    <ClCompile Include="..\src\print\documents\TransportRegistry.cpp" />
+    <ClCompile Include="..\src\print\documents\WeightSpec.cpp" />
+    <ClCompile Include="..\src\print\documents\WeterinarianBook.cpp" />
+    <ClCompile Include="..\src\print\DocumentTerritory.cpp" />
+    <ClCompile Include="..\src\print\DocumentTerritoryObj.cpp" />
+    <ClCompile Include="..\src\print\ForwardDocumentPredicate.cpp" />
+    <ClCompile Include="..\src\print\options\ComparableFieldDefinition.cpp" />
+    <ClCompile Include="..\src\print\options\DocumentCfgDescription.cpp" />
+    <ClCompile Include="..\src\print\options\DocumentOptionDefinition.cpp" />
+    <ClCompile Include="..\src\print\options\PrintOptionSerializer.cpp" />
+    <ClCompile Include="..\src\print\runtime\DocumentInputUtils.cpp" />
+    <ClCompile Include="..\src\print\runtime\Label.cpp" />
+    <ClCompile Include="..\src\print\runtime\WinPaperUtils.cpp" />
+    <ClCompile Include="..\src\print\ui\DocumentPrintDlg.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\BooleanOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\DayDateOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\DecimalFormatCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\DecimalOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\DisplacementEventsCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\DocumentOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\HentNoOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\IntegerOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\OptionCtrlFactory.cpp" />
+    <ClCompile Include="..\src\print\ui\optionctrls\StringOptionCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\PrintPreviewCtrl.cpp" />
+    <ClCompile Include="..\src\print\ui\PrintProfileDlg.cpp" />
+    <ClCompile Include="..\src\print\ui\PrintProfileEditor.cpp" />
+    <ClCompile Include="..\src\print\ui\PrintRecordOrderDlg.cpp" />
+    <ClCompile Include="..\src\print\ui\verticalstackctrl\VerticalStackCtrl.cpp" />
+    <ClCompile Include="..\src\repo\RepoSession.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseCowListContent.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseCowRow.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseHentListContent.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseHentRow.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseInvoiceDeductionRow.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseInvoiceDeductionsListContent.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseInvoiceRow.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseInvoicesListContent.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseIssuesListContent.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseHeaderListContent.cpp" />
+    <ClCompile Include="..\src\repo\ui\content\PurchaseHeaderRow.cpp" />
+    <ClCompile Include="..\src\repo\ui\ctrls\PurchaseIssuesListCtrl.cpp" />
+    <ClCompile Include="..\src\repo\ui\ctrls\RepoInvoiceDeductionsListCtrl.cpp" />
+    <ClCompile Include="..\src\repo\ui\ctrls\RepoPurchaseCowsListCtrl.cpp" />
+    <ClCompile Include="..\src\repo\ui\ctrls\RepoPurchaseInvoicesListCtrl.cpp" />
+    <ClCompile Include="..\src\repo\ui\ctrls\RepoPurchaseListCtrl.cpp" />
+    <ClCompile Include="..\src\repo\ui\InputCowNoDlg.cpp" />
+    <ClCompile Include="..\src\repo\ui\PurchaseInvoiceCalculator.cpp" />
+    <ClCompile Include="..\src\repo\ui\PurchaseIssuesSolverDlg.cpp" />
+    <ClCompile Include="..\src\repo\ui\RepoDlg.cpp" />
+    <ClCompile Include="..\src\repo\ui\RepoPurchaseContentPage.cpp" />
+    <ClCompile Include="..\src\repo\ui\RepoPurchaseHentsPage.cpp" />
+    <ClCompile Include="..\src\repo\ui\RepoPurchaseSummaryPage.cpp" />
+    <ClCompile Include="..\src\repo\ui\text\DownloadIssueViewText.cpp" />
+    <ClCompile Include="..\src\repo\ui\text\PurchaseCowViewText.cpp" />
+    <ClCompile Include="..\src\repo\ui\text\PurchaseHentViewText.cpp" />
+    <ClCompile Include="..\src\repo\ui\text\PurchaseInvoiceDeductionViewText.cpp" />
+    <ClCompile Include="..\src\repo\ui\text\PurchaseInvoiceViewText.cpp" />
+    <ClCompile Include="..\src\repo\ui\text\PurchaseHeaderViewText.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\DownloadIssueView.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\DownloadIssueViewCreator.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseCowView.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseCowViewCreator.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseHentView.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseHentViewCreator.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseInvoiceDeductionView.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseInvoiceDeductionViewCreator.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseInvoiceView.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseInvoiceViewCreator.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseHeaderView.cpp" />
+    <ClCompile Include="..\src\repo\ui\view\PurchaseHeaderViewCreator.cpp" />
+    <ClCompile Include="..\src\runtime\FarmStructure.cpp" />
+    <ClCompile Include="..\src\runtime\FarmStructureBuilder.cpp" />
+    <ClCompile Include="..\src\runtime\TaskExecutor.cpp" />
+    <ClCompile Include="..\src\runtime\UniqueIds.cpp" />
+    <ClCompile Include="..\src\runtime\UniquePresenceKeys.cpp" />
+    <ClCompile Include="..\src\SeasonAccess.cpp" />
+    <ClCompile Include="..\src\season\OpenSeasonDlg.cpp" />
+    <ClCompile Include="..\src\services\ServiceRegistryImpl.cpp" />
+    <ClCompile Include="..\src\SessionAwareDialog.cpp" />
+    <ClCompile Include="..\src\settings\behaviour\BehaviourPage.cpp" />
+    <ClCompile Include="..\src\settings\deductions\CRUDDeductionDefinition.cpp" />
+    <ClCompile Include="..\src\settings\deductions\CRUDObject.cpp" />
+    <ClCompile Include="..\src\settings\deductions\DeductionDefinitionDlg.cpp" />
+    <ClCompile Include="..\src\settings\deductions\DeductionDefinitionRow.cpp" />
+    <ClCompile Include="..\src\settings\deductions\DeductionDefinitionsPage.cpp" />
+    <ClCompile Include="..\src\settings\deductions\DeductionDefinitionView.cpp" />
+    <ClCompile Include="..\src\settings\deductions\DeductionDefinitionViewCreator.cpp" />
+    <ClCompile Include="..\src\settings\deductions\DeductionDefsContent.cpp" />
+    <ClCompile Include="..\src\settings\DefaultValues.cpp" />
+    <ClCompile Include="..\src\settings\DefaultValuesEditor.cpp" />
+    <ClCompile Include="..\src\settings\defaultvalues\DefaultValuesPage.cpp" />
+    <ClCompile Include="..\src\settings\SettingsDlg.cpp" />
+    <ClCompile Include="..\src\settings\SettingsPropPage.cpp" />
+    <ClCompile Include="..\src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_XP|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\tabs\barn\BarnTab.cpp" />
+    <ClCompile Include="..\src\tabs\barn\CowsTab.cpp" />
+    <ClCompile Include="..\src\tabs\barn\HentsDocsTab.cpp" />
+    <ClCompile Include="..\src\tabs\barn\HerdNumbersBar.cpp" />
+    <ClCompile Include="..\src\tabs\barn\HerdTab.cpp" />
+    <ClCompile Include="..\src\tabs\barn\MoveDocsTab.cpp" />
+    <ClCompile Include="..\src\tabs\barn\OwnDocsTab.cpp" />
+    <ClCompile Include="..\src\tabs\find\FindContainerDlg.cpp" />
+    <ClCompile Include="..\src\tabs\find\FindCowDlg.cpp" />
+    <ClCompile Include="..\src\tabs\find\FindHentDlg.cpp" />
+    <ClCompile Include="..\src\tabs\hents\HentsTab.cpp" />
+    <ClCompile Include="..\src\tabs\invoices\InvoicesTab.cpp" />
+    <ClCompile Include="..\src\tabs\ListTab.cpp" />
+    <ClCompile Include="..\src\tabs\TabPage.cpp" />
+    <ClCompile Include="..\src\text\CountryNameText.cpp" />
+    <ClCompile Include="..\src\text\CowPresenceViewText.cpp" />
+    <ClCompile Include="..\src\text\CowSexText.cpp" />
+    <ClCompile Include="..\src\text\CowViewText.cpp" />
+    <ClCompile Include="..\src\text\DocItemViewText.cpp" />
+    <ClCompile Include="..\src\text\DocNoText.cpp" />
+    <ClCompile Include="..\src\text\DocViewText.cpp" />
+    <ClCompile Include="..\src\text\HentsDocViewText.cpp" />
+    <ClCompile Include="..\src\text\HentText.cpp" />
+    <ClCompile Include="..\src\text\HentTypeString.cpp" />
+    <ClCompile Include="..\src\text\InvoiceNoText.cpp" />
+    <ClCompile Include="..\src\text\InvoiceTypeString.cpp" />
+    <ClCompile Include="..\src\text\InvoiceViewText.cpp" />
+    <ClCompile Include="..\src\text\MotiveString.cpp" />
+    <ClCompile Include="..\src\text\MoveDocViewText.cpp" />
+    <ClCompile Include="..\src\text\OwnDocViewText.cpp" />
+    <ClCompile Include="..\src\text\PayWayString.cpp" />
+    <ClCompile Include="..\src\text\SeasonText.cpp" />
+    <ClCompile Include="..\src\text\YesNoText.cpp" />
+    <ClCompile Include="..\src\uitypes\Color.cpp" />
+    <ClCompile Include="..\src\ui\askfordatedlg\AskForDateDlg.cpp" />
+    <ClCompile Include="..\src\ui\cell\ComboCellBuilder.cpp" />
+    <ClCompile Include="..\src\ui\cell\DecimalCellBuilder.cpp" />
+    <ClCompile Include="..\src\ui\cell\EditCellBuilder.cpp" />
+    <ClCompile Include="..\src\ui\cell\NumericCellBuilder.cpp" />
+    <ClCompile Include="..\src\ui\comboselectdlg\ComboSelectDlg.cpp" />
+    <ClCompile Include="..\src\ui\ExceptionMsgBox.cpp" />
+    <ClCompile Include="..\src\ui\layoutmanager\ETSLayout.cpp" />
+    <ClCompile Include="..\src\ui\listboxselectdlg\ListBoxSelectDlg.cpp" />
+    <ClCompile Include="..\src\ui\menu\MenuBuilder.cpp" />
+    <ClCompile Include="..\src\ui\progressdlg\ComplexProgressDialog.cpp" />
+    <ClCompile Include="..\src\ui\progressdlg\SimpleProgressDialog.cpp" />
+    <ClCompile Include="..\src\ui\question\AnswerButton.cpp" />
+    <ClCompile Include="..\src\ui\question\QuestionBox.cpp" />
+    <ClCompile Include="..\src\ui\question\QuestionDlg.cpp" />
+    <ClCompile Include="..\src\ui\question\QuestionDlgTemplate.cpp" />
+    <ClCompile Include="..\src\ui\Tooltip.cpp" />
+    <ClCompile Include="..\src\ui\treepropsheet\PropPageFrame.cpp" />
+    <ClCompile Include="..\src\ui\treepropsheet\PropPageFrameDefault.cpp" />
+    <ClCompile Include="..\src\ui\treepropsheet\TreePropSheet.cpp" />
+    <ClCompile Include="..\src\ui\waitdlg\WaitDialog.cpp" />
+    <ClCompile Include="..\src\ui\YesNoBox.cpp" />
+    <ClCompile Include="..\src\utils\BmpImageList.cpp" />
+    <ClCompile Include="..\src\utils\Product.cpp" />
+    <ClCompile Include="..\src\utils\StringLoader.cpp" />
+    <ClCompile Include="..\src\utils\TempIconLoader.cpp" />
+    <ClCompile Include="..\src\view\BuyDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\BuyInvoiceViewCreator.cpp" />
+    <ClCompile Include="..\src\view\CompanyView.cpp" />
+    <ClCompile Include="..\src\view\CowInvoiceEntryView.cpp" />
+    <ClCompile Include="..\src\view\CowPresenceView.cpp" />
+    <ClCompile Include="..\src\view\CowPresenceViewCreator.cpp" />
+    <ClCompile Include="..\src\view\CowView.cpp" />
+    <ClCompile Include="..\src\view\CowViewCreator.cpp" />
+    <ClCompile Include="..\src\view\DocItemView.cpp" />
+    <ClCompile Include="..\src\view\DocItemViewCreator.cpp" />
+    <ClCompile Include="..\src\view\DocView.cpp" />
+    <ClCompile Include="..\src\view\DocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\FarmHentViewCreator.cpp" />
+    <ClCompile Include="..\src\view\FatHentsDocView.cpp" />
+    <ClCompile Include="..\src\view\FatHentsDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\FatInvoiceView.cpp" />
+    <ClCompile Include="..\src\view\FatOwnDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\HentsDocView.cpp" />
+    <ClCompile Include="..\src\view\HentsDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\HentView.cpp" />
+    <ClCompile Include="..\src\view\HentViewCreator.cpp" />
+    <ClCompile Include="..\src\view\HerdView.cpp" />
+    <ClCompile Include="..\src\view\InvoiceItemViewCreator.cpp" />
+    <ClCompile Include="..\src\view\InvoiceView.cpp" />
+    <ClCompile Include="..\src\view\InvoiceViewCreator.cpp" />
+    <ClCompile Include="..\src\view\MoveDocView.cpp" />
+    <ClCompile Include="..\src\view\MoveDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\OwnDocView.cpp" />
+    <ClCompile Include="..\src\view\OwnDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\SellDocViewCreator.cpp" />
+    <ClCompile Include="..\src\view\SellInvoiceViewCreator.cpp" />
+    <ClCompile Include="..\src\welcome\WelcomeDlg.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\arrays\DeepDelete.h" />
+    <ClInclude Include="..\..\common\arrays\Enumerator.h" />
+    <ClInclude Include="..\..\common\arrays\NewPtrFlushArray.h" />
+    <ClInclude Include="..\..\common\arrays\SortArray.h" />
+    <ClInclude Include="..\..\common\compare\CompareDefs.h" />
+    <ClInclude Include="..\..\common\compare\TypesCompare.h" />
+    <ClInclude Include="..\..\common\configuration\deductions\DeductionDefinition.h" />
+    <ClInclude Include="..\..\common\configuration\deductions\DeductionDefinitions.h" />
+    <ClInclude Include="..\..\common\configuration\deductions\DeductionDetails.h" />
+    <ClInclude Include="..\..\common\configuration\deductions\IDeductionDefinition.h" />
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportField.h" />
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportFieldDescriptor.h" />
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportFieldMetrics.h" />
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportFields.h" />
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfile.h" />
+    <ClInclude Include="..\..\common\configuration\passportrecognition\PassportRecognitionProfiles.h" />
+    <ClInclude Include="..\..\common\configuration\print\IPrintProfile.h" />
+    <ClInclude Include="..\..\common\configuration\print\OrderSpecifier.h" />
+    <ClInclude Include="..\..\common\configuration\print\PrintOption.h" />
+    <ClInclude Include="..\..\common\configuration\print\PrintProfile.h" />
+    <ClInclude Include="..\..\common\configuration\print\PrintProfiles.h" />
+    <ClInclude Include="..\..\common\configuration\serialization\SerializableDeductionDefinition.h" />
+    <ClInclude Include="..\..\common\configuration\serialization\SerializableDeductionDetails.h" />
+    <ClInclude Include="..\..\common\configuration\serialization\SerializablePassportRecognitionProfile.h" />
+    <ClInclude Include="..\..\common\configuration\serialization\SerializablePrintProfile.h" />
+    <ClInclude Include="..\..\common\configuration\Setting.h" />
+    <ClInclude Include="..\..\common\data\compare\DataComparator.h" />
+    <ClInclude Include="..\..\common\data\datalimits.h" />
+    <ClInclude Include="..\..\common\data\DocKey.h" />
+    <ClInclude Include="..\..\common\data\doctypes\DocTypes.h" />
+    <ClInclude Include="..\..\common\data\HentType.h" />
+    <ClInclude Include="..\..\common\data\henttypes\HentTypes.h" />
+    <ClInclude Include="..\..\common\data\IAgent.h" />
+    <ClInclude Include="..\..\common\data\IBuyDoc.h" />
+    <ClInclude Include="..\..\common\data\IClass.h" />
+    <ClInclude Include="..\..\common\data\ICow.h" />
+    <ClInclude Include="..\..\common\data\ICowEntry.h" />
+    <ClInclude Include="..\..\common\data\IDoc.h" />
+    <ClInclude Include="..\..\common\data\IFarm.h" />
+    <ClInclude Include="..\..\common\data\IHent.h" />
+    <ClInclude Include="..\..\common\data\IHerd.h" />
+    <ClInclude Include="..\..\common\data\IIdable.h" />
+    <ClInclude Include="..\..\common\data\IInDoc.h" />
+    <ClInclude Include="..\..\common\data\IInvoice.h" />
+    <ClInclude Include="..\..\common\data\IMoveDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\Agent.h" />
+    <ClInclude Include="..\..\common\data\impl\BankAccount.h" />
+    <ClInclude Include="..\..\common\data\impl\BuyDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\BuyInvoice.h" />
+    <ClInclude Include="..\..\common\data\impl\Class.h" />
+    <ClInclude Include="..\..\common\data\impl\Cow.h" />
+    <ClInclude Include="..\..\common\data\impl\CowDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\CowEntry.h" />
+    <ClInclude Include="..\..\common\data\impl\CowEntryDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\CowInvoiceEntry.h" />
+    <ClInclude Include="..\..\common\data\impl\CowInvoiceEntryDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\DocContent.h" />
+    <ClInclude Include="..\..\common\data\impl\DocDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\Farm.h" />
+    <ClInclude Include="..\..\common\data\impl\Hent.h" />
+    <ClInclude Include="..\..\common\data\impl\Herd.h" />
+    <ClInclude Include="..\..\common\data\impl\InDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\InvoiceContent.h" />
+    <ClInclude Include="..\..\common\data\impl\InvoiceDeduction.h" />
+    <ClInclude Include="..\..\common\data\impl\InvoiceDeductions.h" />
+    <ClInclude Include="..\..\common\data\impl\InvoiceDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\InvoiceHent.h" />
+    <ClInclude Include="..\..\common\data\impl\InvoiceTemplate.h" />
+    <ClInclude Include="..\..\common\data\impl\MoveDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\OutDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\Season.h" />
+    <ClInclude Include="..\..\common\data\impl\SellDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\SellInvoice.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\BankAccountSerializer.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\DataSerialization.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\InvoiceDeductionSerializer.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\InvoiceDeductionsSerializer.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableAgent.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableBuyDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableBuyInvoice.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableClass.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCow.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowEntry.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowEntryDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntry.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableCowInvoiceEntryDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableDocContent.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableDocDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableFarm.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableHent.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableHerd.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInvoiceContent.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInvoiceDetails.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableInvoiceHent.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableMoveDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableOutDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableSeason.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableSellDoc.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableSellInvoice.h" />
+    <ClInclude Include="..\..\common\data\impl\serialization\SerializableStock.h" />
+    <ClInclude Include="..\..\common\data\impl\Stock.h" />
+    <ClInclude Include="..\..\common\data\impl\User.h" />
+    <ClInclude Include="..\..\common\data\InvoiceDirection.h" />
+    <ClInclude Include="..\..\common\data\InvoiceKind.h" />
+    <ClInclude Include="..\..\common\data\invoicescopes\InvoiceScopes.h" />
+    <ClInclude Include="..\..\common\data\InvoiceType.h" />
+    <ClInclude Include="..\..\common\data\invoicetypes\InvoiceTypes.h" />
+    <ClInclude Include="..\..\common\data\IOutDoc.h" />
+    <ClInclude Include="..\..\common\data\ISeason.h" />
+    <ClInclude Include="..\..\common\data\ISellDoc.h" />
+    <ClInclude Include="..\..\common\data\ISellInvoice.h" />
+    <ClInclude Include="..\..\common\data\IStock.h" />
+    <ClInclude Include="..\..\common\data\IUser.h" />
+    <ClInclude Include="..\..\common\data\Motive.h" />
+    <ClInclude Include="..\..\common\data\motives\Motives.h" />
+    <ClInclude Include="..\..\common\data\payways\PayWays.h" />
+    <ClInclude Include="..\..\common\data\repo\IPurchase.h" />
+    <ClInclude Include="..\..\common\data\repo\IPurchaseCow.h" />
+    <ClInclude Include="..\..\common\data\repo\IPurchaseHent.h" />
+    <ClInclude Include="..\..\common\data\repo\IPurchaseInvoice.h" />
+    <ClInclude Include="..\..\common\data\repo\IPurchaseInvoiceDeduction.h" />
+    <ClInclude Include="..\..\common\data\repo\Purchase.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseCow.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseHeader.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseHeaders.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseHent.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseInvoice.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseInvoiceDeduction.h" />
+    <ClInclude Include="..\..\common\data\repo\PurchaseObjPath.h" />
+    <ClInclude Include="..\..\common\data\repo\Purchases.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\PurchaseHeaderSerializer.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\RepoTypesSerialization.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchase.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseCow.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseHent.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoice.h" />
+    <ClInclude Include="..\..\common\data\repo\serialization\SerializablePurchaseInvoiceDeduction.h" />
+    <ClInclude Include="..\..\common\data\runtime\BuyDocOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\DocTransactionItemTuple.h" />
+    <ClInclude Include="..\..\common\data\runtime\IItem.h" />
+    <ClInclude Include="..\..\common\data\runtime\InDocOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\InvoiceCowsScopeOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\InvoiceDocsScopeOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\InvoiceItemKey.h" />
+    <ClInclude Include="..\..\common\data\runtime\InvoiceTransactionItemTuple.h" />
+    <ClInclude Include="..\..\common\data\runtime\IPurchaseDownloadIssue.h" />
+    <ClInclude Include="..\..\common\data\runtime\ISimpleUser.h" />
+    <ClInclude Include="..\..\common\data\runtime\ItemId.h" />
+    <ClInclude Include="..\..\common\data\runtime\ItemIndex.h" />
+    <ClInclude Include="..\..\common\data\runtime\MoveDocOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\OperationArguments.h" />
+    <ClInclude Include="..\..\common\data\runtime\OutDocOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadIssue.h" />
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadIssueCategory.h" />
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadIssues.h" />
+    <ClInclude Include="..\..\common\data\runtime\PurchaseDownloadOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\SellDocOperations.h" />
+    <ClInclude Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueCategorySerializer.h" />
+    <ClInclude Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssueSerializer.h" />
+    <ClInclude Include="..\..\common\data\runtime\serialization\PurchaseDownloadIssuesSerializer.h" />
+    <ClInclude Include="..\..\common\data\runtime\serialization\RuntimeTypesSerialization.h" />
+    <ClInclude Include="..\..\common\data\runtime\serialization\SerializableOperationArguments.h" />
+    <ClInclude Include="..\..\common\data\runtime\serialization\SolutionParametersSerializer.h" />
+    <ClInclude Include="..\..\common\data\runtime\SimpleUser.h" />
+    <ClInclude Include="..\..\common\data\runtime\SolutionParameters.h" />
+    <ClInclude Include="..\..\common\data\runtime\SolutionType.h" />
+    <ClInclude Include="..\..\common\data\types\AccountNo.h" />
+    <ClInclude Include="..\..\common\data\types\countries\Countries.h" />
+    <ClInclude Include="..\..\common\data\types\countries\Country.h" />
+    <ClInclude Include="..\..\common\data\types\CowNo.h" />
+    <ClInclude Include="..\..\common\data\types\CowSex.h" />
+    <ClInclude Include="..\..\common\data\types\FarmNo.h" />
+    <ClInclude Include="..\..\common\data\types\HentNo.h" />
+    <ClInclude Include="..\..\common\data\types\HerdNo.h" />
+    <ClInclude Include="..\..\common\data\types\serialization\TypesSerialization.h" />
+    <ClInclude Include="..\..\common\data\utils\GetDocHerd.h" />
+    <ClInclude Include="..\..\common\data\utils\GetDocInvoice.h" />
+    <ClInclude Include="..\..\common\errortoken\ErrorToken.h" />
+    <ClInclude Include="..\..\common\exception\TagException.h" />
+    <ClInclude Include="..\..\common\filesystem\FileDeleterFinalizer.h" />
+    <ClInclude Include="..\..\common\filesystem\files.h" />
+    <ClInclude Include="..\..\common\filesystem\paths.h" />
+    <ClInclude Include="..\..\common\format\StringFormat.h" />
+    <ClInclude Include="..\..\common\logic\changedetect\ChangeEvent.h" />
+    <ClInclude Include="..\..\common\logic\changedetect\Diffrence.h" />
+    <ClInclude Include="..\..\common\logic\changedetect\DocChangeDetector.h" />
+    <ClInclude Include="..\..\common\logic\changedetect\InvoiceChangeDetector.h" />
+    <ClInclude Include="..\..\common\logic\cowtrail\CowPath.h" />
+    <ClInclude Include="..\..\common\logic\cowtrail\CowTracker.h" />
+    <ClInclude Include="..\..\common\logic\cowtrail\CowTrail.h" />
+    <ClInclude Include="..\..\common\logic\cowtrail\ICowTrail.h" />
+    <ClInclude Include="..\..\common\logic\cowtrail\IHerdFootprint.h" />
+    <ClInclude Include="..\..\common\logic\herdregistry\CowPresenceKey.h" />
+    <ClInclude Include="..\..\common\logic\herdregistry\HerdRegistry.h" />
+    <ClInclude Include="..\..\common\logic\herdregistry\ICowPresence.h" />
+    <ClInclude Include="..\..\common\logic\runtime\LogicException.h" />
+    <ClInclude Include="..\..\common\mustache\Mustache.h" />
+    <ClInclude Include="..\..\common\ported\strptime.h" />
+    <ClInclude Include="..\..\common\progress\ComplexProgress.h" />
+    <ClInclude Include="..\..\common\progress\SafeComplexProgress.h" />
+    <ClInclude Include="..\..\common\progress\SafeSimpleProgress.h" />
+    <ClInclude Include="..\..\common\progress\SimpleProgress.h" />
+    <ClInclude Include="..\..\common\service\IBKService.h" />
+    <ClInclude Include="..\..\common\service\INotificationPublish.h" />
+    <ClInclude Include="..\..\common\service\messages\CowRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\DeductionDefinitionRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\FarmOrganisation.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchClassesResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchCowsResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchDeductionDefinitionsResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchDocsResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchDocsResponses.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchHentsResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchInvoicesResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchManifest.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchPassportRecognitionProfilesResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchPrintProfilesResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchPurchaseHeadersResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchPurchaseResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchPurchasesResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\FetchStocksResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\HentRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\LoginRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\LoginResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\MarkInvoicePaidRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\OpenSeasonResponse.h" />
+    <ClInclude Include="..\..\common\service\messages\PassportRecognitionProfileRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\PrintProfileRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\PurchaseQuery.h" />
+    <ClInclude Include="..\..\common\service\messages\Settings.h" />
+    <ClInclude Include="..\..\common\service\messages\TransactionRequest.h" />
+    <ClInclude Include="..\..\common\service\messages\TransactionResponse.h" />
+    <ClInclude Include="..\..\common\service\notification\CowNotification.h" />
+    <ClInclude Include="..\..\common\service\notification\CowNotifications.h" />
+    <ClInclude Include="..\..\common\service\notification\DeleteNotification.h" />
+    <ClInclude Include="..\..\common\service\notification\DeleteNotifications.h" />
+    <ClInclude Include="..\..\common\service\notification\DocNotification.h" />
+    <ClInclude Include="..\..\common\service\notification\DocNotifications.h" />
+    <ClInclude Include="..\..\common\service\notification\HentNotification.h" />
+    <ClInclude Include="..\..\common\service\notification\HentNotifications.h" />
+    <ClInclude Include="..\..\common\service\notification\LockNotification.h" />
+    <ClInclude Include="..\..\common\service\notification\LockNotifications.h" />
+    <ClInclude Include="..\..\common\service\notification\Notification.h" />
+    <ClInclude Include="..\..\common\service\notification\NotificationEnvelope.h" />
+    <ClInclude Include="..\..\common\service\notification\NotificationRelay.h" />
+    <ClInclude Include="..\..\common\service\notification\UnlockNotification.h" />
+    <ClInclude Include="..\..\common\service\notification\UnlockNotifications.h" />
+    <ClInclude Include="..\..\common\service\TypesRegistration.h" />
+    <ClInclude Include="..\..\common\service\wire\CowWireObject.h" />
+    <ClInclude Include="..\..\common\service\wire\HentWireObject.h" />
+    <ClInclude Include="..\..\common\string\IntString.h" />
+    <ClInclude Include="..\..\common\string\TextUtils.h" />
+    <ClInclude Include="..\..\common\string\ToString.h" />
+    <ClInclude Include="..\..\common\string\Utf8.h" />
+    <ClInclude Include="..\..\common\types\DateRange.h" />
+    <ClInclude Include="..\..\common\types\DateTime.h" />
+    <ClInclude Include="..\..\common\types\Decimal.h" />
+    <ClInclude Include="..\..\common\types\DecimalRange.h" />
+    <ClInclude Include="..\..\common\types\GeoCoordinate.h" />
+    <ClInclude Include="..\..\common\types\IntRange.h" />
+    <ClInclude Include="..\..\common\types\Latitude.h" />
+    <ClInclude Include="..\..\common\types\Longitude.h" />
+    <ClInclude Include="..\..\common\types\NullDecimal.h" />
+    <ClInclude Include="..\..\common\types\NullDouble.h" />
+    <ClInclude Include="..\..\common\types\NullInt.h" />
+    <ClInclude Include="..\..\common\types\NullString.h" />
+    <ClInclude Include="..\..\common\types\Time.h" />
+    <ClInclude Include="..\..\common\utils\BoolUtil.h" />
+    <ClInclude Include="..\..\common\utils\IdGenerator.h" />
+    <ClInclude Include="..\..\common\utils\iif.h" />
+    <ClInclude Include="..\..\common\utils\JsonUtils.h" />
+    <ClInclude Include="..\..\common\utils\SafeGet.h" />
+    <ClInclude Include="..\..\common\utils\WildcardMatch.h" />
+    <ClInclude Include="..\..\common\validation\CowNoValidator.h" />
+    <ClInclude Include="..\..\common\validation\HentNoValidator.h" />
+    <ClInclude Include="..\src\App.h" />
+    <ClInclude Include="..\src\AppServices.h" />
+    <ClInclude Include="..\src\barcodescanner\BarcodeScanner.h" />
+    <ClInclude Include="..\src\barcodescanner\BarcodeScannerObserver.h" />
+    <ClInclude Include="..\src\barcodescanner\BarcodeScannerService.h" />
+    <ClInclude Include="..\src\barcodescanner\Opos.h" />
+    <ClInclude Include="..\src\barcodescanner\oposscanner.h" />
+    <ClInclude Include="..\src\barcodescanner\ScannerConnectionStatus.h" />
+    <ClInclude Include="..\src\barcodescanner\ScannerEventListener.h" />
+    <ClInclude Include="..\src\barcodescanner\symbolscanner.h" />
+    <ClInclude Include="..\src\barcodescanner\ui\BarcodeInputDlg.h" />
+    <ClInclude Include="..\src\barcodescanner\ui\ScannerStatusBtn.h" />
+    <ClInclude Include="..\src\barcodescanner\ui\ScannerStatusIndicator.h" />
+    <ClInclude Include="..\src\bkprint\renderer\CompositeObject.h" />
+    <ClInclude Include="..\src\bkprint\renderer\DocumentRenderer.h" />
+    <ClInclude Include="..\src\bkprint\renderer\ExpandableTemplateDataSource.h" />
+    <ClInclude Include="..\src\bkprint\renderer\FixedTemplateDataSource.h" />
+    <ClInclude Include="..\src\bkprint\renderer\ImgObject.h" />
+    <ClInclude Include="..\src\bkprint\renderer\Object.h" />
+    <ClInclude Include="..\src\bkprint\renderer\Page.h" />
+    <ClInclude Include="..\src\bkprint\renderer\Paper.h" />
+    <ClInclude Include="..\src\bkprint\renderer\PrintOut.h" />
+    <ClInclude Include="..\src\bkprint\renderer\RealizedTextStyle.h" />
+    <ClInclude Include="..\src\bkprint\renderer\RectObject.h" />
+    <ClInclude Include="..\src\bkprint\renderer\SizeCalculator.h" />
+    <ClInclude Include="..\src\bkprint\renderer\TemplateRenderer.h" />
+    <ClInclude Include="..\src\bkprint\renderer\TextObject.h" />
+    <ClInclude Include="..\src\bkprint\renderer\Values.h" />
+    <ClInclude Include="..\src\bkprint\template\Band.h" />
+    <ClInclude Include="..\src\bkprint\template\Border.h" />
+    <ClInclude Include="..\src\bkprint\template\DocumentFooter.h" />
+    <ClInclude Include="..\src\bkprint\template\ExpandableTemplate.h" />
+    <ClInclude Include="..\src\bkprint\template\Field.h" />
+    <ClInclude Include="..\src\bkprint\template\FieldFactory.h" />
+    <ClInclude Include="..\src\bkprint\template\FieldsContainer.h" />
+    <ClInclude Include="..\src\bkprint\template\FieldVisitor.h" />
+    <ClInclude Include="..\src\bkprint\template\FixedTemplate.h" />
+    <ClInclude Include="..\src\bkprint\template\ImageField.h" />
+    <ClInclude Include="..\src\bkprint\template\LogoField.h" />
+    <ClInclude Include="..\src\bkprint\template\PageHeader.h" />
+    <ClInclude Include="..\src\bkprint\template\RectField.h" />
+    <ClInclude Include="..\src\bkprint\template\Template.h" />
+    <ClInclude Include="..\src\bkprint\template\TemplateCast.h" />
+    <ClInclude Include="..\src\bkprint\template\TemplateVisitor.h" />
+    <ClInclude Include="..\src\bkprint\template\TextAlignment.h" />
+    <ClInclude Include="..\src\bkprint\template\TextField.h" />
+    <ClInclude Include="..\src\bkprint\template\TextStyle.h" />
+    <ClInclude Include="..\src\bkprint\template\TextStyleIndex.h" />
+    <ClInclude Include="..\src\bkprint\template\unmarshaler\LogoSettingVisitor.h" />
+    <ClInclude Include="..\src\bkprint\template\unmarshaler\TemplateUnmarshalException.h" />
+    <ClInclude Include="..\src\bkprint\template\unmarshaler\TemplateUnmarshaller.h" />
+    <ClInclude Include="..\src\bkprint\template\unmarshaler\TypesUnmarshaler.h" />
+    <ClInclude Include="..\src\bkprint\template\util\AlignUtil.h" />
+    <ClInclude Include="..\src\bkprint\template\util\ColorUtil.h" />
+    <ClInclude Include="..\src\bkprint\template\util\PaperOrientationUtil.h" />
+    <ClInclude Include="..\src\bkprint\template\util\PaperTypeUtil.h" />
+    <ClInclude Include="..\src\bkprint\types\Font.h" />
+    <ClInclude Include="..\src\bkprint\types\PaperOrientation.h" />
+    <ClInclude Include="..\src\bkprint\types\PaperType.h" />
+    <ClInclude Include="..\src\ChildFrm.h" />
+    <ClInclude Include="..\src\ChildView.h" />
+    <ClInclude Include="..\src\collector\Collector.h" />
+    <ClInclude Include="..\src\collector\CollectorDeviceStatus.h" />
+    <ClInclude Include="..\src\collector\CollectorException.h" />
+    <ClInclude Include="..\src\collector\CollectorServer.h" />
+    <ClInclude Include="..\src\collector\CollectorServerInterface.h" />
+    <ClInclude Include="..\src\collector\CollectorServerObserver.h" />
+    <ClInclude Include="..\src\collector\CollectorSession.h" />
+    <ClInclude Include="..\src\collector\ConnectionException.h" />
+    <ClInclude Include="..\src\collector\data\DownloadCow.h" />
+    <ClInclude Include="..\src\collector\data\DownloadDoc.h" />
+    <ClInclude Include="..\src\collector\data\DownloadHent.h" />
+    <ClInclude Include="..\src\collector\data\DownloadSnapshot.h" />
+    <ClInclude Include="..\src\collector\data\DownloadSnapshotHeader.h" />
+    <ClInclude Include="..\src\collector\data\UploadCow.h" />
+    <ClInclude Include="..\src\collector\data\UploadCowClass.h" />
+    <ClInclude Include="..\src\collector\data\UploadHent.h" />
+    <ClInclude Include="..\src\collector\data\UploadProperties.h" />
+    <ClInclude Include="..\src\collector\data\UploadSnapshot.h" />
+    <ClInclude Include="..\src\collector\import\items\CowImportItem.h" />
+    <ClInclude Include="..\src\collector\import\items\ImportItem.h" />
+    <ClInclude Include="..\src\collector\import\items\ImportItemVisitor.h" />
+    <ClInclude Include="..\src\collector\import\items\InDocImportItem.h" />
+    <ClInclude Include="..\src\collector\import\items\OutDocImportItem.h" />
+    <ClInclude Include="..\src\collector\import\problems\EmptyInDocImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\EmptyOutDocImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\HentImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\HerdImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\ImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\MainClassImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\ProblemVisitor.h" />
+    <ClInclude Include="..\src\collector\import\problems\TermBuyClassImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\problems\TermSellClassImportProblem.h" />
+    <ClInclude Include="..\src\collector\import\SnapshotImportSession.h" />
+    <ClInclude Include="..\src\collector\ICollector.h" />
+    <ClInclude Include="..\src\collector\snapshotstorage\CollectorSnapshotStorage.h" />
+    <ClInclude Include="..\src\collector\ui\CollectorDownloadDlg.h" />
+    <ClInclude Include="..\src\collector\ui\CollectorManagerDlg.h" />
+    <ClInclude Include="..\src\collector\ui\CollectorServerStatusBarCtrl.h" />
+    <ClInclude Include="..\src\collector\ui\CollectorStatusColors.h" />
+    <ClInclude Include="..\src\collector\ui\content\CollectorListContent.h" />
+    <ClInclude Include="..\src\collector\ui\content\SnapshotListContent.h" />
+    <ClInclude Include="..\src\collector\ui\text\CollectorStatusString.h" />
+    <ClInclude Include="..\src\collector\ui\text\CollectorText.h" />
+    <ClInclude Include="..\src\compare\CowPresenceViewComparator.h" />
+    <ClInclude Include="..\src\compare\DataComparator.h" />
+    <ClInclude Include="..\src\compare\DocComparator.h" />
+    <ClInclude Include="..\src\compare\HentComparator.h" />
+    <ClInclude Include="..\src\compare\HentsDocComparator.h" />
+    <ClInclude Include="..\src\compare\InvoiceViewComparator.h" />
+    <ClInclude Include="..\src\compare\MemberComparator.h" />
+    <ClInclude Include="..\src\compare\MoveDocComparator.h" />
+    <ClInclude Include="..\src\compare\OwnDocComparator.h" />
+    <ClInclude Include="..\src\compare\SeasonComparator.h" />
+    <ClInclude Include="..\src\compare\SortAttribute.h" />
+    <ClInclude Include="..\src\compare\SortAttributes.h" />
+    <ClInclude Include="..\src\content\AgentsComboContent.h" />
+    <ClInclude Include="..\src\content\AllCowsListContent.h" />
+    <ClInclude Include="..\src\content\BankAccountsComboContent.h" />
+    <ClInclude Include="..\src\content\BuyDocsListContent.h" />
+    <ClInclude Include="..\src\content\BuyInvoicesListContent.h" />
+    <ClInclude Include="..\src\content\ClassesComboContent.h" />
+    <ClInclude Include="..\src\content\CowPresenceRow.h" />
+    <ClInclude Include="..\src\content\CowsListContent.h" />
+    <ClInclude Include="..\src\content\DocItemRow.h" />
+    <ClInclude Include="..\src\content\HentSearchContent.h" />
+    <ClInclude Include="..\src\content\HentRow.h" />
+    <ClInclude Include="..\src\content\HentsDocRow.h" />
+    <ClInclude Include="..\src\content\HentsDocsListContent.h" />
+    <ClInclude Include="..\src\content\HerdsComboContent.h" />
+    <ClInclude Include="..\src\content\InCowsListContent.h" />
+    <ClInclude Include="..\src\content\InDocsListContent.h" />
+    <ClInclude Include="..\src\content\InvoiceRow.h" />
+    <ClInclude Include="..\src\content\InvoiceRowsIndex.h" />
+    <ClInclude Include="..\src\content\InvoicesListContent.h" />
+    <ClInclude Include="..\src\content\MoveDocRow.h" />
+    <ClInclude Include="..\src\content\MoveDocsListContent.h" />
+    <ClInclude Include="..\src\content\OutDocsListContent.h" />
+    <ClInclude Include="..\src\content\OwnDocRow.h" />
+    <ClInclude Include="..\src\content\OwnDocsListContent.h" />
+    <ClInclude Include="..\src\content\predicate\AndPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceAgeRangePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceBirthDatePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceBoughtFromPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceCowNoPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceCowSexPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceHerdEntryDatePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceHerdExitDatePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceOwnClassPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceOwnStockPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresencePassportNoPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceSoldToPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceViewPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\CowPresenceWeightRangePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentAliasPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentCityPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentFiscalNoPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentHentNoPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentHentTypePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentNamePredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentPersonalNoPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentPOBoxPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentStreetPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentViewPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\HentZipPredicate.h" />
+    <ClInclude Include="..\src\content\predicate\Predicate.h" />
+    <ClInclude Include="..\src\content\SellDocsListContent.h" />
+    <ClInclude Include="..\src\content\DocTransactionContent.h" />
+    <ClInclude Include="..\src\content\SellInvoicesListContent.h" />
+    <ClInclude Include="..\src\content\SimpleInvoicesListContent.h" />
+    <ClInclude Include="..\src\content\StocksComboContent.h" />
+    <ClInclude Include="..\src\ContextAccess.h" />
+    <ClInclude Include="..\src\context\ContextDestructor.h" />
+    <ClInclude Include="..\src\context\ContextException.h" />
+    <ClInclude Include="..\src\context\ContextInitialiser.h" />
+    <ClInclude Include="..\src\context\CowClientObject.h" />
+    <ClInclude Include="..\src\context\ForwardHerdObserver.h" />
+    <ClInclude Include="..\src\context\ForwardSeasonObserver.h" />
+    <ClInclude Include="..\src\context\HentClientObject.h" />
+    <ClInclude Include="..\src\context\HerdAudience.h" />
+    <ClInclude Include="..\src\context\HerdObserver.h" />
+    <ClInclude Include="..\src\context\NotificationRelayImpl.h" />
+    <ClInclude Include="..\src\context\NotificationSubscriber.h" />
+    <ClInclude Include="..\src\context\object\BuyDocClientObject.h" />
+    <ClInclude Include="..\src\context\object\BuyInvoiceClientObject.h" />
+    <ClInclude Include="..\src\context\object\ClientObject.h" />
+    <ClInclude Include="..\src\context\object\CowClientObject.h" />
+    <ClInclude Include="..\src\context\object\HentClientObject.h" />
+    <ClInclude Include="..\src\context\object\InDocClientObject.h" />
+    <ClInclude Include="..\src\context\object\MoveDocClientObject.h" />
+    <ClInclude Include="..\src\context\object\OutDocClientObject.h" />
+    <ClInclude Include="..\src\context\object\SellDocClientObject.h" />
+    <ClInclude Include="..\src\context\object\SellInvoiceClientObject.h" />
+    <ClInclude Include="..\src\context\Observerable.h" />
+    <ClInclude Include="..\src\context\SeasonObserver.h" />
+    <ClInclude Include="..\src\context\SeasonSession.h" />
+    <ClInclude Include="..\src\context\SeasonSessionImpl.h" />
+    <ClInclude Include="..\src\context\transaction\DefaultValuesApplier.h" />
+    <ClInclude Include="..\src\context\transaction\NoOpCowEditor.h" />
+    <ClInclude Include="..\src\context\UserSettings.h" />
+    <ClInclude Include="..\src\context\UserSettingsImpl.h" />
+    <ClInclude Include="..\src\context\transaction\BuyDocTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\CowEditor.h" />
+    <ClInclude Include="..\src\context\transaction\CowsScopeInvoiceTransactionFacade.h" />
+    <ClInclude Include="..\src\context\transaction\InvoiceTransactionDeductionItem.h" />
+    <ClInclude Include="..\src\context\transaction\DeductionItemIndex.h" />
+    <ClInclude Include="..\src\context\transaction\DocItem.h" />
+    <ClInclude Include="..\src\context\transaction\DocsScopeInvoiceTransactionFacade.h" />
+    <ClInclude Include="..\src\context\transaction\DownloadPurchaseTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\InDocTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\InvoiceCowsTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\InvoiceDocsTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\InvoiceTransactionItem.h" />
+    <ClInclude Include="..\src\context\transaction\InvoiceItemIndex.h" />
+    <ClInclude Include="..\src\context\transaction\DocItemIndex.h" />
+    <ClInclude Include="..\src\context\transaction\ITransactionInterface.h" />
+    <ClInclude Include="..\src\context\transaction\MinusDocTransactionFacade.h" />
+    <ClInclude Include="..\src\context\transaction\MoveDocTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\ObserverableInvoiceTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\ObserverableTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\OutDocTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\PlusDocTransactionFacade.h" />
+    <ClInclude Include="..\src\context\transaction\SellDocTransaction.h" />
+    <ClInclude Include="..\src\context\transaction\TransactionCowEditor.h" />
+    <ClInclude Include="..\src\context\transaction\TransactionNewCowEditor.h" />
+    <ClInclude Include="..\src\context\transaction\TransactionException.h" />
+    <ClInclude Include="..\src\context\transaction\TransactionObserver.h" />
+    <ClInclude Include="..\src\context\transaction\TransactionState.h" />
+    <ClInclude Include="..\src\context\UIBridge.h" />
+    <ClInclude Include="..\src\context\XContext.h" />
+    <ClInclude Include="..\src\cow\CowDlg.h" />
+    <ClInclude Include="..\src\cow\CowSelectDlg.h" />
+    <ClInclude Include="..\src\cow\LonlyCowEditor.h" />
+    <ClInclude Include="..\src\cow\CowSelectInterface.h" />
+    <ClInclude Include="..\src\cow\ScanCowBCdsWizard.h" />
+    <ClInclude Include="..\src\ctrls\AccountNoEdit.h" />
+    <ClInclude Include="..\src\ctrls\agerange\AgeRangeCtrl.h" />
+    <ClInclude Include="..\src\ctrls\arrowbutton\ArrowButton.h" />
+    <ClInclude Include="..\src\ctrls\BaseCombo.h" />
+    <ClInclude Include="..\src\ctrls\checkablegroup\CheckableGroupBox.h" />
+    <ClInclude Include="..\src\ctrls\checkboxlist\CheckBoxListBox.h" />
+    <ClInclude Include="..\src\ctrls\checkboxlist\CheckBoxItem.h" />
+    <ClInclude Include="..\src\ctrls\clickablegroup\ClickableGroupBox.h" />
+    <ClInclude Include="..\src\ctrls\coloredit\ColorEdit.h" />
+    <ClInclude Include="..\src\ctrls\contentlistctrl\ContentListCtrl.h" />
+    <ClInclude Include="..\src\ctrls\contentlistctrl\ContentObserver.h" />
+    <ClInclude Include="..\src\ctrls\contentlistctrl\ForwardContentObserver.h" />
+    <ClInclude Include="..\src\ctrls\contentlistctrl\ListContent.h" />
+    <ClInclude Include="..\src\ctrls\contentlistctrl\ListRow.h" />
+    <ClInclude Include="..\src\ctrls\contentlistctrl\NullListRow.h" />
+    <ClInclude Include="..\src\ctrls\coolbtn\CoolBtn.h" />
+    <ClInclude Include="..\src\ctrls\countrybutton\CountryButton.h" />
+    <ClInclude Include="..\src\ctrls\countryedit\CountryEdit.h" />
+    <ClInclude Include="..\src\ctrls\countryflags\CountryFlagsImageList.h" />
+    <ClInclude Include="..\src\ctrls\CowNoEdit.h" />
+    <ClInclude Include="..\src\ctrls\cownowildcardedit\CowNoWildcardEdit.h" />
+    <ClInclude Include="..\src\ctrls\cowsexbtn\CowSexBtn.h" />
+    <ClInclude Include="..\src\ctrls\cowsexcombo\CowSexCombo.h" />
+    <ClInclude Include="..\src\ctrls\dateedit\dateedit.h" />
+    <ClInclude Include="..\src\ctrls\daterange\DateRangeCtrl.h" />
+    <ClInclude Include="..\src\ctrls\decimaledit\DecimalEdit.h" />
+    <ClInclude Include="..\src\ctrls\decimalrange\DecimalRangeCtrl.h" />
+    <ClInclude Include="..\src\ctrls\dimedit\DimEditCtrl.h" />
+    <ClInclude Include="..\src\ctrls\dwmbtn\DayWeekMonthBtn.h" />
+    <ClInclude Include="..\src\ctrls\editwithbtnctrl\editwithbtnctrl.h" />
+    <ClInclude Include="..\src\ctrls\encodingcombo\EncodingCombo.h" />
+    <ClInclude Include="..\src\ctrls\enteredit\EnterEdit.h" />
+    <ClInclude Include="..\src\ctrls\ExtrasMemo.h" />
+    <ClInclude Include="..\src\ctrls\FilterEdit\FilterEdit.h" />
+    <ClInclude Include="..\src\ctrls\freeimagectrl\FreeImageCtrl.h" />
+    <ClInclude Include="..\src\ctrls\GeoCoordinateEdit.h" />
+    <ClInclude Include="..\src\ctrls\hentbtn\HentBtn.h" />
+    <ClInclude Include="..\src\ctrls\HentNoEdit.h" />
+    <ClInclude Include="..\src\ctrls\HentTypeCombo.h" />
+    <ClInclude Include="..\src\ctrls\hourminuteedit\HourMinuteEdit.h" />
+    <ClInclude Include="..\src\ctrls\integeredit\IntegerEdit.h" />
+    <ClInclude Include="..\src\ctrls\invoicetypebtn\InvoiceTypeBtn.h" />
+    <ClInclude Include="..\src\ctrls\invoicetypecombo\InvoiceTypeCombo.h" />
+    <ClInclude Include="..\src\ctrls\LatitudeEdit.h" />
+    <ClInclude Include="..\src\ctrls\layoutlistctrl\ColumnLayout.h" />
+    <ClInclude Include="..\src\ctrls\layoutlistctrl\HeaderColumn.h" />
+    <ClInclude Include="..\src\ctrls\layoutlistctrl\LayoutHeaderCtrl.h" />
+    <ClInclude Include="..\src\ctrls\layoutlistctrl\LayoutListCtrl.h" />
+    <ClInclude Include="..\src\ctrls\layoutlistctrl\ListHeaderDescriptor.h" />
+    <ClInclude Include="..\src\ctrls\layoutlistctrl\ListHeaderLayout.h" />
+    <ClInclude Include="..\src\ctrls\LongitudeEdit.h" />
+    <ClInclude Include="..\src\ctrls\maskededit\OXMaskedEdit.h" />
+    <ClInclude Include="..\src\ctrls\MotiveCombo.h" />
+    <ClInclude Include="..\src\ctrls\numericedit\NumericEdit.h" />
+    <ClInclude Include="..\src\ctrls\ownclasswnd\OwnClassWnd.h" />
+    <ClInclude Include="..\src\ctrls\ownrdrwlistctrl\OwnrDrwListCtrl.h" />
+    <ClInclude Include="..\src\ctrls\paywaycombo\PayWayCombo.h" />
+    <ClInclude Include="..\src\ctrls\pngbutton\PngButton.h" />
+    <ClInclude Include="..\src\ctrls\pngmenubutton\PngMenuButton.h" />
+    <ClInclude Include="..\src\ctrls\sectionheader\SectionHeader.h" />
+    <ClInclude Include="..\src\ctrls\stdedit\stdedit.h" />
+    <ClInclude Include="..\src\ctrls\tabctrl\CustomTabCtrl.h" />
+    <ClInclude Include="..\src\ctrls\tabctrl\ThemeUtil.h" />
+    <ClInclude Include="..\src\ctrls\tipedit\TipEdit.h" />
+    <ClInclude Include="..\src\ctrls\tipwnd\TimerTipWnd.h" />
+    <ClInclude Include="..\src\ctrls\tipwnd\TipWnd.h" />
+    <ClInclude Include="..\src\ctrls\tipwnd\TipWndStyle.h" />
+    <ClInclude Include="..\src\ctrls\vatratecombo\VATCombo.h" />
+    <ClInclude Include="..\src\ctrls\vnavigation\VNavigation.h" />
+    <ClInclude Include="..\src\ctrls\xcolorstatic\FontSize.h" />
+    <ClInclude Include="..\src\ctrls\xcolorstatic\XColorStatic.h" />
+    <ClInclude Include="..\src\ctrls\xstatusbar\XStatusBar.h" />
+    <ClInclude Include="..\src\ctrls\XTabCtrl\XTabCtrl.h" />
+    <ClInclude Include="..\src\ctrls\xtoolbar\XToolBar.h" />
+    <ClInclude Include="..\src\doc\BuyDocDlg.h" />
+    <ClInclude Include="..\src\doc\CandidatesContent.h" />
+    <ClInclude Include="..\src\doc\CowPresenceSelectRow.h" />
+    <ClInclude Include="..\src\doc\ctrls\DocItemListCtrl.h" />
+    <ClInclude Include="..\src\doc\ctrls\ItemCountStatic.h" />
+    <ClInclude Include="..\src\doc\ctrls\RecognizePassportsBtn.h" />
+    <ClInclude Include="..\src\doc\DocSelectDlg.h" />
+    <ClInclude Include="..\src\doc\DocSelectInterface.h" />
+    <ClInclude Include="..\src\doc\FastInDocDlg.h" />
+    <ClInclude Include="..\src\doc\InDocDlg.h" />
+    <ClInclude Include="..\src\doc\MoveDocDlg.h" />
+    <ClInclude Include="..\src\doc\OutDocDlg.h" />
+    <ClInclude Include="..\src\doc\SellDocDlg.h" />
+    <ClInclude Include="..\src\doc\TransactionSelectInterface.h" />
+    <ClInclude Include="..\src\excelexport\ExcelExport.h" />
+    <ClInclude Include="..\src\excelexport\ExcelExportSettings.h" />
+    <ClInclude Include="..\src\excelexport\ExcelExportSettingsDlg.h" />
+    <ClInclude Include="..\src\farmaccounts\FarmAccountDlg.h" />
+    <ClInclude Include="..\src\farmaccounts\FarmAccountsManagerDlg.h" />
+    <ClInclude Include="..\src\farmaccounts\FarmAccountsStorage.h" />
+    <ClInclude Include="..\src\farmaccounts\Farms.h" />
+    <ClInclude Include="..\src\header\BuyInvoiceCalculationHeader.h" />
+    <ClInclude Include="..\src\header\CowListHeader.h" />
+    <ClInclude Include="..\src\header\CowPresenceListHeader.h" />
+    <ClInclude Include="..\src\header\CowInStockPresenceListHeader.h" />
+    <ClInclude Include="..\src\header\HeaderLayoutConfiguration.h" />
+    <ClInclude Include="..\src\header\HentsDocsListHeader.h" />
+    <ClInclude Include="..\src\header\InvoiceListHeader.h" />
+    <ClInclude Include="..\src\header\MoveDocsListHeader.h" />
+    <ClInclude Include="..\src\header\OwnDocsListHeader.h" />
+    <ClInclude Include="..\src\header\SellInvoiceCalculationHeader.h" />
+    <ClInclude Include="..\src\hent\HentDlg.h" />
+    <ClInclude Include="..\src\hent\HentEditor.h" />
+    <ClInclude Include="..\src\hent\HentSearchDlg.h" />
+    <ClInclude Include="..\src\image\CGdiPlusBitmap.h" />
+    <ClInclude Include="..\src\image\fipWinImageEx.h" />
+    <ClInclude Include="..\src\image\Png.h" />
+    <ClInclude Include="..\src\info\CompanyInfoDlg.h" />
+    <ClInclude Include="..\src\invoice\BaseInvoiceDlg.h" />
+    <ClInclude Include="..\src\invoice\BuyDocSelectInterface.h" />
+    <ClInclude Include="..\src\invoice\BuyInvoiceCowScopeDlg.h" />
+    <ClInclude Include="..\src\invoice\BuyInvoiceCowsSelectInterface.h" />
+    <ClInclude Include="..\src\invoice\BuyInvoiceDlg.h" />
+    <ClInclude Include="..\src\invoice\BuyInvoiceDocScopeDlg.h" />
+    <ClInclude Include="..\src\invoice\calculation\CalculationElement.h" />
+    <ClInclude Include="..\src\invoice\calculation\CalculationObserver.h" />
+    <ClInclude Include="..\src\invoice\calculation\CustomPrice.h" />
+    <ClInclude Include="..\src\invoice\calculation\DeductionElement.h" />
+    <ClInclude Include="..\src\invoice\calculation\InvoiceCalculation.h" />
+    <ClInclude Include="..\src\invoice\calculator\InvoiceCalculator.h" />
+    <ClInclude Include="..\src\invoice\content\BuyDocsCandidatesListContent.h" />
+    <ClInclude Include="..\src\invoice\content\CalculationElementRow.h" />
+    <ClInclude Include="..\src\invoice\content\CowCandidatesContent.h" />
+    <ClInclude Include="..\src\invoice\content\DeductionElementRow.h" />
+    <ClInclude Include="..\src\invoice\content\HentsDocsCandidatesListContent.h" />
+    <ClInclude Include="..\src\invoice\content\InvoiceCalculationContent.h" />
+    <ClInclude Include="..\src\invoice\content\InvoiceDeductionsContent.h" />
+    <ClInclude Include="..\src\invoice\content\SellDocsCandidatesListContent.h" />
+    <ClInclude Include="..\src\invoice\content\SimpleHentsDocsListContent.h" />
+    <ClInclude Include="..\src\invoice\content\SimpleInDocsListContent.h" />
+    <ClInclude Include="..\src\invoice\InvoiceCowsSelectInterface.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\FullAccountingSymfonia.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\InvoiceExporter.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\JpkExporter.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\JsonExporter.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\options\InvoiceExporterOption.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\options\InvoiceExporterOptions.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\quickxml.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\sagejson.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\SmallBusinessSymfonia.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\exporters\SubiektEDI.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\InvoiceInterface.h" />
+    <ClInclude Include="..\src\invoice\invoiceexport\ui\InvoicesExportDlg.h" />
+    <ClInclude Include="..\src\invoice\InvoiceHentUpdateDlg.h" />
+    <ClInclude Include="..\src\invoice\lock\BuyInvoiceLocker.h" />
+    <ClInclude Include="..\src\invoice\lock\SellInvoiceLocker.h" />
+    <ClInclude Include="..\src\invoice\markpaid\BuyInvoiceMarkPaidDlg.h" />
+    <ClInclude Include="..\src\invoice\markpaid\InvoiceMarkPaidDlg.h" />
+    <ClInclude Include="..\src\invoice\markpaid\SellInvoiceMarkPaidDlg.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\content\MoneyTransferRow.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\content\MoneyTransfersContent.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\AliorFormatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\BZWBKFormatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\DelimetedFormatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\ElixirFormatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\CompanyNameAndAddrField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\CompanySourceAccountNo.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\CompanySourceBankNo.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\ConstantField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\CurrencyCodeField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\Elixir4x35Field.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\EmptyField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\FormatterField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceDateField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentAccountNoField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentAddrField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentBankNoField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentCityField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentNameAndAddrField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentNameAndNoField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentNameField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentStreetAddrField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceHentZipField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceIdField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceNumberField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\InvoiceTitleField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\MaxSizeField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\MoneyCentValueField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\MoneyFloatValueField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\MoneyTransferDateField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\MoneyTransferTitleField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\QuotedField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\ReplaceField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\fields\WrapperField.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\Formatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\KBFormatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\PolbankFormatter.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\formatters\utils\AccountNoUtils.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\MoneyTransferContext.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\MoneyTransferEntry.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\MoneyTransferEntryFactory.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\text\MoneyTransferEntryText.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\ui\MoneyTransferDlg.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\view\MoneyTransferView.h" />
+    <ClInclude Include="..\src\invoice\moneytransfer\view\MoneyTransferViewCreator.h" />
+    <ClInclude Include="..\src\invoice\SellDocSelectInterface.h" />
+    <ClInclude Include="..\src\invoice\SellInvoiceCowScopeDlg.h" />
+    <ClInclude Include="..\src\invoice\SellInvoiceCowsSelectInterface.h" />
+    <ClInclude Include="..\src\invoice\SellInvoiceDlg.h" />
+    <ClInclude Include="..\src\invoice\SellInvoiceDocScopeDlg.h" />
+    <ClInclude Include="..\src\invoice\ui\deduction\DeductionDetailsDlg.h" />
+    <ClInclude Include="..\src\invoice\ui\deduction\EditDeductionDetailsDlg.h" />
+    <ClInclude Include="..\src\invoice\ui\deduction\NewDeductionDetailsDlg.h" />
+    <ClInclude Include="..\src\invoice\view\BuyCalculationViewCreator.h" />
+    <ClInclude Include="..\src\invoice\view\CalculationElementView.h" />
+    <ClInclude Include="..\src\invoice\view\CalculationViewCreator.h" />
+    <ClInclude Include="..\src\invoice\view\DeductionElementView.h" />
+    <ClInclude Include="..\src\invoice\view\DeductionElementViewCreator.h" />
+    <ClInclude Include="..\src\invoice\view\SellCalculationViewCreator.h" />
+    <ClInclude Include="..\src\localstorage\LocalStorage.h" />
+    <ClInclude Include="..\src\locking\LockAttempt.h" />
+    <ClInclude Include="..\src\locking\LockerDlg.h" />
+    <ClInclude Include="..\src\locking\RecordLocker.h" />
+    <ClInclude Include="..\src\logo\logo.h" />
+    <ClInclude Include="..\src\logo\LogoService.h" />
+    <ClInclude Include="..\src\MainFrm.h" />
+    <ClInclude Include="..\src\passportrecognition\cache\PassportImageDiskCache.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\abbyy80\Abbyy80RecognitionEngine.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\abbyy80\AbbyyString.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\abbyy80\AutoDib.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\abbyy80\BstrWrap.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\abbyy80\FREngine.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\abbyy80\SafePtr.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\RecognitionEngine.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\RecognitionException.h" />
+    <ClInclude Include="..\src\passportrecognition\engine\Recognizer.h" />
+    <ClInclude Include="..\src\passportrecognition\operations\FindPassportFrameOperation.h" />
+    <ClInclude Include="..\src\passportrecognition\operations\LoadFromDIBOperation.h" />
+    <ClInclude Include="..\src\passportrecognition\operations\LoadFromFileOperation.h" />
+    <ClInclude Include="..\src\passportrecognition\operations\PassportImageOperation.h" />
+    <ClInclude Include="..\src\passportrecognition\operations\RegressionLine.hpp" />
+    <ClInclude Include="..\src\passportrecognition\operations\TresholdOperation.h" />
+    <ClInclude Include="..\src\passportrecognition\PassportImage.h" />
+    <ClInclude Include="..\src\passportrecognition\PassportRecognitionFieldsConstructor.h" />
+    <ClInclude Include="..\src\passportrecognition\PassportRecognitionResult.h" />
+    <ClInclude Include="..\src\passportrecognition\PassportRecognizer.h" />
+    <ClInclude Include="..\src\passportrecognition\profileeditor\PassportFieldEditor.h" />
+    <ClInclude Include="..\src\passportrecognition\profileeditor\PassportRecognitionProfileEditor.h" />
+    <ClInclude Include="..\src\passportrecognition\session\ExistingItemEditor.h" />
+    <ClInclude Include="..\src\passportrecognition\session\NewItemEditor.h" />
+    <ClInclude Include="..\src\passportrecognition\session\PassportRecognitionSession.h" />
+    <ClInclude Include="..\src\passportrecognition\session\PlusDocPassportRecognitionSession.h" />
+    <ClInclude Include="..\src\passportrecognition\settings\DataSettings.h" />
+    <ClInclude Include="..\src\passportrecognition\settings\EngineSettings.h" />
+    <ClInclude Include="..\src\passportrecognition\settings\ImageSettings.h" />
+    <ClInclude Include="..\src\passportrecognition\settings\PassportRecognizerSettings.h" />
+    <ClInclude Include="..\src\passportrecognition\settings\PassportRecognizerSettingsStorage.h" />
+    <ClInclude Include="..\src\passportrecognition\settings\ScannerSettings.h" />
+    <ClInclude Include="..\src\passportrecognition\types\NullPoint.h" />
+    <ClInclude Include="..\src\passportrecognition\types\Point.h" />
+    <ClInclude Include="..\src\passportrecognition\types\Size.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ChooseCowDlg.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\content\RecognitionItemRow.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\content\RecognitionSessionContent.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\FloatEnterEdit.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\FloorPlanCtrl.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\EasyBorderCtrl.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\IntValueSliderCtrl.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\PassImageCtrl.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\PassportProfileFieldsListCtrl.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\RulerWnd.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\ctrls\XEdit.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\InputField.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\InputWeightDlg.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\PassportProfileEditorDlg.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\PassportRecognitionDlg.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\settings\DataSettingsPage.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\settings\EngineSettingsPage.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\settings\ImageSettingsPage.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\settings\PassportRecognizerCfgDlg.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\settings\ScannerSettingsPage.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\text\RecognitionItemViewText.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\twain\Dyndll.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\twain\TraceFile.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\twain\Tracer.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\twain\twain.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\twain\TwainEventHandler.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\twain\TwainPP.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\utils\PassportMetricUtils.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\view\RecognitionItemView.h" />
+    <ClInclude Include="..\src\passportrecognition\ui\view\RecognitionItemViewCreator.h" />
+    <ClInclude Include="..\src\passportsegregation\BucketEntry.h" />
+    <ClInclude Include="..\src\passportsegregation\BucketListCtrl.h" />
+    <ClInclude Include="..\src\passportsegregation\CowPassport.h" />
+    <ClInclude Include="..\src\passportsegregation\CrossLayout.h" />
+    <ClInclude Include="..\src\passportsegregation\NamedValue.h" />
+    <ClInclude Include="..\src\passportsegregation\PassportSearchDlg.h" />
+    <ClInclude Include="..\src\passportsegregation\PassportSegregationDlg.h" />
+    <ClInclude Include="..\src\passportsegregation\SearchBucket.h" />
+    <ClInclude Include="..\src\passportsegregation\SearchBucketSummary.h" />
+    <ClInclude Include="..\src\passportsegregation\SegregationBucket.h" />
+    <ClInclude Include="..\src\print\context\CurrencySymbol.h" />
+    <ClInclude Include="..\src\print\context\DocumentContext.h" />
+    <ClInclude Include="..\src\print\context\DocumentContextBuilder.h" />
+    <ClInclude Include="..\src\print\context\numbertotext\NumberToText.h" />
+    <ClInclude Include="..\src\print\context\pricetotext\PriceToText.h" />
+    <ClInclude Include="..\src\print\context\QtyUnit.h" />
+    <ClInclude Include="..\src\print\context\text\QtyUnitText.h" />
+    <ClInclude Include="..\src\print\DocumentManagerService.h" />
+    <ClInclude Include="..\src\print\DocumentPredicate.h" />
+    <ClInclude Include="..\src\print\documents\Contract.h" />
+    <ClInclude Include="..\src\print\documents\ContractAttachment.h" />
+    <ClInclude Include="..\src\print\documents\Disinfection.h" />
+    <ClInclude Include="..\src\print\documents\Displacement.h" />
+    <ClInclude Include="..\src\print\documents\DisplacementViaMarket.h" />
+    <ClInclude Include="..\src\print\documents\Foodchain1.h" />
+    <ClInclude Include="..\src\print\documents\Foodchain2.h" />
+    <ClInclude Include="..\src\print\documents\Foodchain3.h" />
+    <ClInclude Include="..\src\print\documents\HealthCertAttachment.h" />
+    <ClInclude Include="..\src\print\documents\HentsDocSpecification.h" />
+    <ClInclude Include="..\src\print\documents\HerdBook.h" />
+    <ClInclude Include="..\src\print\documents\InvoiceDocument.h" />
+    <ClInclude Include="..\src\print\documents\InvoiceSpecification.h" />
+    <ClInclude Include="..\src\print\documents\InvoicesSummary.h" />
+    <ClInclude Include="..\src\print\documents\NormalizedFoodchain.h" />
+    <ClInclude Include="..\src\print\documents\OwnDocSpecification.h" />
+    <ClInclude Include="..\src\print\documents\PlusDocReport.h" />
+    <ClInclude Include="..\src\print\documents\TransportManifest.h" />
+    <ClInclude Include="..\src\print\documents\TransportManifest2.h" />
+    <ClInclude Include="..\src\print\documents\TransportRegistry.h" />
+    <ClInclude Include="..\src\print\documents\WeightSpec.h" />
+    <ClInclude Include="..\src\print\documents\WeterinarianBook.h" />
+    <ClInclude Include="..\src\print\ForwardDocumentPredicate.h" />
+    <ClInclude Include="..\src\print\KeysInputInterface.h" />
+    <ClInclude Include="..\src\print\DocumentArchetype.h" />
+    <ClInclude Include="..\src\print\DocumentInput.h" />
+    <ClInclude Include="..\src\print\DocumentInstance.h" />
+    <ClInclude Include="..\src\print\DocumentInterface.h" />
+    <ClInclude Include="..\src\print\DocumentManager.h" />
+    <ClInclude Include="..\src\print\DocumentSelection.h" />
+    <ClInclude Include="..\src\print\DocumentTerritory.h" />
+    <ClInclude Include="..\src\print\DocumentTerritoryObj.h" />
+    <ClInclude Include="..\src\print\IdsInputInterface.h" />
+    <ClInclude Include="..\src\print\options\ComparableFieldDefinition.h" />
+    <ClInclude Include="..\src\print\options\DocumentCfgDescription.h" />
+    <ClInclude Include="..\src\print\options\DocumentConfigurationDescription.h" />
+    <ClInclude Include="..\src\print\options\DocumentOptionDefinition.h" />
+    <ClInclude Include="..\src\print\options\DocumentOptionType.h" />
+    <ClInclude Include="..\src\print\options\PrintOptionSerializer.h" />
+    <ClInclude Include="..\src\print\runtime\DocumentInputUtils.h" />
+    <ClInclude Include="..\src\print\runtime\FeedException.h" />
+    <ClInclude Include="..\src\print\runtime\Label.h" />
+    <ClInclude Include="..\src\print\runtime\WinPaperUtils.h" />
+    <ClInclude Include="..\src\print\ui\DocumentPrintDlg.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\BooleanOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\DayDateOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\DecimalFormatCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\DecimalOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\DisplacementEventsCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\DocumentOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\HentNoOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\IntegerOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\OptionCtrlFactory.h" />
+    <ClInclude Include="..\src\print\ui\optionctrls\StringOptionCtrl.h" />
+    <ClInclude Include="..\src\print\ui\PrintPreviewCtrl.h" />
+    <ClInclude Include="..\src\print\ui\PrintProfileDlg.h" />
+    <ClInclude Include="..\src\print\ui\PrintProfileEditor.h" />
+    <ClInclude Include="..\src\print\ui\PrintRecordOrderDlg.h" />
+    <ClInclude Include="..\src\print\ui\verticalstackctrl\VerticalStackCtrl.h" />
+    <ClInclude Include="..\src\repo\RepoException.h" />
+    <ClInclude Include="..\src\repo\RepoSession.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseCowListContent.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseCowRow.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseHentListContent.h" />
+    <ClInclude Include="..\src\repo\ui\content\purchasehentrow.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseInvoiceDeductionRow.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseInvoiceDeductionsListContent.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseInvoiceRow.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseInvoicesListContent.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseIssuesListContent.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseHeaderListContent.h" />
+    <ClInclude Include="..\src\repo\ui\content\PurchaseHeaderRow.h" />
+    <ClInclude Include="..\src\repo\ui\content\Row.h" />
+    <ClInclude Include="..\src\repo\ui\ctrls\PurchaseIssuesListCtrl.h" />
+    <ClInclude Include="..\src\repo\ui\ctrls\RepoInvoiceDeductionsListCtrl.h" />
+    <ClInclude Include="..\src\repo\ui\ctrls\RepoPurchaseCowsListCtrl.h" />
+    <ClInclude Include="..\src\repo\ui\ctrls\RepoPurchaseInvoicesListCtrl.h" />
+    <ClInclude Include="..\src\repo\ui\ctrls\RepoPurchaseListCtrl.h" />
+    <ClInclude Include="..\src\repo\ui\InputCowNoDlg.h" />
+    <ClInclude Include="..\src\repo\ui\PurchaseInvoiceCalculator.h" />
+    <ClInclude Include="..\src\repo\ui\PurchaseIssuesSolverDlg.h" />
+    <ClInclude Include="..\src\repo\ui\RepoDlg.h" />
+    <ClInclude Include="..\src\repo\ui\RepoPurchaseContentPage.h" />
+    <ClInclude Include="..\src\repo\ui\RepoPurchaseHentsPage.h" />
+    <ClInclude Include="..\src\repo\ui\RepoPurchaseSummaryPage.h" />
+    <ClInclude Include="..\src\repo\ui\text\DownloadIssueViewText.h" />
+    <ClInclude Include="..\src\repo\ui\text\PurchaseCowViewText.h" />
+    <ClInclude Include="..\src\repo\ui\text\PurchaseHentViewText.h" />
+    <ClInclude Include="..\src\repo\ui\text\PurchaseInvoiceDeductionViewText.h" />
+    <ClInclude Include="..\src\repo\ui\text\PurchaseInvoiceViewText.h" />
+    <ClInclude Include="..\src\repo\ui\text\PurchaseHeaderViewText.h" />
+    <ClInclude Include="..\src\repo\ui\view\DownloadIssueView.h" />
+    <ClInclude Include="..\src\repo\ui\view\DownloadIssueViewCreator.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseCowView.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseCowViewCreator.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseHentView.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseHentViewCreator.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseInvoiceDeductionView.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseInvoiceDeductionViewCreator.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseInvoiceView.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseInvoiceViewCreator.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseHeaderView.h" />
+    <ClInclude Include="..\src\repo\ui\view\PurchaseHeaderViewCreator.h" />
+    <ClInclude Include="..\src\Resource.h" />
+    <ClInclude Include="..\src\runtime\FarmStructure.h" />
+    <ClInclude Include="..\src\runtime\FarmStructureBuilder.h" />
+    <ClInclude Include="..\src\runtime\TaskExecutor.h" />
+    <ClInclude Include="..\src\runtime\UniqueIds.h" />
+    <ClInclude Include="..\src\runtime\UniquePresenceKeys.h" />
+    <ClInclude Include="..\src\SeasonAccess.h" />
+    <ClInclude Include="..\src\season\OpenSeasonDlg.h" />
+    <ClInclude Include="..\src\services\AppService.h" />
+    <ClInclude Include="..\src\services\ServiceRegistry.h" />
+    <ClInclude Include="..\src\services\ServiceRegistryImpl.h" />
+    <ClInclude Include="..\src\SessionAwareDialog.h" />
+    <ClInclude Include="..\src\SessionAwareWnd.h" />
+    <ClInclude Include="..\src\settings\behaviour\BehaviourPage.h" />
+    <ClInclude Include="..\src\settings\deductions\CRUDDeductionDefinition.h" />
+    <ClInclude Include="..\src\settings\deductions\CRUDFlag.h" />
+    <ClInclude Include="..\src\settings\deductions\CRUDObject.h" />
+    <ClInclude Include="..\src\settings\deductions\DeductionDefinitionDlg.h" />
+    <ClInclude Include="..\src\settings\deductions\DeductionDefinitionRow.h" />
+    <ClInclude Include="..\src\settings\deductions\DeductionDefinitionsPage.h" />
+    <ClInclude Include="..\src\settings\deductions\DeductionDefinitionView.h" />
+    <ClInclude Include="..\src\settings\deductions\DeductionDefinitionViewCreator.h" />
+    <ClInclude Include="..\src\settings\deductions\DeductionDefsContent.h" />
+    <ClInclude Include="..\src\settings\DefaultValues.h" />
+    <ClInclude Include="..\src\settings\DefaultValuesEditor.h" />
+    <ClInclude Include="..\src\settings\defaultvalues\DefaultValuesPage.h" />
+    <ClInclude Include="..\src\settings\SettingsDlg.h" />
+    <ClInclude Include="..\src\settings\SettingsPropPage.h" />
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\tabs\barn\BarnTab.h" />
+    <ClInclude Include="..\src\tabs\barn\CowsTab.h" />
+    <ClInclude Include="..\src\tabs\barn\HentsDocsTab.h" />
+    <ClInclude Include="..\src\tabs\barn\HerdNumbersBar.h" />
+    <ClInclude Include="..\src\tabs\barn\HerdTab.h" />
+    <ClInclude Include="..\src\tabs\barn\MoveDocsTab.h" />
+    <ClInclude Include="..\src\tabs\barn\OwnDocsTab.h" />
+    <ClInclude Include="..\src\tabs\find\FindContainerDlg.h" />
+    <ClInclude Include="..\src\tabs\find\FindCowDlg.h" />
+    <ClInclude Include="..\src\tabs\find\FindDlg.h" />
+    <ClInclude Include="..\src\tabs\find\FindHentDlg.h" />
+    <ClInclude Include="..\src\tabs\hents\HentsTab.h" />
+    <ClInclude Include="..\src\tabs\invoices\InvoicesTab.h" />
+    <ClInclude Include="..\src\tabs\ListTab.h" />
+    <ClInclude Include="..\src\tabs\TabPage.h" />
+    <ClInclude Include="..\src\targetver.h" />
+    <ClInclude Include="..\src\text\CountryNameText.h" />
+    <ClInclude Include="..\src\text\CowPresenceViewText.h" />
+    <ClInclude Include="..\src\text\CowSexText.h" />
+    <ClInclude Include="..\src\text\CowViewText.h" />
+    <ClInclude Include="..\src\text\DocItemViewText.h" />
+    <ClInclude Include="..\src\text\DocNoText.h" />
+    <ClInclude Include="..\src\text\DocViewText.h" />
+    <ClInclude Include="..\src\text\HentsDocViewText.h" />
+    <ClInclude Include="..\src\text\HentText.h" />
+    <ClInclude Include="..\src\text\HentTypeString.h" />
+    <ClInclude Include="..\src\text\InvoiceNoText.h" />
+    <ClInclude Include="..\src\text\InvoiceTypeString.h" />
+    <ClInclude Include="..\src\text\InvoiceViewText.h" />
+    <ClInclude Include="..\src\text\MotiveString.h" />
+    <ClInclude Include="..\src\text\MoveDocViewText.h" />
+    <ClInclude Include="..\src\text\OwnDocViewText.h" />
+    <ClInclude Include="..\src\text\PayWayString.h" />
+    <ClInclude Include="..\src\text\SeasonText.h" />
+    <ClInclude Include="..\src\text\YesNoText.h" />
+    <ClInclude Include="..\src\uiconstants\ColorConstants.h" />
+    <ClInclude Include="..\src\uiconstants\PrecisionContstants.h" />
+    <ClInclude Include="..\src\uitypes\Color.h" />
+    <ClInclude Include="..\src\ui\askfordatedlg\AskForDateDlg.h" />
+    <ClInclude Include="..\src\ui\cell\ComboCellBuilder.h" />
+    <ClInclude Include="..\src\ui\cell\DecimalCellBuilder.h" />
+    <ClInclude Include="..\src\ui\cell\EditCellBuilder.h" />
+    <ClInclude Include="..\src\ui\cell\NumericCellBuilder.h" />
+    <ClInclude Include="..\src\ui\comboselectdlg\ComboSelectDlg.h" />
+    <ClInclude Include="..\src\ui\ExceptionMsgBox.h" />
+    <ClInclude Include="..\src\ui\layoutmanager\ETSLayout.h" />
+    <ClInclude Include="..\src\ui\lazydlg\LazyDlg.h" />
+    <ClInclude Include="..\src\ui\listboxselectdlg\ListBoxSelectDlg.h" />
+    <ClInclude Include="..\src\ui\menu\MenuBuilder.h" />
+    <ClInclude Include="..\src\ui\progressdlg\ComplexProgressDialog.h" />
+    <ClInclude Include="..\src\ui\progressdlg\SimpleProgressDialog.h" />
+    <ClInclude Include="..\src\ui\question\AnswerButton.h" />
+    <ClInclude Include="..\src\ui\question\QuestionBox.h" />
+    <ClInclude Include="..\src\ui\question\QuestionDlg.h" />
+    <ClInclude Include="..\src\ui\question\QuestionDlgTemplate.h" />
+    <ClInclude Include="..\src\ui\Tooltip.h" />
+    <ClInclude Include="..\src\ui\treepropsheet\PropPageFrame.h" />
+    <ClInclude Include="..\src\ui\treepropsheet\PropPageFrameDefault.h" />
+    <ClInclude Include="..\src\ui\treepropsheet\TreePropSheet.h" />
+    <ClInclude Include="..\src\ui\waitdlg\WaitDialog.h" />
+    <ClInclude Include="..\src\ui\YesNoBox.h" />
+    <ClInclude Include="..\src\utils\BmpImageList.h" />
+    <ClInclude Include="..\src\utils\Product.h" />
+    <ClInclude Include="..\src\utils\StringLoader.h" />
+    <ClInclude Include="..\src\utils\TempIconLoader.h" />
+    <ClInclude Include="..\src\view\BuyDocViewCreator.h" />
+    <ClInclude Include="..\src\view\BuyInvoiceViewCreator.h" />
+    <ClInclude Include="..\src\view\CompanyView.h" />
+    <ClInclude Include="..\src\view\CowInvoiceEntryView.h" />
+    <ClInclude Include="..\src\view\CowPresenceView.h" />
+    <ClInclude Include="..\src\view\CowPresenceViewCreator.h" />
+    <ClInclude Include="..\src\view\CowView.h" />
+    <ClInclude Include="..\src\view\CowViewCreator.h" />
+    <ClInclude Include="..\src\view\DocItemView.h" />
+    <ClInclude Include="..\src\view\DocItemViewCreator.h" />
+    <ClInclude Include="..\src\view\DocView.h" />
+    <ClInclude Include="..\src\view\DocViewCreator.h" />
+    <ClInclude Include="..\src\view\FarmHentViewCreator.h" />
+    <ClInclude Include="..\src\view\FatDocView.h" />
+    <ClInclude Include="..\src\view\FatHentsDocView.h" />
+    <ClInclude Include="..\src\view\FatHentsDocViewCreator.h" />
+    <ClInclude Include="..\src\view\FatInvoiceView.h" />
+    <ClInclude Include="..\src\view\FatInvoiceViewCreator.h" />
+    <ClInclude Include="..\src\view\FatOwnDocViewCreator.h" />
+    <ClInclude Include="..\src\view\HentsDocView.h" />
+    <ClInclude Include="..\src\view\HentsDocViewCreator.h" />
+    <ClInclude Include="..\src\view\HentView.h" />
+    <ClInclude Include="..\src\view\HentViewCreator.h" />
+    <ClInclude Include="..\src\view\HerdView.h" />
+    <ClInclude Include="..\src\view\InvoiceItemViewCreator.h" />
+    <ClInclude Include="..\src\view\InvoiceView.h" />
+    <ClInclude Include="..\src\view\InvoiceViewCreator.h" />
+    <ClInclude Include="..\src\view\MoveDocView.h" />
+    <ClInclude Include="..\src\view\MoveDocViewCreator.h" />
+    <ClInclude Include="..\src\view\OwnDocView.h" />
+    <ClInclude Include="..\src\view\OwnDocViewCreator.h" />
+    <ClInclude Include="..\src\view\SellDocViewCreator.h" />
+    <ClInclude Include="..\src\view\SellInvoiceViewCreator.h" />
+    <ClInclude Include="..\src\welcome\WelcomeDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\add_32.png" />
+    <Image Include="..\res\append_32x32.png" />
+    <Image Include="..\res\bitmap2.bmp" />
+    <Image Include="..\res\bk.ico" />
+    <Image Include="..\res\brain.ico" />
+    <Image Include="..\res\bugtraq.ico" />
+    <Image Include="..\res\buydoc.png" />
+    <Image Include="..\res\checkall.png" />
+    <Image Include="..\res\checkbox.bmp" />
+    <Image Include="..\res\defaultlogo.png" />
+    <Image Include="..\res\download.png" />
+    <Image Include="..\res\download16x16.png" />
+    <Image Include="..\res\downoad_save.png" />
+    <Image Include="..\res\edit_32.png" />
+    <Image Include="..\res\exit.png" />
+    <Image Include="..\res\flags.bmp" />
+    <Image Include="..\res\hentblue.ico" />
+    <Image Include="..\res\hentgreen.ico" />
+    <Image Include="..\res\hentred.ico" />
+    <Image Include="..\res\hidearrow.png" />
+    <Image Include="..\res\icon2.ico" />
+    <Image Include="..\res\indoc.png" />
+    <Image Include="..\res\invalidlogo.png" />
+    <Image Include="..\res\leftarrow_16x16bw.png" />
+    <Image Include="..\res\LOGO.png" />
+    <Image Include="..\res\minus_32.png" />
+    <Image Include="..\res\movedoc.png" />
+    <Image Include="..\res\no-barcode-icon-disabled.png" />
+    <Image Include="..\res\no-barcode-icon.png" />
+    <Image Include="..\res\nobarcode.ico" />
+    <Image Include="..\res\outdoc.png" />
+    <Image Include="..\res\piechart.ico" />
+    <Image Include="..\res\png00001.png" />
+    <Image Include="..\res\png00002.png" />
+    <Image Include="..\res\png1.png" />
+    <Image Include="..\res\png2.png" />
+    <Image Include="..\res\png3.png" />
+    <Image Include="..\res\png4.png" />
+    <Image Include="..\res\png5.png" />
+    <Image Include="..\res\png6.png" />
+    <Image Include="..\res\png7.png" />
+    <Image Include="..\res\png8.png" />
+    <Image Include="..\res\png9.png" />
+    <Image Include="..\res\refresh_16x16.png" />
+    <Image Include="..\res\refresh_32.png" />
+    <Image Include="..\res\refresh_green.png" />
+    <Image Include="..\res\rightarrow_16x16bw.png" />
+    <Image Include="..\res\screwdriver.ico" />
+    <Image Include="..\res\search_32x32.png" />
+    <Image Include="..\res\selldoc.png" />
+    <Image Include="..\res\sortarrows.bmp" />
+    <Image Include="..\res\target_mark_aim_32x32.png" />
+    <Image Include="..\res\task_status.bmp" />
+    <Image Include="..\res\text_and_barcde.bmp" />
+    <Image Include="..\res\Toolbar.bmp" />
+    <Image Include="..\res\Toolbar256.bmp" />
+    <Image Include="..\res\trash_16x16.png" />
+    <Image Include="..\res\trash_32x32.png" />
+    <Image Include="..\res\unchecka.png" />
+    <Image Include="..\res\uncheckall.png" />
+    <Image Include="..\res\upload.png" />
+    <Image Include="..\res\UserImages.bmp" />
+    <Image Include="..\res\watch_16x16.png" />
+    <Image Include="..\res\yes-barcode-icon-disabled.png" />
+    <Image Include="..\res\yes-barcode-icon.png" />
+    <Image Include="..\res\yesbarcode.ico" />
+    <Image Include="brain.ico" />
+    <Image Include="checkbox.bmp" />
+    <Image Include="flags.bmp" />
+    <Image Include="hentblue.ico" />
+    <Image Include="hentgreen.ico" />
+    <Image Include="hentred.ico" />
+    <Image Include="no-barcode-icon.png" />
+    <Image Include="nobarcode.ico" />
+    <Image Include="screwdriver.ico" />
+    <Image Include="sortarrows.bmp" />
+    <Image Include="task_status.bmp" />
+    <Image Include="text_and_barcde.bmp" />
+    <Image Include="yesbarcode.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\res\bk.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\bk.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

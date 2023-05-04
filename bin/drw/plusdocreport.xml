@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>TOPSTYLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial CE</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>BUYELLHEAD</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>TABLEHEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+
+		<documentheader>
+
+			<text label="">
+				<position>				
+					<left>50</left>
+					<top>80</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>80</height>
+				</size>
+
+				<value>RAPORT Z PRZYJĘCIA</value>
+				<style>2</style>
+			</text>
+
+		</documentheader>
+
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+					<text label="">
+						<position>
+							<left>58</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>63</height>
+						</size>
+						<value>LP</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>183</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>63</height>
+						</size>
+						<value>Numer zwierzęcia</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>558</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>63</height>
+						</size>
+						<value>PZ</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						<style>3</style>
+					</text>
+					<text label="">
+						<position>
+							<left>683</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1350</width>
+							<height>63</height>
+						</size>
+						<value>Kupiona od</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						
+						<style>3</style>
+					</text>
+
+
+				</header>
+				<fields>
+
+
+					<text label="INDEX">
+						<position>
+							<left>58</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>100</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>183</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>375</width>
+							<height>100</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="INDOCNO">
+						<position>
+							<left>558</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>125</width>
+							<height>100</height>
+						</size>
+						<value>{INDOCNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="BUYFROMHENT">
+						<position>
+							<left>683</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1350</width>
+							<height>100</height>
+						</size>
+						<value>{BUYFROMHENT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+
+
+				</fields>
+			</band>
+		</bands>
+		
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1700</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>-1</style>
+			</text>
+		</pagefooter>
+	</document>
+</expandabletemplate>

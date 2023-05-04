@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="portrait" paper="a4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="1">
+			<name>HEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-40</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>FIELDS</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-25</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>BOTTOMTEXT</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-27</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="4">
+			<name>FIELDSTOP</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>TOP</verAlign>
+			<font>
+				<height>-25</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="5">
+			<name>SMALL_NUMBER</name>
+			<textColor>#000000</textColor>
+			<horAlign>RIGHT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-25</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="6">
+			<name>SUMARRY</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="7">
+			<name>HENTINFO</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-42</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader showOnFirstPage="y" topMargin="80">
+
+			<text label="TITLE">
+				<position>
+					<left>50</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>60</height>
+				</size>
+				<value>SPECYFIKACJA FAKTURY {INVOICENO} Z DNIA {INVOICEDATE}</value>
+				<style>1</style>
+			</text>	
+
+		</pageheader>
+
+		<documentheader>
+
+
+			<text label="">
+				<position>
+					<left>51</left>
+					<top>10</top>
+				</position>
+				<size>
+					<width>999</width>
+					<height>53</height>
+				</size>
+				<value>SPRZEDAWCA</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>1</style>
+			</text>
+
+			<text label="SELLER_NAME">
+				<position>
+					<left>51</left>
+					<top>63</top>
+				</position>
+				<size>
+					<width>999</width>
+					<height>285</height>
+				</size>
+				<value>{SELLER}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>7</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>1050</left>
+					<top>10</top>
+				</position>
+				<size>
+					<width>999</width>
+					<height>53</height>
+				</size>
+				<value>NABYWCA</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+
+				<fillColor>#C0C0C0</fillColor>
+
+				<style>1</style>
+			</text>
+			<text label="BUYER_NAME">
+				<position>
+					<left>1050</left>
+					<top>63</top>
+				</position>
+				<size>
+					<width>999</width>
+					<height>285</height>
+				</size>
+				<value>{BUYER}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>7</style>
+			</text>
+
+
+		</documentheader>
+
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+					<text label="">
+						<position>
+							<left>313</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>96</width>
+							<height>100</height>
+						</size>
+						<value>Lp</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+
+					<text label="">
+						<position>
+							<left>409</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>166</width>
+							<height>100</height>
+						</size>
+						<value>KLASA</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+
+					<text label="">
+						<position>
+							<left>575</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>166</width>
+							<height>100</height>
+						</size>
+						<value>WAGA</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+
+					<text label="">
+						<position>
+							<left>741</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>304</width>
+							<height>100</height>
+						</size>
+						<value>NR KOLCZYKA</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1045</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>100</height>
+						</size>
+						<value>Cena za kg&#xA;netto (PLN)</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1218</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>100</height>
+						</size>
+						<value>Wartość netto&#xA;(PLN)</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1391</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>100</height>
+						</size>
+						<value>Kwota VAT&#xA;(PLN)</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1564</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>100</height>
+						</size>
+						<value>Wartość bruto&#xA;(PLN)</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+
+				</header>
+
+				<fields>	
+
+					<text label="INDEX">
+						<position>
+							<left>313</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>96</width>
+							<height>60</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+					<text label="SECONDSTOCK">
+						<position>
+							<left>409</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>166</width>
+							<height>60</height>
+						</size>
+						<value>{SECONDSTOCK}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+					<text label="SECONDWEIGHT">
+						<position>
+							<left>575</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>166</width>
+							<height>60</height>
+						</size>
+						<value>{SECONDWEIGHT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+					<text label="COWNO0">
+						<position>
+							<left>741</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>304</width>
+							<height>60</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="UNITPRICENET">
+						<position>
+							<left>1045</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>60</height>
+						</size>
+						<value>{UNITPRICENET}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="NETTO">
+						<position>
+							<left>1218</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>60</height>
+						</size>
+						<value>{NETTO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+					<text label="VAT">
+						<position>
+							<left>1391</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>60</height>
+						</size>
+						<value>{VAT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>
+
+					<text label="BRUTTO">
+						<position>
+							<left>1564</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>173</width>
+							<height>60</height>
+						</size>
+						<value>{BRUTTO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>-1</style>
+					</text>	
+
+				</fields>
+			</band>
+		</bands>
+
+		<documentfooter stickToBottom="n">
+
+			<text label="">
+				<position>
+					<left>49</left>
+					<top>15</top>
+				</position>
+				<size>
+					<width>153</width>
+					<height>55</height>
+				</size>
+				<value>Razem :</value>
+				<style>6</style>
+			</text>
+
+			<text label="TOTAL_SECONDARY_WEIGHT">
+				<position>
+					<left>575</left>
+					<top>15</top>
+				</position>
+				<size>
+					<width>172</width>
+					<height>55</height>
+				</size>
+				<value>{TOTALSECONDWEIGHT}</value>
+				<style>6</style>
+			</text>
+
+			<text label="TOTAL_NETTO">
+				<position>
+					<left>1218</left>
+					<top>15</top>
+				</position>
+				<size>
+					<width>173</width>
+					<height>55</height>
+				</size>
+				<value>{TOTALNETTO}</value>
+				<style>6</style>
+			</text>
+
+
+			<text label="TOTAL_VAT">
+				<position>
+					<left>1391</left>
+					<top>15</top>
+				</position>
+				<size>
+					<width>173</width>
+					<height>55</height>
+				</size>
+				<value>{TOTALVATVALUE}</value>
+				<style>6</style>
+			</text>
+
+			<text label="TOTAL_BRUTTO">
+				<position>
+					<left>1564</left>
+					<top>15</top>
+				</position>
+				<size>
+					<width>173</width>
+					<height>55</height>
+				</size>
+				<value>{TOTALGROSSVALUE}</value>
+				<style>6</style>
+			</text>
+
+			<rect label="">
+				<position>
+					<left>51</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>1998</width>
+					<height>0</height>
+				</size>
+				<border>
+					<lineWidth>4</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<fillColor>#C0C0C0</fillColor>
+			</rect>
+
+		</documentfooter>
+
+		<pagefooter>
+
+			<text label="PAGES">
+
+				<position>                            
+					<left>0</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>2000</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>
+
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-27</height>
+						<face>Arial</face>
+						<bold>false</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>
+
+			</text>
+		</pagefooter>
+
+
+	</document>
+</expandabletemplate>

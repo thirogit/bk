@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<expandabletemplate orientation="landscape" paper="a4">
+	<styles>
+		<style id="TABLE">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-35</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="HEADER">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-36</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="PAGECOUNT">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>BOTTOM</verAlign>
+			<font>
+				<height>-30</height>
+				<face>Arial</face>
+				<bold>false</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="1">
+			<name>LABELS</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-36</height>
+				<face>Arial Narrow</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="2">
+			<name>HEADER</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-28</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+		<style id="3">
+			<name>HERDNO</name>
+			<textColor>#000000</textColor>
+			<horAlign>CENTER</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-36</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+
+		<style id="TITLE">
+			<name>TITLE</name>
+			<textColor>#000000</textColor>
+			<horAlign>RIGHT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>70</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>false</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<document>
+
+		<pageheader>
+		</pageheader>
+		<documentheader>
+
+
+			<text label="">
+				<position>
+					<left>2000</left>
+					<top>200</top>
+				</position>
+				<size>
+					<width>900</width>
+					<height>199</height>
+				</size>
+				<value>DOKUMENT PRZEWOZOWY</value>
+				<style>TITLE</style>
+				
+			</text>
+
+			<text label="">
+				<position>
+					<left>100</left>
+					<top>399</top>
+				</position>
+				<size>
+					<width>350</width>
+					<height>70</height>
+				</size>
+				<value>Nr siedziby stada:</value>
+				<style>1</style>
+			</text>
+
+			<text label="HERDNO[0]">
+				<position>
+					<left>450</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[0]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>			
+
+			<text label="HERDNO[1]">
+				<position>
+					<left>510</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[1]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+
+			<text label="HERDNO[2]">
+				<position>
+					<left>570</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[2]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+
+			<text label="HERDNO[3]">
+				<position>
+					<left>630</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[3]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[4]">
+				<position>
+					<left>690</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[4]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[5]">
+				<position>
+					<left>750</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[5]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[6]">
+				<position>
+					<left>810</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[6]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[7]">
+				<position>
+					<left>870</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[7]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[8]">
+				<position>
+					<left>930</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[8]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[9]">
+				<position>
+					<left>990</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[9]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[10]">
+				<position>
+					<left>1050</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[10]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[11]">
+				<position>
+					<left>1110</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[11]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[12]">
+				<position>
+					<left>1170</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[12]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+			<text label="HERDNO[13]">
+				<position>
+					<left>1230</left>
+					<top>392</top>
+				</position>
+				<size>
+					<width>60</width>
+					<height>67</height>
+				</size>
+				<value>{HERDNO[13]}</value>
+				<border>
+					<lineWidth>1</lineWidth>
+					<lineColor>#000000</lineColor>
+				</border>
+				<style>3</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>1300</left>
+					<top>399</top>
+				</position>
+				<size>
+					<width>450</width>
+					<height>69</height>
+				</size>
+				<value>Adres siedziby stada:</value>
+				
+				<style>1</style>
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1750</left>
+					<top>399</top>
+				</position>
+				<size>
+					<width>1150</width>
+					<height>69</height>
+				</size>
+				<value>.......................................................................................................................................</value>
+				<style>1</style>
+				
+			</text>
+
+			<text label="HERDADDRESS">
+				<position>
+					<left>1750</left>
+					<top>389</top>
+				</position>
+				<size>
+					<width>1150</width>
+					<height>69</height>
+				</size>
+				<value>{HERDADDRESS}</value>
+				
+				<style>HEADER</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>100</left>
+					<top>478</top>
+				</position>
+				<size>
+					<width>900</width>
+					<height>69</height>
+				</size>
+				<value>Imię i nazwisko/ Nazwa siedziby przewoźnika:</value>
+				<style>1</style>
+				
+			</text>
+			
+			<text label="">
+				<position>
+					<left>1000</left>
+					<top>478</top>
+				</position>
+				<size>
+					<width>1900</width>
+					<height>69</height>
+				</size>
+				<value>...................................................................................................................................................................................................................................................</value>
+				<style>1</style>
+				
+			</text>
+
+			<text label="CARRIERNAME">
+				<position>
+					<left>1000</left>
+					<top>468</top>
+				</position>
+				<size>
+					<width>1900</width>
+					<height>69</height>
+				</size>
+				<value>{CARRIERNAME}</value>
+				
+				<style>HEADER</style>
+			</text>
+
+
+			<text label="">
+				<position>
+					<left>100</left>
+					<top>555</top>
+				</position>
+				<size>
+					<width>750</width>
+					<height>69</height>
+				</size>
+				<value>Weterynaryjny nr ident. przwoźnika:</value>
+				<style>1</style>
+				
+			</text>
+			
+			<text label="">
+				<position>
+					<left>850</left>
+					<top>555</top>
+				</position>
+				<size>
+					<width>450</width>
+					<height>69</height>
+				</size>
+				<value>.......................................................................................................................................</value>
+				<style>1</style>
+				
+			</text>
+
+			<text label="CARRIERWETNO">
+				<position>
+					<left>850</left>
+					<top>545</top>
+				</position>
+				<size>
+					<width>450</width>
+					<height>69</height>
+				</size>
+				<value>{CARRIERWETNO}</value>
+				
+				<style>HEADER</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>1300</left>
+					<top>555</top>
+				</position>
+				<size>
+					<width>750</width>
+					<height>69</height>
+				</size>
+				<value>Marka i nr rejestr. środka transportu:</value>
+				<style>1</style>
+				
+			</text>
+
+			<text label="">
+				<position>
+					<left>2050</left>
+					<top>555</top>
+				</position>
+				<size>
+					<width>850</width>
+					<height>69</height>
+				</size>
+				<value>.............................................................................................................................</value>
+				<style>1</style>
+				
+			</text>
+			
+			<text label="PLATENO_TRUCKBRAND">
+				<position>
+					<left>2050</left>
+					<top>545</top>
+				</position>
+				<size>
+					<width>850</width>
+					<height>69</height>
+				</size>
+				<value>{PLATENO} {TRUCKBRAND}</value>
+				
+				<style>HEADER</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>100</left>
+					<top>633</top>
+				</position>
+				<size>
+					<width>700</width>
+					<height>69</height>
+				</size>
+				<value>Data, godzina i miejsce załadunku:</value>
+				<style>1</style>
+				
+			</text>
+			
+			<text label="">
+				<position>
+					<left>800</left>
+					<top>633</top>
+				</position>
+				<size>
+					<width>1100</width>
+					<height>69</height>
+				</size>
+				<value>.............................................................................................................................................</value>
+				<style>1</style>
+				
+			</text>
+
+			<text label="LOADDATETIME_LOADPLACE">
+				<position>
+					<left>800</left>
+					<top>623</top>
+				</position>
+				<size>
+					<width>1100</width>
+					<height>69</height>
+				</size>
+				<value>{LOADDATETIME} {LOADPLACE}</value>
+				
+				<style>HEADER</style>
+			</text>
+
+
+			<text label="">
+				<position>
+					<left>1900</left>
+					<top>633</top>
+				</position>
+				<size>
+					<width>700</width>
+					<height>69</height>
+				</size>
+				<value>Data dostarczenia żywca do rzeźni:</value>
+				<style>1</style>
+				
+			</text>
+			
+			<text label="">
+				<position>
+					<left>2600</left>
+					<top>633</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>69</height>
+				</size>
+				<value>...........................................................</value>
+				<style>1</style>
+				
+			</text>
+	
+
+			<text label="UNLOADDATETIME">
+				<position>
+					<left>2600</left>
+					<top>623</top>
+				</position>
+				<size>
+					<width>300</width>
+					<height>69</height>
+				</size>
+				<value>{UNLOADDATETIME}</value>
+				
+				<style>HEADER</style>
+			</text>
+
+
+
+
+
+		</documentheader>
+
+		<bands>
+
+			<band name="items">
+				<header>
+
+
+					<text label="">
+						<position>
+							<left>795</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>209</width>
+							<height>67</height>
+						</size>
+						<value>WAGA</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+
+						<fillColor>#C0C0C0</fillColor>
+
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>182</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>208</width>
+							<height>67</height>
+						</size>
+						<value>GATUNEK</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>						
+						<fillColor>#C0C0C0</fillColor>						
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>390</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>405</width>
+							<height>67</height>
+						</size>
+						<value>NR KOLCZYKA</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1004</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>442</width>
+							<height>67</height>
+						</size>
+						<value>NR STADA</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>1446</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1456</width>
+							<height>67</height>
+						</size>
+						<value>NAZWISKO I ADRES</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						<style>2</style>
+					</text>
+					<text label="">
+						<position>
+							<left>93</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>89</width>
+							<height>67</height>
+						</size>
+						<value>Lp.</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<fillColor>#C0C0C0</fillColor>
+						<style>2</style>
+					</text>
+
+
+				</header>
+
+				<fields>
+
+					<text label="INDEX">
+						<position>
+							<left>93</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>89</width>
+							<height>67</height>
+						</size>
+						<value>{INDEX}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLE</style>
+					</text>
+
+
+
+
+					<text label="SPIECIES">
+						<position>
+							<left>182</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>208</width>
+							<height>67</height>
+						</size>
+						<value>{SPIECIES}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLE</style>
+					</text>
+					<text label="COWNO">
+						<position>
+							<left>390</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>405</width>
+							<height>67</height>
+						</size>
+						<value>{COWNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLE</style>
+					</text>
+
+					<text label="WEIGHT">
+						<position>
+							<left>795</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>209</width>
+							<height>67</height>
+						</size>
+						<value>{WEIGHT}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLE</style>
+					</text>
+
+					<text label="HERDNO">
+						<position>
+							<left>1004</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>442</width>
+							<height>67</height>
+						</size>
+						<value>{HERDNO}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLE</style>
+					</text>
+					<text label="NAMEANDADDRESS">
+						<position>
+							<left>1446</left>
+							<top>0</top>
+						</position>
+						<size>
+							<width>1456</width>
+							<height>67</height>
+						</size>
+						<value>{NAMEANDADDRESS}</value>
+						<border>
+							<lineWidth>1</lineWidth>
+							<lineColor>#000000</lineColor>
+						</border>
+						<style>TABLE</style>
+					</text>				
+
+				</fields>
+
+			</band>
+		</bands>
+
+		<pagefooter>		
+			<text label="PAGES">
+				<position>
+					<left>200</left>
+					<top>140</top>
+				</position>
+				<size>
+					<width>2570</width>
+					<height>60</height>
+				</size>
+				<value>{PAGE}/{PAGECOUNT}</value>				
+				<style>PAGECOUNT</style>
+			</text>
+
+			<text label="">
+				<position>
+					<left>2000</left>
+					<top>0</top>
+				</position>
+				<size>
+					<width>900</width>
+					<height>200</height>
+				</size>
+				<value>.................................................................................&#xA;podpis posiadacza zwierząt / pieczęć</value>
+				<ownstyle>
+					<textColor>#000000</textColor>
+					<horAlign>CENTER</horAlign>
+					<verAlign>CENTER</verAlign>
+					<font>
+						<height>-25</height>
+						<face>Arial</face>
+						<bold>true</bold>
+						<italic>false</italic>
+						<underline>false</underline>
+						<strikeout>false</strikeout>
+					</font>
+				</ownstyle>				
+			</text>
+		</pagefooter>
+
+	</document>
+
+</expandabletemplate>

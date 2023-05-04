@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fixedtemplate orientation="portrait" paper="A4">
+
+	<styles>
+		<style id="-1">
+			<name>USERDEF</name>
+			<textColor>#000000</textColor>
+			<horAlign>LEFT</horAlign>
+			<verAlign>CENTER</verAlign>
+			<font>
+				<height>-50</height>
+				<face>Arial</face>
+				<bold>true</bold>
+				<italic>true</italic>
+				<underline>false</underline>
+				<strikeout>false</strikeout>
+			</font>
+		</style>
+	</styles>
+
+	<pages>
+		<page name="front">
+
+			
+    <text label="">
+        <position>
+            <left>100</left>
+            <top>583</top>
+        </position>
+        <size>
+            <width>1900</width>
+            <height>206</height>
+        </size>
+        <value>Dnia …………………… o godzinie …………….. wykonano dezynfekcje *samochodu/naczepy numerze rejestracyjnym:……………….........….&#xA;środkiem o nazwie ……………………….</value>
+        <ownstyle>
+            <textColor>#000000</textColor>
+            <horAlign>LEFT</horAlign>
+            <verAlign>CENTER</verAlign>
+            <font>
+                <height>-50</height>
+                <face>Arial</face>
+                <bold>false</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+            </font>
+        </ownstyle>
+    </text>
+    <text label="">
+        <position>
+            <left>634</left>
+            <top>440</top>
+        </position>
+        <size>
+            <width>836</width>
+            <height>145</height>
+        </size>
+        <value>DEZYNFEKCJA</value>
+        <ownstyle>
+            <textColor>#000000</textColor>
+            <horAlign>CENTER</horAlign>
+            <verAlign>CENTER</verAlign>
+            <font>
+                <height>-60</height>
+                <face>Arial</face>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>true</underline>
+                <strikeout>false</strikeout>
+            </font>
+        </ownstyle>
+    </text>
+    <text label="">
+        <position>
+            <left>1099</left>
+            <top>850</top>
+        </position>
+        <size>
+            <width>820</width>
+            <height>283</height>
+        </size>
+        <value>Pieczęć i podpis</value>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <ownstyle>
+            <textColor>#000000</textColor>
+            <horAlign>CENTER</horAlign>
+            <verAlign>BOTTOM</verAlign>
+            <font>
+                <height>-30</height>
+                <face>Arial</face>
+                <bold>false</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+            </font>
+        </ownstyle>
+    </text>
+    <text label="EVENTDAY">
+        <position>
+            <left>300</left>
+            <top>580</top>
+        </position>
+        <size>
+            <width>400</width>
+            <height>71</height>
+        </size>
+        <value>{EVENTDAY}</value>
+        <style>-1</style>
+    </text>
+    <text label="EVENTTIME">
+        <position>
+            <left>1035</left>
+            <top>587</top>
+        </position>
+        <size>
+            <width>268</width>
+            <height>71</height>
+        </size>
+        <value>{EVENTTIME}</value>
+        <style>-1</style>
+    </text>
+    <text label="PLATENO">
+        <position>
+            <left>1276</left>
+            <top>640</top>
+        </position>
+        <size>
+            <width>725</width>
+            <height>71</height>
+        </size>
+        <value>{PLATENO}</value>
+        <style>-1</style>
+    </text>
+    <text label="CHEMICALAGENT">
+        <position>
+            <left>582</left>
+            <top>700</top>
+        </position>
+        <size>
+            <width>1430</width>
+            <height>71</height>
+        </size>
+        <value>{CHEMICALAGENT}</value>
+        <style>-1</style>
+    </text>
+    <text label="">
+        <position>
+            <left>65</left>
+            <top>1188</top>
+        </position>
+        <size>
+            <width>598</width>
+            <height>85</height>
+        </size>
+        <value>* niepotrzebne skreślić</value>
+        <ownstyle>
+            <textColor>#000000</textColor>
+            <horAlign>CENTER</horAlign>
+            <verAlign>CENTER</verAlign>
+            <font>
+                <height>-30</height>
+                <face>Arial</face>
+                <bold>false</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+            </font>
+        </ownstyle>
+    </text>
+
+			<!-- <img label="LOGO">
+          <position>
+            <left>-1002</left>
+            <top>1399</top>
+            <right>-598</right>
+            <bottom>997</bottom>
+          </position>
+        </img> -->
+		</page>
+	</pages>
+
+</fixedtemplate>
